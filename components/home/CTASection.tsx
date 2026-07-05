@@ -40,9 +40,9 @@ export default function CTASection() {
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center items-center gap-x-7 gap-y-3 text-sm text-white/80">
-            <a href="mailto:info@zera.health" className="inline-flex items-center gap-2 hover:text-white transition-colors">
+            <a href="mailto:hello@zera.health" className="inline-flex items-center gap-2 hover:text-white transition-colors">
               <Mail className="w-4 h-4" />
-              info@zera.health
+              hello@zera.health
             </a>
           </div>
 

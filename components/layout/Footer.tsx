@@ -55,11 +55,11 @@ export default function Footer() {
               cardiology next.
             </p>
             <a
-              href="mailto:info@zera.health"
+              href="mailto:hello@zera.health"
               className="inline-flex items-center gap-2 mt-4 text-sm text-[#60a5fa] hover:text-white transition-colors"
             >
               <Mail className="w-4 h-4" />
-              info@zera.health
+              hello@zera.health
             </a>
           </div>
 
@@ -142,7 +142,7 @@ export default function Footer() {
               HIPAA Compliant
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-white/20 text-white/60">
-              BAA Available
+              SOC 2 Aligned
             </span>
           </div>
         </div>

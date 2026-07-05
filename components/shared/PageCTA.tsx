@@ -49,9 +49,9 @@ export default function PageCTA({
             </a>
           </div>
           <div className="mt-8 flex flex-wrap justify-center items-center gap-x-7 gap-y-3 text-sm text-white/80">
-            <a href="mailto:info@zera.health" className="inline-flex items-center gap-2 hover:text-white transition-colors">
+            <a href="mailto:hello@zera.health" className="inline-flex items-center gap-2 hover:text-white transition-colors">
               <Mail className="w-4 h-4" />
-              info@zera.health
+              hello@zera.health
             </a>
           </div>
           <div className="mt-7 flex flex-wrap justify-center gap-x-3 gap-y-2 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-white/55">

@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
-const LEAD_EMAIL = "info@zera.health";
+const LEAD_EMAIL = "hello@zera.health";
 
 type Intent = "demo" | "waitlist";
 
