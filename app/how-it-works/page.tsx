@@ -27,49 +27,26 @@ const PIPELINE = [
   },
 ];
 
-const FIVE_STEPS = [
-  {
-    number: 1,
-    title: "Ambient Capture",
-    pull: "You talk to your patient naturally. Zera listens.",
-    body: "Zera runs quietly in the background on a phone or browser, capturing the nuanced clinical dialogue while filtering out small talk, interruptions, and background noise. No wake words. No clunky dictation commands. Just conversation.",
-  },
-  {
-    number: 2,
-    title: "Structured Clinical Documentation",
-    pull: "A chart-ready note is generated in real time.",
-    body: "Zera synthesizes the transcript into a structured, ophthalmology-aware encounter note. Chief Complaint, history, exam findings, measurements (VA, IOP, slit lamp, fundus, gonioscopy), and assessment & plan — all formatted to your specialty's standards.",
-    code: `Chief Complaint: Blurry vision OD x 3 weeks
-HPI: 68yo F with progressive central vision loss in the right eye...
-Exam: VA OD 20/80, OS 20/25
-       IOP OD 16, OS 15
-       Slit lamp: 2+ NS cataract OD, 1+ NS OS
-       Fundus: Foveal drusen OD, normal OS
-Assessment & Plan: Age-related macular degeneration OD...`,
-  },
-  {
-    number: 3,
-    title: "Autonomous Medical Coding",
-    pull: "Zera translates the clinical story into billable codes.",
-    body: "Zera reads the Medical Decision Making context and automatically assigns ICD-10 and CPT/HCPCS codes. It understands specialty-specific procedural logic — applying modifiers like -25, -59, and -50 for bilateral procedures, and bundling logic for combined exam, imaging, and surgical workflows.",
-    code: `CPT: 92134 (OCT, retina)
-CPT: 66984-RT (Cataract surgery, right eye)
-Modifier: -25 (Significant, separately identifiable E&M)
-ICD-10: H35.31 (Nonexudative AMD, right eye)
-ICD-10: H25.11 (Age-related nuclear cataract, right eye)`,
-  },
-  {
-    number: 4,
-    title: "Pre-Submission Validation",
-    pull: "Errors are caught at the encounter, not after the rejection.",
-    body: "Before a claim ever leaves the practice, Zera validates it against payer rules, laterality consistency, MEAT documentation requirements, and code-pair edits. Denial risks surface while the encounter is still fresh — not weeks later when the remittance arrives.",
-  },
-  {
-    number: 5,
-    title: "Claim-Ready Handoff",
-    pull: "A clean, validated claim with a complete audit trail.",
-    body: "The validated claim moves to your clearinghouse or billing team, every code traceable to its source documentation. What used to take days of back-and-forth between providers, scribes, and coders happens in one continuous workflow.",
-  },
+const STEPS = [
+  { n: 1, title: "Ambient capture", desc: "Zera listens in the background — no wake words, no dictation. Just the conversation." },
+  { n: 2, title: "Structured note", desc: "The transcript becomes a chart-ready, ophthalmology-aware encounter note in real time." },
+  { n: 3, title: "Autonomous coding", desc: "ICD-10 and CPT codes — with the right modifiers and bundling — assigned automatically." },
+  { n: 4, title: "Pre-submission validation", desc: "Payer rules, laterality, and MEAT checks catch denial risks before the claim leaves." },
+  { n: 5, title: "Claim-ready handoff", desc: "A clean, validated claim moves to your clearinghouse with a full audit trail." },
+];
+
+const NOTE_LINES = [
+  "CC: Blurry vision OD × 3 weeks",
+  "VA OD 20/80  ·  IOP OD 16",
+  "Fundus: foveal drusen OD",
+  "A/P: Nonexudative AMD, right eye",
+];
+
+const CODES = [
+  { code: "CPT 92134", desc: "OCT, retina" },
+  { code: "CPT 66984-RT", desc: "Cataract surgery, right eye" },
+  { code: "Mod -25", desc: "Separately identifiable E&M" },
+  { code: "ICD-10 H35.31", desc: "Nonexudative AMD, right eye" },
 ];
 
 export default function HowItWorks() {
@@ -113,38 +90,80 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      {/* 5-step engine */}
+      {/* The Engine — compact timeline + one example artifact */}
       <section className="py-20 lg:py-28">
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
-          <AnimatedSection className="max-w-3xl mb-16">
+          <AnimatedSection className="max-w-3xl mb-14">
             <SectionLabel>The Engine</SectionLabel>
             <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               Five steps, one uninterrupted flow.
             </h2>
           </AnimatedSection>
 
-          <div className="space-y-6">
-            {FIVE_STEPS.map((step, i) => (
-              <AnimatedSection key={step.number} delay={i * 0.05}>
-                <div className="rounded-2xl border border-border bg-white p-8 lg:p-10">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                    <div>
-                      <div className="flex items-center gap-3 mb-4">
-                        <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white font-bold text-sm">{step.number}</span>
-                        <h3 className="text-xl font-bold text-foreground">{step.title}</h3>
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-12 items-start">
+            {/* Left: numbered timeline */}
+            <AnimatedSection className="lg:col-span-3">
+              <div className="relative">
+                <span aria-hidden className="absolute left-[1.125rem] top-3 bottom-3 w-px bg-border" />
+                <ol className="space-y-7">
+                  {STEPS.map((s) => (
+                    <li key={s.n} className="relative flex gap-4">
+                      <span className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold">
+                        {s.n}
+                      </span>
+                      <div className="pt-1">
+                        <h3 className="text-lg font-bold text-foreground">{s.title}</h3>
+                        <p className="text-[15px] text-muted-foreground leading-relaxed mt-1">{s.desc}</p>
                       </div>
-                      <p className="text-lg text-foreground font-semibold mb-3">{step.pull}</p>
-                      <p className="text-muted-foreground leading-relaxed">{step.body}</p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </AnimatedSection>
+
+            {/* Right: one example artifact, sticky */}
+            <AnimatedSection delay={0.15} className="lg:col-span-2">
+              <div className="lg:sticky lg:top-28">
+                <div
+                  className="rounded-2xl border border-border bg-white overflow-hidden"
+                  style={{ boxShadow: "0 18px 50px -18px rgba(15,23,42,0.22)" }}
+                >
+                  <div className="flex items-center justify-between border-b border-border bg-muted/40 px-5 py-3">
+                    <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
+                      Example · Retina visit
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-primary">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      Live
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground mb-2.5">Note</p>
+                    <div className="rounded-xl bg-muted/40 border border-border px-4 py-3 space-y-1">
+                      {NOTE_LINES.map((line) => (
+                        <p key={line} className="font-mono text-[12.5px] leading-relaxed text-foreground/80">{line}</p>
+                      ))}
                     </div>
-                    {step.code && (
-                      <pre className="rounded-xl bg-[#0f172a] text-white/90 p-5 text-[12.5px] leading-relaxed font-mono overflow-x-auto">
-                        {step.code}
-                      </pre>
-                    )}
+
+                    <div className="flex items-center gap-2 my-4 text-muted-foreground">
+                      <span className="h-px flex-1 bg-border" />
+                      <span className="font-mono text-[10px] uppercase tracking-[0.18em]">generates</span>
+                      <span className="h-px flex-1 bg-border" />
+                    </div>
+
+                    <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary mb-2.5">Codes</p>
+                    <ul className="space-y-2">
+                      {CODES.map((c) => (
+                        <li key={c.code} className="flex items-baseline justify-between gap-3">
+                          <span className="font-mono text-[12.5px] font-semibold text-primary tabular-nums">{c.code}</span>
+                          <span className="text-[12.5px] text-muted-foreground text-right">{c.desc}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
-              </AnimatedSection>
-            ))}
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
