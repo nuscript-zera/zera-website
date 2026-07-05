@@ -6,28 +6,28 @@ import { Plus } from "lucide-react";
 
 const faqs = [
   {
-    q: "What is Audryl?",
-    a: "Audryl is an AI platform for medical transcription operations. It turns audio into EHR-ready clinical notes through an AI production pipeline your editors review rather than retype, with built-in QA workflows and workforce management in one system.",
+    q: "What is Zera?",
+    a: "Zera is an autonomous revenue cycle platform for ambulatory specialty medicine. It captures the encounter, generates the documentation, produces the codes, validates the claim, and prepares it for submission — in real time, in one continuous workflow, with the provider always in control.",
   },
   {
-    q: "How does Audryl help transcription companies and MTSOs?",
-    a: "Audryl breaks the link between capacity and headcount. Your team reviews AI-drafted notes instead of typing from scratch, so you can process more clinical volume with the same people — improving turnaround time, quality consistency, and margins without a hiring cycle.",
+    q: "Which specialties does Zera support?",
+    a: "Ophthalmology is live today — purpose-built for retina, glaucoma, cataract/refractive, and comprehensive workflows. Cardiology is in development next. The intelligence layer is shared across specialties; the vocabulary, workflow specifics, and payer rules are purpose-built per specialty.",
   },
   {
-    q: "Is Audryl HIPAA compliant?",
-    a: "Yes. Audryl is architected for HIPAA from the ground up, signs a Business Associate Agreement (BAA) with every client, isolates each organization's data by tenant, and encrypts data in transit and at rest.",
+    q: "Does Zera replace my EHR?",
+    a: "No. Zera is an intelligence layer, not an EHR replacement. It works alongside the systems you already run — athenahealth, eClinicalWorks, Nextech, ModMed EMA, Veradigm, Altera, and Epic (ambulatory) — and requires no staff layoffs or workflow rip-and-replace.",
   },
   {
-    q: "Does Audryl replace medical transcriptionists and editors?",
-    a: "No. Audryl keeps human editors in the loop. AI drafts the documentation and your team reviews and QA-scores it, which raises throughput and quality rather than removing the people who safeguard accuracy.",
+    q: "How does Zera prevent denials?",
+    a: "Five concurrent analyzers run as the note is composed — laterality enforcement, HCC condition flagging, MEAT documentation validation, ICD-10 specificity checking, and J-code unit reconciliation. Documentation issues surface to the provider before sign, not after the denial arrives weeks later.",
   },
   {
-    q: "What EHR formats and outputs does Audryl support?",
-    a: "Audryl produces EHR-ready, claims-ready documentation, delivered today through a secure portal or file delivery. For enterprise clients, direct EHR integration and HL7/FHIR delivery can be built as part of onboarding, so output fits existing clinical and revenue-cycle workflows.",
+    q: "Is Zera HIPAA compliant?",
+    a: "Yes. Zera is architected for HIPAA from the ground up, signs a Business Associate Agreement with every customer, deploys US-only, isolates each organization's data with customer-scoped keys, and never uses customer data to train models. A SOC 2 audit is in flight.",
   },
   {
-    q: "Is Audryl proven in production?",
-    a: "Yes. Audryl is in daily production now, processing real clinical documentation for 70+ diverse US healthcare organizations — hospitals, ASCs, physician groups, and clinics. This is live operational work, not a pilot or a demo.",
+    q: "Can Zera run the whole revenue cycle for us?",
+    a: "Yes. You can run Zera yourself, or choose Zera Managed RCM — the same platform, operated by a dedicated team of certified coders, billers, and AR specialists assigned to your practice. Same software, same intelligence layer, different operational ownership.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function FAQSection() {
           Questions, answered.
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Everything operators ask before running their first pilot on Audryl.
+          What practices ask before booking their first Zera demo.
         </p>
 
         <div className="mt-12">

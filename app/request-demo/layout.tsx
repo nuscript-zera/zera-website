@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Request a Demo",
+  title: "Book a Demo",
   description:
-    "Book a walkthrough of Audryl and run a free pilot on your own client and worktype, with your own editors — before you commit.",
+    "Book an ophthalmology demo of Zera, or join the cardiology waitlist. See one encounter go from spoken word to clean claim in real time.",
   alternates: { canonical: "/request-demo" },
   openGraph: {
-    title: "Request a Demo · Audryl",
+    title: "Book a Demo · Zera",
     description:
-      "Book a walkthrough of Audryl and run a free pilot on your own client and worktype, with your own editors — before you commit.",
+      "Book an ophthalmology demo of Zera, or join the cardiology waitlist.",
     url: "/request-demo",
   },
 };

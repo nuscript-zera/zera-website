@@ -2,18 +2,17 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
+  title: "Terms of Use",
   description:
-    "The terms governing use of Audryl's AI clinical documentation platform and related services.",
+    "Terms governing use of the Zera platform and website, operated by NuScript Systems, Inc.",
   alternates: { canonical: "/terms-of-service" },
   openGraph: {
-    title: "Terms of Service · Audryl",
-    description:
-      "The terms governing use of Audryl's AI clinical documentation platform and related services.",
+    title: "Terms of Use · Zera",
+    description: "Terms governing use of the Zera platform and website.",
     url: "/terms-of-service",
   },
 };
 
-export default function TermsOfServiceLayout({ children }: { children: ReactNode }) {
+export default function TermsLayout({ children }: { children: ReactNode }) {
   return <>{children}</>;
 }

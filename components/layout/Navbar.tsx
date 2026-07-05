@@ -8,9 +8,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Platform", href: "/platform" },
-  { label: "For MTSOs", href: "/for-mtsos" },
-  { label: "Security", href: "/security" },
-  { label: "About", href: "/about" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Why Zera", href: "/why-zera" },
+  { label: "Managed RCM", href: "/managed-rcm" },
 ];
 
 export default function Navbar() {
@@ -38,8 +38,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[72px] lg:h-[85px]">
           <Link href="/" className="flex items-center group">
             <img
-              src="/audryl-logo.png?v=2"
-              alt="Audryl"
+              src="/zera-logo.png?v=1"
+              alt="Zera"
               className="h-8 w-auto"
             />
           </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://app.audryl.com"
+              href="https://app.zera.health"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,9 +69,9 @@ export default function Navbar() {
                 Login
               </Button>
             </a>
-            <a href="/request-demo">
+            <a href="/request-demo?interest=ophthalmology-demo">
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all px-5 gap-2 rounded-xl text-[18px]">
-                Request Demo
+                Book a Demo
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </a>
@@ -109,7 +109,7 @@ export default function Navbar() {
               ))}
               <div className="pt-3 border-t border-border mt-3 space-y-2">
                 <a
-                  href="https://app.audryl.com"
+                  href="https://app.zera.health"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -121,9 +121,9 @@ export default function Navbar() {
                     Login
                   </Button>
                 </a>
-                <a href="/request-demo" onClick={() => setIsOpen(false)} className="block">
+                <a href="/request-demo?interest=ophthalmology-demo" onClick={() => setIsOpen(false)} className="block">
                   <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground gap-2 rounded-xl text-[18px]">
-                    Request Demo
+                    Book a Demo
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </a>

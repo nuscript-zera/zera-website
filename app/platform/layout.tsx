@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "AI Documentation Platform",
+  title: "The Platform",
   description:
-    "How Audryl turns dictation and ambient audio into structured, EHR-ready clinical notes — AI drafting, editor review, and 13-category QA in one platform.",
+    "Zera captures the encounter, generates documentation, produces codes, validates the claim, and prepares it for submission — one real-time intelligence layer for ambulatory specialty medicine.",
   alternates: { canonical: "/platform" },
   openGraph: {
-    title: "AI Documentation Platform · Audryl",
+    title: "The Platform · Zera",
     description:
-      "How Audryl turns dictation and ambient audio into structured, EHR-ready clinical notes — AI drafting, editor review, and 13-category QA in one platform.",
+      "One platform that captures the encounter, generates documentation, produces codes, and validates the claim — without leaving the workflow.",
     url: "/platform",
   },
 };

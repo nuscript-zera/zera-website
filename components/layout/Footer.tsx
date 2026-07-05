@@ -3,16 +3,16 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 
 const platformLinks = [
-  { label: "Product Overview", href: "/platform" },
-  { label: "For MTSOs", href: "/for-mtsos" },
-  { label: "Security", href: "/security" },
-  { label: "About", href: "/about" },
+  { label: "Platform", href: "/platform" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Why Zera", href: "/why-zera" },
+  { label: "Managed RCM", href: "/managed-rcm" },
 ];
 
 const getStartedLinks = [
-  { label: "Book a Demo", href: "/request-demo" },
-  { label: "Start Free Pilot", href: "/request-demo?intent=pilot" },
-  { label: "Login", href: "https://app.audryl.com", external: true },
+  { label: "Book an Ophthalmology Demo", href: "/request-demo?interest=ophthalmology-demo" },
+  { label: "Talk to Our Team", href: "/request-demo" },
+  { label: "Login", href: "https://app.zera.health", external: true },
 ];
 
 const legalLinks = [
@@ -33,8 +33,8 @@ export default function Footer() {
             Our Belief
           </p>
           <h2 className="text-[2.1rem] md:text-[3rem] lg:text-[3.2rem] font-bold text-white leading-[1.02] tracking-[-0.02em] text-balance max-w-[60rem]">
-            Your MTSO can{" "}
-            <span style={{ color: "#60a5fa" }}>grow</span> without a hiring cycle.
+            Note → Code → Claim.{" "}
+            <span style={{ color: "#60a5fa" }}>One AI. Zero handoffs.</span>
           </h2>
         </div>
 
@@ -43,23 +43,23 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
               <img
-                src="/audryl-logo-white.png?v=2"
-                alt="Audryl"
+                src="/zera-logo-white.png?v=1"
+                alt="Zera"
                 className="h-8 w-auto"
               />
             </div>
             <p className="text-sm leading-relaxed max-w-md text-white/60">
-              The AI platform for medical transcription operations. AI-powered
-              production pipeline, complete QA workflows, and built-in workforce
-              management — proven at production scale across 70+ diverse US
-              healthcare organizations.
+              The autonomous revenue cycle platform for ambulatory specialty
+              medicine. Every encounter — documented, coded, scrubbed, and
+              claim-ready — in one workflow, in real time. Ophthalmology today,
+              cardiology next.
             </p>
             <a
-              href="mailto:info@audryl.com"
+              href="mailto:info@zera.health"
               className="inline-flex items-center gap-2 mt-4 text-sm text-[#60a5fa] hover:text-white transition-colors"
             >
               <Mail className="w-4 h-4" />
-              info@audryl.com
+              info@zera.health
             </a>
           </div>
 
@@ -123,7 +123,7 @@ export default function Footer() {
         <div className="mt-12 lg:mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5">
             <p className="text-xs text-white/50">
-              © 2026 Audryl. All rights reserved.
+              © 2026 Zera, a platform of NuScript Systems, Inc. All rights reserved.
             </p>
             <div className="flex items-center gap-5">
               {legalLinks.map((link) => (

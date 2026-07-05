@@ -4,12 +4,12 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Audryl collects, uses, stores, and protects information across its AI clinical documentation platform.",
+    "How NuScript Systems, Inc. handles personal information across the Zera platform — an autonomous revenue cycle platform for ambulatory medicine.",
   alternates: { canonical: "/privacy-policy" },
   openGraph: {
-    title: "Privacy Policy · Audryl",
+    title: "Privacy Policy · Zera",
     description:
-      "How Audryl collects, uses, stores, and protects information across its AI clinical documentation platform.",
+      "How NuScript Systems, Inc. handles personal information across the Zera platform.",
     url: "/privacy-policy",
   },
 };

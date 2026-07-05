@@ -9,32 +9,32 @@ const points = [
   {
     label: "HIPAA",
     title: "Compliant by design",
-    desc: "Architected for HIPAA from the ground up.",
+    desc: "Architected for HIPAA from the ground up, BAA with every customer.",
   },
   {
-    label: "Crypto",
-    title: "Encrypted end to end",
-    desc: "Industry-standard protocols in transit and at rest.",
+    label: "SOC 2",
+    title: "Audit in flight",
+    desc: "Type I controls in place; Type II window open. Inventory under NDA.",
   },
   {
     label: "Isolation",
     title: "Isolated by tenant",
-    desc: "No shared buckets, no cross-tenant access.",
+    desc: "US-only deployment. No cross-tenant access, customer-scoped keys.",
+  },
+  {
+    label: "Models",
+    title: "Your data stays yours",
+    desc: "No customer data is ever used to train models.",
+  },
+  {
+    label: "Audit",
+    title: "Audit-defensible",
+    desc: "Every transcript word timestamped; every code traceable to source.",
   },
   {
     label: "RBAC",
     title: "Role-based access",
-    desc: "Least-privilege across editors, QA, and admins.",
-  },
-  {
-    label: "Audit",
-    title: "Full audit trail",
-    desc: "Every action logged and reviewable.",
-  },
-  {
-    label: "Infra",
-    title: "Hardened infrastructure",
-    desc: "Monitored cloud with redundancy built in.",
+    desc: "Least-privilege access and full logging across the platform.",
   },
 ];
 
@@ -49,16 +49,17 @@ export default function SecuritySection() {
               <span className="text-primary">Trust</span>
             </p>
             <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground leading-[0.98] tracking-[-0.02em] text-balance">
-              We sign a Business Associate Agreement with every client.
+              We sign a Business Associate Agreement with every practice.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-md">
-              Clinical data requires trust. Audryl is engineered for HIPAA
-              compliance, tenant isolation, and security at scale — so the
-              handling of protected health information is never an open question.
+              Clinical and financial data requires trust. Zera is engineered for
+              HIPAA compliance, per-organization isolation, and a complete audit
+              trail — so the handling of protected health information is never an
+              open question.
             </p>
             <div className="mt-6 inline-flex items-center gap-2 text-xs font-semibold font-mono uppercase tracking-wider text-muted-foreground">
               <ShieldCheck className="w-4 h-4 text-primary" />
-              HIPAA · BAA available for every client
+              HIPAA · BAA available for every practice
             </div>
           </AnimatedSection>
 

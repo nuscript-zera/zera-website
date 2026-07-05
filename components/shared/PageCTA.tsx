@@ -1,14 +1,22 @@
 import React from "react";
-import { Mail, Phone, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
 export default function PageCTA({
   heading,
   subcopy,
+  primaryLabel = "Book an Ophthalmology Demo",
+  primaryHref = "/request-demo?interest=ophthalmology-demo",
+  secondaryLabel = "Explore the Platform",
+  secondaryHref = "/platform",
 }: {
   heading: string;
   subcopy: string;
+  primaryLabel?: string;
+  primaryHref?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
 }) {
   return (
     <section className="max-lg:pt-[5.3125rem] lg:pt-[7.5rem] max-lg:pb-[3.5rem] lg:pb-[5rem]" style={{ backgroundColor: "#0f172a" }}>
@@ -21,33 +29,29 @@ export default function PageCTA({
             {subcopy}
           </p>
           <div className="mt-8 flex justify-center gap-3.5 max-md:flex-col md:flex-row">
-            <a href="/request-demo?intent=pilot">
+            <a href={primaryHref}>
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/30 gap-2 px-8 rounded-xl font-semibold text-base h-12 w-full md:w-auto"
               >
-                Start free pilot
+                {primaryLabel}
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </a>
-            <a href="/request-demo">
+            <a href={secondaryHref}>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white px-8 rounded-xl font-semibold text-base h-12 w-full md:w-auto"
               >
-                Book a demo
+                {secondaryLabel}
               </Button>
             </a>
           </div>
           <div className="mt-8 flex flex-wrap justify-center items-center gap-x-7 gap-y-3 text-sm text-white/80">
-            <a href="mailto:marketing@audryl.com" className="inline-flex items-center gap-2 hover:text-white transition-colors">
+            <a href="mailto:info@zera.health" className="inline-flex items-center gap-2 hover:text-white transition-colors">
               <Mail className="w-4 h-4" />
-              marketing@audryl.com
-            </a>
-            <a href="tel:+919790444927" className="inline-flex items-center gap-2 hover:text-white transition-colors">
-              <Phone className="w-4 h-4" />
-              +91 97904 44927
+              info@zera.health
             </a>
           </div>
           <div className="mt-7 flex flex-wrap justify-center gap-x-3 gap-y-2 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-white/55">
@@ -55,7 +59,7 @@ export default function PageCTA({
             <span aria-hidden="true">·</span>
             <span>BAA available</span>
             <span aria-hidden="true">·</span>
-            <span>Proven across 70+ organizations</span>
+            <span>SOC 2 aligned</span>
           </div>
         </AnimatedSection>
       </div>
