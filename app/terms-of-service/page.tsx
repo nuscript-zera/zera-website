@@ -63,7 +63,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: "Governing Law & Jurisdiction",
-    content: "These Terms are governed by and construed in accordance with the laws of the State of Delaware, without regard to its conflict of law provisions. Any disputes arising under or related to these Terms shall be resolved exclusively in the state or federal courts located in Delaware, and you irrevocably consent to the personal jurisdiction of such courts.",
+    content: "These Terms are governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of law provisions. Any disputes arising under or related to these Terms shall be resolved exclusively in the state or federal courts located in Texas, and you irrevocably consent to the personal jurisdiction of such courts.",
   },
   {
     title: "Modifications to These Terms",
@@ -98,7 +98,7 @@ export default function TermsOfUse() {
             Terms of Use
           </motion.h1>
           <motion.p {...fadeUp(0.16)} className="text-lg text-muted-foreground mt-6">
-            Effective Date: May 11, 2026
+            Effective Date: July 5, 2026
           </motion.p>
         </div>
       </section>

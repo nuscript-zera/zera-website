@@ -97,7 +97,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </motion.h1>
           <motion.p {...fadeUp(0.16)} className="text-lg text-muted-foreground mt-6">
-            Effective Date: May 11, 2026
+            Effective Date: July 5, 2026
           </motion.p>
         </div>
       </section>
