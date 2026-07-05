@@ -12,7 +12,7 @@ export default function ZeraWhySection() {
       <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
         <AnimatedSection className="max-w-3xl mx-auto text-center mb-16">
           <SectionLabel>Why Zera</SectionLabel>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mt-4 leading-tight mb-6">
+          <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance mb-6">
             Healthcare AI built by operators, not just engineers.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">

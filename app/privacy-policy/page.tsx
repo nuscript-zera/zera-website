@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
           <motion.div {...fadeUp(0)}>
             <SectionLabel>Legal</SectionLabel>
           </motion.div>
-          <motion.h1 {...fadeUp(0.08)} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 leading-tight max-w-4xl">
+          <motion.h1 {...fadeUp(0.08)} className="text-4xl lg:text-[4.1rem] font-bold text-foreground mt-4 leading-[0.96] tracking-[-0.02em] text-balance max-w-4xl">
             Privacy Policy
           </motion.h1>
           <motion.p {...fadeUp(0.16)} className="text-lg text-muted-foreground mt-6">

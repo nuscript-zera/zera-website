@@ -41,7 +41,7 @@ export default function ManagedRCM() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-4xl">
             <SectionLabel>Two Ways to Operate</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 leading-tight">
+            <h1 className="text-4xl lg:text-[4.1rem] font-bold text-foreground mt-4 leading-[0.96] tracking-[-0.02em] text-balance">
               Run Zera yourself — or have our team run it for you.
             </h1>
             <p className="text-xl text-muted-foreground font-medium mt-6 leading-relaxed">
@@ -56,7 +56,7 @@ export default function ManagedRCM() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-3xl mb-14">
             <SectionLabel>How It's Different</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mt-4 leading-tight">
+            <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               The outcomes of in-house, without the burden.
             </h2>
           </AnimatedSection>
@@ -87,7 +87,7 @@ export default function ManagedRCM() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-3xl mb-14">
             <SectionLabel>What's Included</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mt-4 leading-tight">
+            <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               A full revenue cycle operation, run on Zera.
             </h2>
           </AnimatedSection>

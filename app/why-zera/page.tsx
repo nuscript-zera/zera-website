@@ -72,7 +72,7 @@ export default function WhyZera() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-4xl">
             <SectionLabel>The Operator-Led AI Platform</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 leading-tight">
+            <h1 className="text-4xl lg:text-[4.1rem] font-bold text-foreground mt-4 leading-[0.96] tracking-[-0.02em] text-balance">
               Healthcare AI built by operators, not just engineers.
             </h1>
             <p className="text-xl text-muted-foreground font-medium mt-6 leading-relaxed">
@@ -87,7 +87,7 @@ export default function WhyZera() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-3xl mb-14">
             <SectionLabel>Why One Platform</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mt-4 leading-tight">
+            <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               What changes when documentation, coding, and claims share one data layer.
             </h2>
           </AnimatedSection>
@@ -109,7 +109,7 @@ export default function WhyZera() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-3xl mb-14">
             <SectionLabel>The Zera DNA</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mt-4 leading-tight">
+            <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               From running the operation to automating it.
             </h2>
           </AnimatedSection>
@@ -137,7 +137,7 @@ export default function WhyZera() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-3xl mb-14">
             <SectionLabel>What We Believe</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mt-4 leading-tight">
+            <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               Three principles, held without exception.
             </h2>
           </AnimatedSection>
@@ -163,7 +163,7 @@ export default function WhyZera() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-3xl mb-14">
             <SectionLabel>Security & Compliance</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mt-4 leading-tight">
+            <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               Trust, engineered in from the start.
             </h2>
           </AnimatedSection>

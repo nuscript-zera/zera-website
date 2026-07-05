@@ -107,7 +107,7 @@ export default function RequestDemo() {
               {c.eyebrow}
             </p>
 
-            <h1 className="text-4xl lg:text-[3.7rem] font-bold text-foreground leading-[0.98] tracking-[-0.02em] text-balance">
+            <h1 className="text-4xl lg:text-[4.1rem] font-bold text-foreground leading-[0.96] tracking-[-0.02em] text-balance">
               {c.heading}
             </h1>
 

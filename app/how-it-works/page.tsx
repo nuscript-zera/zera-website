@@ -80,7 +80,7 @@ export default function HowItWorks() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-4xl">
             <SectionLabel>How It Works</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 leading-tight">
+            <h1 className="text-4xl lg:text-[4.1rem] font-bold text-foreground mt-4 leading-[0.96] tracking-[-0.02em] text-balance">
               Note → Code → Claim. One continuous workflow.
             </h1>
             <p className="text-xl text-muted-foreground font-medium mt-6 leading-relaxed">
@@ -118,7 +118,7 @@ export default function HowItWorks() {
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-3xl mb-16">
             <SectionLabel>The Engine</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mt-4 leading-tight">
+            <h2 className="text-[2.1rem] lg:text-[2.9rem] font-bold text-foreground mt-4 leading-[0.98] tracking-[-0.02em] text-balance">
               Five steps, one uninterrupted flow.
             </h2>
           </AnimatedSection>
