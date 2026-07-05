@@ -9,7 +9,7 @@ export default function ZeraHeroSection() {
   return (
     <section className="hero-surface relative pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
       <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
