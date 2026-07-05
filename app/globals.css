@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 0 0% 100%;              /* #FFFFFF */
+    --foreground: 222 47% 11%;            /* #0f172a Slate 900 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary: #2563EB Blue 600 */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: #E8F1FF Soft Sky Blue */
+    --secondary: 218 100% 95%;
+    --secondary-foreground: 220 89% 40%;
+
+    /* Muted: #F5F7FA Cool Grey */
+    --muted: 216 33% 97%;
+    --muted-foreground: 0 0% 29%;         /* #4A4A4A Text Grey */
+
+    /* Accent: Blue-600 #2563EB (teal retired; blue is the single accent) */
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 216 20% 91%;
+    --input: 216 20% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-satoshi font-medium text-base leading-relaxed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
