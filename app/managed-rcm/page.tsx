@@ -37,7 +37,7 @@ export default function ManagedRCM() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pt-44 lg:pb-24">
+      <section className="hero-surface relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pt-44 lg:pb-24">
         <div className="max-w-[1180px] mx-auto px-4 md:px-[1.5938rem] lg:px-[1.75rem]">
           <AnimatedSection className="max-w-4xl">
             <SectionLabel>Two Ways to Operate</SectionLabel>
