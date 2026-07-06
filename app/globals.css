@@ -287,13 +287,13 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .prose p{color:var(--l-muted);font-size:1.0625rem;line-height:1.75;margin-bottom:14px}
 
 /* origin & meaning (company) */
-.origin{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;margin-top:46px}
+.origin{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:start;margin-top:46px}
 .origin-mark .oword{font-family:'Satoshi',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
   letter-spacing:-.025em;color:#fff;line-height:1}
-.origin-mark .oword .opron{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:.3em;
-  letter-spacing:.02em;color:var(--faint);margin-left:.32em}
+.origin-mark .opron{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:1.1rem;
+  letter-spacing:.04em;color:var(--faint);margin-top:16px}
 .origin-mark .oexp{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:1rem;letter-spacing:.03em;
-  color:var(--muted);margin-top:22px}
+  color:var(--muted);margin-top:7px}
 .origin-copy p{font-size:1.1rem;line-height:1.66;color:var(--muted)}
 .origin-copy p + p{margin-top:16px}
 .origin-copy p b{color:#fff;font-weight:700}
