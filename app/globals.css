@@ -292,16 +292,12 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
   letter-spacing:-.025em;color:#fff;line-height:1}
 .origin-mark .oword .opron{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:.3em;
   letter-spacing:.02em;color:var(--faint);margin-left:.32em}
-.acr{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:32px}
-.ac{border:1px solid var(--line);border-radius:14px;padding:20px 12px 15px;background:rgba(255,255,255,.02);text-align:center}
-.ac .al{display:block;font-family:'Satoshi',sans-serif;font-weight:700;font-size:2.3rem;color:var(--blue4);line-height:1}
-.ac .aw{display:block;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.62rem;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--muted);margin-top:13px}
+.origin-mark .oexp{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:1rem;letter-spacing:.03em;
+  color:var(--muted);margin-top:22px}
 .origin-copy p{font-size:1.1rem;line-height:1.66;color:var(--muted)}
 .origin-copy p + p{margin-top:16px}
 .origin-copy p b{color:#fff;font-weight:700}
 @media(max-width:900px){.origin{grid-template-columns:1fr;gap:34px}}
-@media(max-width:520px){.acr{grid-template-columns:repeat(2,1fr)}.ac .al{font-size:2rem}}
 .prose ul{color:var(--l-muted);font-size:1.0625rem;line-height:1.75;margin:0 0 16px 22px}
 .prose li{margin-bottom:6px}
 .prose a{color:var(--blue);font-weight:500}
