@@ -15,7 +15,7 @@ export default function ContactPage() {
       <PageHead
         eyebrow="Contact"
         title="Let&apos;s see Zera on your encounters."
-        sub="Whether you run a specialty practice, want to pilot Zera, or you're an investor — tell us where revenue is leaking today and we'll show you what one clean pass looks like."
+        sub="Whether you run a specialty practice or want to pilot Zera, tell us where revenue is leaking today and we'll show you what one clean pass looks like."
       />
 
       <section className="section light">
@@ -32,7 +32,7 @@ export default function ContactPage() {
                 <div className="rval">
                   NuScript Systems, Inc.
                   <br />
-                  Texas C-Corporation
+                  Austin, TX
                   <br />
                   Zera is a product of NuScript Systems, Inc.
                 </div>
@@ -51,9 +51,9 @@ export default function ContactPage() {
                 <div className="rval">Within one business day</div>
               </div>
               <div className="row">
-                <div className="rlabel">Web</div>
-                <a className="rval" href="https://zera.health">
-                  zera.health
+                <div className="rlabel">Phone</div>
+                <a className="rval" href="tel:+18007737499">
+                  (800) 773-7499
                 </a>
               </div>
             </aside>
