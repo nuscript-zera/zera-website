@@ -160,7 +160,6 @@ export default function ProductPage() {
             </div>
 
             <div className="gate-note">
-              <span className="gn-tag">Why it&apos;s the moat</span>
               <p>
                 Everything left of the signature is still live and free to fix. Zera works <b>here</b> — upstream, in
                 the lane — so a gap never has the chance to become a denial, an appeal, or a write-off three days later.
