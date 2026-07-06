@@ -64,7 +64,7 @@ export default function CompanyPage() {
           </div>
           <div className="origin reveal">
             <div className="origin-mark">
-              <div className="oword">Zera</div>
+              <div className="oword">Zera <span className="opron">/ zee-ruh /</span></div>
               <div className="acr">
                 <div className="ac"><span className="al">Z</span><span className="aw">Zero</span></div>
                 <div className="ac"><span className="al">E</span><span className="aw">Error</span></div>

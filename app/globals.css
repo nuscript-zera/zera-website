@@ -290,6 +290,8 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .origin{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;margin-top:46px}
 .origin-mark .oword{font-family:'Satoshi',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
   letter-spacing:-.025em;color:#fff;line-height:1}
+.origin-mark .oword .opron{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:.3em;
+  letter-spacing:.02em;color:var(--faint);margin-left:.32em}
 .acr{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:32px}
 .ac{border:1px solid var(--line);border-radius:14px;padding:20px 12px 15px;background:rgba(255,255,255,.02);text-align:center}
 .ac .al{display:block;font-family:'Satoshi',sans-serif;font-weight:700;font-size:2.3rem;color:var(--blue4);line-height:1}
