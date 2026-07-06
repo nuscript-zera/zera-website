@@ -26,7 +26,8 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow reveal">Revenue AI for specialty medicine</span>
           <h1 className="reveal">
-            Note. Code. Claim. <span className="accent">One AI, zero handoffs.</span>
+            Note. Code. Claim.<br />
+            <span className="accent">One AI. Zero handoffs.</span>
           </h1>
           <p className="sub reveal">
             Zera turns each clinical encounter into a coded, payer-ready claim in one pass — capturing the note,
@@ -129,7 +130,7 @@ export default function Home() {
             <span className="eyebrow">What you get</span>
             <h2>A documentation-intelligence hub, not another point tool.</h2>
             <p className="lead">
-              Zera v1 unifies the front of the revenue cycle — where clean claims are actually won or lost.
+              Zera unifies the front of the revenue cycle — where clean claims are actually won or lost.
             </p>
           </div>
           <div className="products">

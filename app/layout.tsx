@@ -10,7 +10,7 @@ const description =
 export const metadata: Metadata = {
   metadataBase: new URL("https://zera.health"),
   title: {
-    default: "Zera — Note. Code. Claim. One AI, zero handoffs.",
+    default: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
     template: "%s — Zera",
   },
   description,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://zera.health",
     siteName: "Zera",
-    title: "Zera — Note. Code. Claim. One AI, zero handoffs.",
+    title: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
     description,
   },
   twitter: {
