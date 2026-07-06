@@ -315,7 +315,7 @@ export default function ProductPage() {
               <div className="top">
                 <h3>Full revenue cycle</h3>
                 <span className="tag dev">
-                  <span className="d"></span>Built · coming soon
+                  <span className="d"></span>Built · Soon
                 </span>
               </div>
               <p>

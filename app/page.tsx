@@ -164,7 +164,7 @@ export default function Home() {
               <div className="top">
                 <h3>Full-cycle RCM</h3>
                 <span className="tag dev">
-                  <span className="d"></span>Built · coming soon
+                  <span className="d"></span>Built · Soon
                 </span>
               </div>
               <p>

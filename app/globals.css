@@ -117,7 +117,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .pagehead .wrap{position:relative;z-index:1}
 .pagehead h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.04;margin-top:16px;max-width:20ch;color:var(--ink)}
 .pagehead .sub{color:var(--muted);font-size:1.25rem;line-height:1.55;margin-top:18px;max-width:62ch}
-.pagehead .credline{margin-top:28px;padding-top:18px;border-top:1px solid var(--line2);font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:none;line-height:1.7}
+.pagehead .credline{margin-top:28px;padding-top:18px;border-top:1px solid var(--line2);font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);max-width:none;line-height:1.7}
 .pagehead .credline .ci{white-space:nowrap}
 .pagehead .credline .sep{margin:0 .55em;opacity:.55}
 
@@ -139,7 +139,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .stat .n{font-size:2.6rem;font-weight:700;letter-spacing:-0.03em;line-height:1;color:var(--l-ink)}
 .stat .n .u{font-size:1.5rem;color:var(--blue);margin-left:2px}
 .stat .k{color:var(--l-muted);font-size:1rem;line-height:1.45;margin-top:12px;max-width:30ch}
-.stat .src{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--l-muted);margin-top:12px}
+.stat .src{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--l-faint);margin-top:12px}
 
 /* products / capability cards (light) */
 .products{display:grid;grid-template-columns:3fr 2fr;gap:22px;margin-top:52px}
@@ -285,6 +285,23 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .prose h2{font-size:1.45rem;font-weight:700;letter-spacing:-0.01em;color:var(--l-ink);margin:38px 0 12px}
 .prose h2:first-child{margin-top:0}
 .prose p{color:var(--l-muted);font-size:1.0625rem;line-height:1.75;margin-bottom:14px}
+
+/* origin & meaning (company) */
+.origin{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;margin-top:8px}
+.origin-mark .oword{font-family:'Satoshi',sans-serif;font-weight:700;font-size:clamp(3rem,6vw,4.4rem);
+  letter-spacing:-.03em;color:#fff;line-height:1}
+.origin-mark .oword .opron{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:.3em;
+  letter-spacing:.02em;color:var(--faint);margin-left:.32em}
+.acr{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:32px}
+.ac{border:1px solid var(--line);border-radius:14px;padding:20px 12px 15px;background:rgba(255,255,255,.02);text-align:center}
+.ac .al{display:block;font-family:'Satoshi',sans-serif;font-weight:700;font-size:2.3rem;color:var(--blue4);line-height:1}
+.ac .aw{display:block;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.62rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);margin-top:13px}
+.origin-copy p{font-size:1.1rem;line-height:1.66;color:var(--muted)}
+.origin-copy p + p{margin-top:16px}
+.origin-copy p b{color:#fff;font-weight:700}
+@media(max-width:900px){.origin{grid-template-columns:1fr;gap:34px}}
+@media(max-width:520px){.acr{grid-template-columns:repeat(2,1fr)}.ac .al{font-size:2rem}}
 .prose ul{color:var(--l-muted);font-size:1.0625rem;line-height:1.75;margin:0 0 16px 22px}
 .prose li{margin-bottom:6px}
 .prose a{color:var(--blue);font-weight:500}
@@ -304,7 +321,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .contact{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start;margin-top:6px}
 .contact h2{font-size:1.6rem;font-weight:700;letter-spacing:-0.01em;color:var(--l-ink);margin-bottom:22px}
 .cform .field{margin-bottom:16px}
-.cform label{display:block;font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
+.cform label{display:block;font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--l-faint);margin-bottom:7px}
 .cform input,.cform select,.cform textarea{width:100%;font-family:'Satoshi',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
 .cform input::placeholder,.cform textarea::placeholder{color:#aeb8c6}
 .cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
@@ -316,7 +333,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .hqcard{border:1px solid var(--l-line);border-radius:16px;background:#fff;padding:18px 26px}
 .hqcard .row{padding:18px 0;border-top:1px solid var(--l-line)}
 .hqcard .row:first-child{border-top:0}
-.hqcard .rlabel{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
+.hqcard .rlabel{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--l-faint);margin-bottom:7px}
 .hqcard .rval{font-size:1.02rem;color:var(--l-ink);font-weight:500;line-height:1.5}
 .hqcard a.rval{color:var(--blue);font-weight:700;display:inline-block}
 .hqcard .maplink{display:inline-block;margin-top:9px;color:var(--blue);font-weight:700;font-size:.9rem}
@@ -333,12 +350,12 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .foot .belief h2 .accent{color:var(--blue)}
 .foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
 .foot .brand{margin-bottom:12px;color:var(--l-ink);width:fit-content}
-.foot .foottag{display:block;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
+.foot .foottag{display:block;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-faint);margin-bottom:16px}
 .foot .footlogo{height:28px;width:auto;display:block}
 .foot .desc{color:var(--l-muted);font-size:1.15rem;line-height:1.6;max-width:38ch}
 .foot .footmail{display:inline-block;margin-top:16px;color:var(--blue);font-weight:700;font-size:1.02rem;transition:opacity .2s}
 .foot .footmail:hover{opacity:.75}
-.foot .col h4{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
+.foot .col h4{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-faint);margin-bottom:16px}
 .foot .col a{display:block;color:var(--l-muted);font-size:1.11rem;margin-bottom:12px;transition:color .2s;width:fit-content}
 .foot .col a:hover{color:var(--l-ink)}
 .foot .investor{margin-top:14px;color:var(--blue);font-weight:500}

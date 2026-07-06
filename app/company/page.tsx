@@ -55,6 +55,38 @@ export default function CompanyPage() {
         </div>
       </section>
 
+      {/* Origin & meaning */}
+      <section className="section dark">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Origin &amp; meaning</span>
+            <h2>The name is the promise.</h2>
+          </div>
+          <div className="origin reveal">
+            <div className="origin-mark">
+              <div className="oword">Zera <span className="opron">/ zee-ruh /</span></div>
+              <div className="acr">
+                <div className="ac"><span className="al">Z</span><span className="aw">Zero</span></div>
+                <div className="ac"><span className="al">E</span><span className="aw">Error</span></div>
+                <div className="ac"><span className="al">R</span><span className="aw">Revenue</span></div>
+                <div className="ac"><span className="al">A</span><span className="aw">Automation</span></div>
+              </div>
+            </div>
+            <div className="origin-copy">
+              <p>
+                Zera began as an acronym — <b>Zero Error Revenue Automation</b> — the whole job in four words: carry a
+                specialty encounter all the way to a clean claim, with no mistakes and no handoffs in between.
+              </p>
+              <p>
+                As the platform grew from automating steps into running the cycle on its own, the meaning grew with it —
+                a <b>Zero-friction Engine for Revenue Autonomy</b>. Same four letters. Same promise:{" "}
+                <span className="accent">zero</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section light tint">
         <div className="wrap">
           <div className="shead reveal">
