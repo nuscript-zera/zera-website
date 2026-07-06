@@ -89,6 +89,38 @@ export default function ProductPage() {
         </div>
       </section>
 
+      {/* The pre-sign gate */}
+      <section className="section light tint">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">The pre-sign gate</span>
+            <h2>Caught before the note is signed.</h2>
+            <p className="lead">
+              Everyone else scrubs claims on the way out the door. Zera works one step earlier — on the live, unsigned
+              note, while the patient is still in the exam lane. Gaps and coding conflicts surface in real time, so the
+              provider fixes them before they sign, when a correction is instant and free.
+            </p>
+          </div>
+          <div className="pillars">
+            <div className="pillar reveal">
+              <h3>Real-time, on the live note</h3>
+              <p>
+                As the note takes shape, Zera flags missing detail, mismatched codes, and unit or modifier conflicts —
+                inline, before signature.
+              </p>
+            </div>
+            <div className="pillar reveal">
+              <h3>The provider stays in control</h3>
+              <p>Nothing is blocked or silently changed. Zera surfaces the issue; the clinician resolves it in the room, in seconds.</p>
+            </div>
+            <div className="pillar reveal">
+              <h3>Fixed upstream, not downstream</h3>
+              <p>A gap caught in the exam lane never becomes a denial, an appeal, or a write-off three days later.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Traceable Truth */}
       <section className="section dark">
         <div className="wrap">

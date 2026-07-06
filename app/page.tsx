@@ -47,7 +47,7 @@ export default function Home() {
               <span className="fnum">02</span>
               <div className="fk">Encode</div>
               <h4>Code</h4>
-              <p>CPT, ICD-10, modifiers and J-code units are assigned from the note — and traceable to it.</p>
+              <p>CPT, ICD-10, modifiers and J-code units come from the note — and gaps surface in real time, before it&apos;s signed.</p>
             </div>
             <Chevron />
             <div className="flowstep">
@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </div>
           <p className="flowcap reveal">
-            One system, one source of truth <b>·</b> the physician stays in control at every step
+            Validated on the live note, before signature <b>·</b> fixed in the lane, not scrubbed downstream
           </p>
         </div>
       </header>
@@ -101,12 +101,12 @@ export default function Home() {
           <span className="eyebrow reveal">Why now</span>
           <div className="reveal">
             <p>
-              Most denials start upstream — in documentation and coding — long before the biller ever sees the claim.
-              The old fix was to add people to each handoff. Modern language and reasoning models let us do the
-              opposite:{" "}
+              Most denials start upstream — in documentation and coding — long before a biller ever sees the claim. The
+              old fix was to add people to each handoff and scrub claims on the way out. Modern language and reasoning
+              models let us do the opposite:{" "}
               <span className="accent">
-                collapse note, code, and claim into a single AI pass, with the clinician in the loop — so the claim is
-                right before it&apos;s ever sent.
+                catch the problem on the live note and let the provider resolve it before they sign — while the patient
+                is still in the exam lane, when the fix costs nothing.
               </span>{" "}
               That&apos;s Zera.
             </p>
@@ -134,14 +134,16 @@ export default function Home() {
               </div>
               <p>
                 Capture the visit, generate a specialty-aware note, and get the codes, modifiers, and J-code unit math
-                that go with it — reviewed and approved by the physician, then handed off as a claim-ready record. Built
-                for the complexity of specialty medicine, not the average office visit.
+                that go with it — with gaps flagged on the live note so the provider can fix them before they sign.
+                Reviewed, approved, and handed off as a claim-ready record. Built for the complexity of specialty
+                medicine, not the average office visit.
               </p>
               <ul className="caps">
                 <li>Speech-to-structure</li>
                 <li>CPT + ICD-10 coding</li>
                 <li>Modifier engine</li>
                 <li>J-code unit math</li>
+                <li>Pre-sign validation</li>
                 <li>Traceable Truth</li>
                 <li>HIPAA + BAA</li>
               </ul>

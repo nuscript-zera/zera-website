@@ -60,25 +60,19 @@ export default function CompanyPage() {
           <div className="shead reveal">
             <span className="eyebrow">Team</span>
             <h2>Founder-led, operator-built.</h2>
+            <p className="lead">
+              Zera is led by a founder who has spent a career inside the work it automates. Senior engineering and
+              clinical hires are joining as we scale alongside the founding cohort.
+            </p>
           </div>
-          <div className="people">
-            <div className="person reveal">
-              <div className="prole">Founder &amp; CEO</div>
-              <h3>Arvind Manohar</h3>
-              <p>
-                Twenty-five years across healthcare documentation and revenue cycle, and the technical founder behind
-                both Audryl and Zera. He&apos;s built the platform hands-on — and run the operations it&apos;s designed
-                to transform.
-              </p>
-            </div>
-            <div className="person reveal">
-              <div className="prole">Chief Technology Officer</div>
-              <h3>Doug Wolfgram</h3>
-              <p>
-                A veteran healthcare-technology builder whose work spans CareSpan Health and BodiMetrics. He brings deep
-                experience shipping clinical and connected-health platforms to Zera&apos;s engineering.
-              </p>
-            </div>
+          <div className="person reveal" style={{ maxWidth: "720px", marginTop: "40px" }}>
+            <div className="prole">Founder &amp; CEO</div>
+            <h3>Arvind Manohar</h3>
+            <p>
+              Twenty-five years across healthcare documentation and revenue cycle, and the technical founder behind both
+              Audryl and Zera. He&apos;s built the platform hands-on — and run the operations it&apos;s designed to
+              transform.
+            </p>
           </div>
         </div>
       </section>
