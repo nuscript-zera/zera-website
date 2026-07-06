@@ -97,25 +97,74 @@ export default function ProductPage() {
             <h2>Caught before the note is signed.</h2>
             <p className="lead">
               Everyone else scrubs claims on the way out the door. Zera works one step earlier — on the live, unsigned
-              note, while the patient is still in the exam lane. Gaps and coding conflicts surface in real time, so the
-              provider fixes them before they sign, when a correction is instant and free.
+              note, while the patient is still in the exam lane.
             </p>
           </div>
-          <div className="pillars">
-            <div className="pillar reveal">
-              <h3>Real-time, on the live note</h3>
+
+          <div className="gate reveal">
+            <div className="gate-lane">
+              <div className="gate-stop">
+                <div className="gate-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4" /></svg>
+                </div>
+                <div className="gate-txt">
+                  <div className="gate-k">In the lane</div>
+                  <div className="gate-lbl">Note goes live</div>
+                  <div className="gate-sub">Encounter captured, still open</div>
+                </div>
+              </div>
+
+              <div className="gate-stop hot">
+                <div className="gate-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 21V4h11l-1.5 4H20l-2 5H6" /><path d="M4 21v-6" /></svg>
+                </div>
+                <div className="gate-txt">
+                  <div className="gate-k">Pre-sign gate</div>
+                  <div className="gate-lbl">Zera flags gaps</div>
+                  <div className="gate-sub">Missing detail, mismatched codes, unit &amp; modifier conflicts — in real time</div>
+                </div>
+              </div>
+
+              <div className="gate-stop warm">
+                <div className="gate-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg>
+                </div>
+                <div className="gate-txt">
+                  <div className="gate-k">In control</div>
+                  <div className="gate-lbl">Provider fixes</div>
+                  <div className="gate-sub">In the room, in seconds — nothing blocked or silently changed</div>
+                </div>
+              </div>
+
+              <div className="gate-stop sign">
+                <div className="gate-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 17c3 0 3-9 6-9s2 6 4 6 2-3 4-3 2 2 4 2" /><path d="M3 21h18" /></svg>
+                </div>
+                <div className="gate-txt">
+                  <div className="gate-k">Threshold</div>
+                  <div className="gate-lbl">Signature</div>
+                  <div className="gate-sub">Note committed — clean by the time it&apos;s signed</div>
+                </div>
+              </div>
+
+              <div className="gate-stop done">
+                <div className="gate-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+                </div>
+                <div className="gate-txt">
+                  <div className="gate-k">Downstream</div>
+                  <div className="gate-lbl">Clean claim</div>
+                  <div className="gate-sub">Leaves already coded and documented</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="gate-note">
+              <span className="gn-tag">Why it&apos;s the moat</span>
               <p>
-                As the note takes shape, Zera flags missing detail, mismatched codes, and unit or modifier conflicts —
-                inline, before signature.
+                Everything left of the signature is still live and free to fix. Zera works <b>here</b> — upstream, in
+                the lane — so a gap never has the chance to become a denial, an appeal, or a write-off three days later.
               </p>
-            </div>
-            <div className="pillar reveal">
-              <h3>The provider stays in control</h3>
-              <p>Nothing is blocked or silently changed. Zera surfaces the issue; the clinician resolves it in the room, in seconds.</p>
-            </div>
-            <div className="pillar reveal">
-              <h3>Fixed upstream, not downstream</h3>
-              <p>A gap caught in the exam lane never becomes a denial, an appeal, or a write-off three days later.</p>
             </div>
           </div>
         </div>
