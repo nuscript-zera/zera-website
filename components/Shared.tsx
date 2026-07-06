@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-export function PageHead({ eyebrow, title, sub, note }: { eyebrow: string; title: ReactNode; sub?: string; note?: ReactNode }) {
+export function PageHead({ eyebrow, title, sub, note, children }: { eyebrow: string; title: ReactNode; sub?: string; note?: ReactNode; children?: ReactNode }) {
   return (
     <header className="pagehead">
       <div className="wrap">
@@ -9,6 +9,7 @@ export function PageHead({ eyebrow, title, sub, note }: { eyebrow: string; title
         <h1 className="reveal">{title}</h1>
         {sub && <p className="sub reveal">{sub}</p>}
         {note && <p className="credline reveal">{note}</p>}
+        {children}
       </div>
     </header>
   );
@@ -28,7 +29,7 @@ export function CtaBand() {
           <Link href="/contact" className="btn btn-primary">
             Book a demo
           </Link>
-          <Link href="/product" className="btn btn-ghost">
+          <Link href="/platform" className="btn btn-ghost">
             See how it works
           </Link>
         </div>

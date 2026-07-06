@@ -24,7 +24,7 @@ export default function Navbar() {
           <img src="/zera-logo.png" alt="Zera" className="brandlogo logo-dark" />
         </Link>
         <div className="navlinks">
-          <Link href="/product">Product</Link>
+          <Link href="/platform">Platform</Link>
           <Link href="/company">Company</Link>
           <Link href="/contact" className="btn btn-primary">Book a demo</Link>
         </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className={"navmenu" + (open ? " open" : "")} onClick={() => setOpen(false)}>
-        <Link href="/product">Product</Link>
+        <Link href="/platform">Platform</Link>
         <Link href="/company">Company</Link>
         <Link href="/contact" className="btn btn-primary">Book a demo</Link>
       </div>

@@ -4,10 +4,10 @@ import { PageHead, CtaBand } from "@/components/Shared";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Product",
+  title: "Platform",
   description:
     "Zera collapses note, code, and claim into a single AI pass for specialty medicine — with a pre-sign validation gate, word-level provenance, and full-cycle RCM engines built and integrating.",
-  alternates: { canonical: "https://zera.health/product" },
+  alternates: { canonical: "https://zera.health/platform" },
 };
 
 function ACheck() {
@@ -18,18 +18,48 @@ function ACheck() {
   );
 }
 
+function Chevron() {
+  return (
+    <div className="flowchev" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M8 5l7 7-7 7" />
+      </svg>
+    </div>
+  );
+}
+
 export default function ProductPage() {
   return (
     <>
       <PageHead
-        eyebrow="Product"
+        eyebrow="Platform"
         title={
           <>
             One pass from <span className="accent">note to claim</span>.
           </>
         }
         sub="Zera is the documentation-intelligence hub for specialty medicine. It captures the encounter, produces the note, assigns the codes, and assembles a claim-ready record — with the physician approving at every step, and every code traceable to its source."
-      />
+      >
+        <div className="flow flow-mini reveal" role="img" aria-label="The Zera pipeline: Note to Code to Claim">
+          <div className="flowstep">
+            <div className="fk">Capture</div>
+            <h4>Note</h4>
+            <p>Ambient encounter → specialty-aware note</p>
+          </div>
+          <Chevron />
+          <div className="flowstep">
+            <div className="fk">Encode</div>
+            <h4>Code</h4>
+            <p>CPT, ICD-10, modifiers &amp; J-code units</p>
+          </div>
+          <Chevron />
+          <div className="flowstep">
+            <div className="fk">Submit</div>
+            <h4>Claim</h4>
+            <p>Clean and payer-ready, the first time</p>
+          </div>
+        </div>
+      </PageHead>
 
       {/* Pipeline recap */}
       <section className="section light">

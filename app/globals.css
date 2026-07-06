@@ -98,6 +98,10 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .flowcap{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.14em;
   text-transform:uppercase;color:var(--faint)}
 .flowcap b{color:var(--blue4);font-weight:600}
+.flow-mini{margin-top:42px}
+.flow-mini .flowstep{padding:18px 20px 16px}
+.flow-mini .flowstep h4{font-size:1.18rem;margin-top:7px}
+.flow-mini .flowstep p{font-size:.9rem;margin-top:6px}
 
 /* ---------- PAGE HEADER (inner pages, dark) ---------- */
 .pagehead{position:relative;overflow:hidden;background:var(--bg);padding:150px 0 66px}

@@ -37,7 +37,7 @@ export default function Home() {
             <Link href="/contact" className="btn btn-primary">
               Book a demo
             </Link>
-            <Link href="/product" className="btn btn-ghost">
+            <Link href="/platform" className="btn btn-ghost">
               See how it works
             </Link>
           </div>
@@ -155,7 +155,7 @@ export default function Home() {
                 <li>Traceable Truth</li>
                 <li>HIPAA + BAA</li>
               </ul>
-              <Link className="plink" href="/product">
+              <Link className="plink" href="/platform">
                 Explore the platform →
               </Link>
             </article>
@@ -170,7 +170,7 @@ export default function Home() {
                 The claim and RCM engines — denial analytics, A/R, and end-to-end claims — are already built, coming to
                 the platform next on the same clean documentation data.
               </p>
-              <Link className="plink muted" href="/product">
+              <Link className="plink muted" href="/platform">
                 See the roadmap →
               </Link>
             </article>
@@ -285,12 +285,11 @@ export default function Home() {
           <div className="specnext reveal">
             <span className="snk">Same engine, next</span>
             <p>
-              <b>Ophthalmology first. Cardiology next.</b> The intelligence layer — clinical NLU, HCC reasoning, coding
-              logic — is shared. The vocabulary, workflows, and payer rules are purpose-built per specialty. Generic
-              platforms can&apos;t match this depth; single-specialty tools can&apos;t match this reach.
+              <b>Cardiology is next</b> — the same engine, with vocabulary, workflows, and payer rules purpose-built per
+              specialty.
             </p>
           </div>
-          <Link className="tlink reveal" href="/product">
+          <Link className="tlink reveal" href="/platform">
             See how the platform works →
           </Link>
         </div>

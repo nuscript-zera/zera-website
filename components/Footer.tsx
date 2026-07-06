@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
           <div className="col">
             <h4>Explore</h4>
-            <Link href="/product">Product</Link>
+            <Link href="/platform">Platform</Link>
             <Link href="/company">Company</Link>
             <Link href="/contact">Book a demo</Link>
           </div>
@@ -35,9 +35,9 @@ export default function Footer() {
             <h4>Connect</h4>
             <Link href="/contact">Contact</Link>
             <a href="mailto:hello@zera.health">Sales &amp; pilots</a>
-            <Link className="investor" href="/contact">
+            <a className="investor" href="mailto:arvind@zera.health">
               For investors — get in touch →
-            </Link>
+            </a>
           </div>
         </div>
         <div className="base">

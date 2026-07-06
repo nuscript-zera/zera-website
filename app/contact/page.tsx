@@ -69,7 +69,7 @@ export default function ContactPage() {
             If you&apos;re an investor, a strategic partner, or a practice leader weighing something bigger than a
             standard demo — I&apos;d rather hear from you directly than through a form.
           </p>
-          <a className="fmail" href="mailto:hello@zera.health">
+          <a className="fmail" href="mailto:arvind@zera.health">
             Write to the founder&apos;s office →
           </a>
         </div>
