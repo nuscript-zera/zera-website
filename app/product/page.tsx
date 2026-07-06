@@ -110,7 +110,7 @@ export default function ProductPage() {
                 <div className="gate-txt">
                   <div className="gate-k">In the lane</div>
                   <div className="gate-lbl">Note goes live</div>
-                  <div className="gate-sub">Encounter captured, still open</div>
+                  <div className="gate-sub">Captured, generated, and coded — still open</div>
                 </div>
               </div>
 
