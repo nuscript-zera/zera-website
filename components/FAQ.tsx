@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What is Zera?",
-    a: "Zera is an autonomous revenue platform for ambulatory specialty medicine. It captures the encounter, generates the documentation, and produces the codes in one real-time workflow — with the provider always in control. Note and Code are live today; the full claim and RCM engines are built and wiring into the platform now.",
+    a: "Zera is an autonomous revenue platform for ambulatory specialty medicine. It captures the encounter, generates the documentation, and produces the codes in one real-time workflow — with the provider always in control. Note and Code are live today; the full claim and RCM engines are built and coming to the platform next.",
   },
   {
     q: "Which specialties does Zera support?",

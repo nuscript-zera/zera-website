@@ -163,12 +163,12 @@ export default function Home() {
               <div className="top">
                 <h3>Full-cycle RCM</h3>
                 <span className="tag dev">
-                  <span className="d"></span>Integrating
+                  <span className="d"></span>Built · coming soon
                 </span>
               </div>
               <p>
-                The claim and RCM engines — denial analytics, A/R, and end-to-end claims workflow — are already built
-                and wiring into the platform now, on top of the same clean documentation data.
+                The claim and RCM engines — denial analytics, A/R, and end-to-end claims — are already built, coming to
+                the platform next on the same clean documentation data.
               </p>
               <Link className="plink muted" href="/product">
                 See the roadmap →

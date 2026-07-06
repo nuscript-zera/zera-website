@@ -283,14 +283,14 @@ export default function ProductPage() {
             </article>
             <article className="pcard soft reveal">
               <div className="top">
-                <h3>Built and integrating</h3>
+                <h3>Full revenue cycle</h3>
                 <span className="tag dev">
-                  <span className="d"></span>Wiring in
+                  <span className="d"></span>Built · coming soon
                 </span>
               </div>
               <p>
-                The four RCM engines and orchestrator are already built — denial analytics, A/R, payer-rule
-                intelligence, and end-to-end claims workflow — wiring into the platform alongside our founding cohort.
+                Denial analytics, A/R, payer-rule intelligence, and end-to-end claims. The RCM engines are already
+                built — coming to the platform next.
               </p>
             </article>
           </div>
