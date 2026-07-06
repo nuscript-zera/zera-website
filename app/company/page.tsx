@@ -64,7 +64,7 @@ export default function CompanyPage() {
           </div>
           <div className="origin reveal">
             <div className="origin-mark">
-              <div className="oword">Zera <span className="opron">/ zee-ruh /</span></div>
+              <div className="oword">Zera</div>
               <div className="acr">
                 <div className="ac"><span className="al">Z</span><span className="aw">Zero</span></div>
                 <div className="ac"><span className="al">E</span><span className="aw">Error</span></div>
@@ -74,13 +74,14 @@ export default function CompanyPage() {
             </div>
             <div className="origin-copy">
               <p>
-                Zera began as an acronym — <b>Zero Error Revenue Automation</b> — the whole job in four words: carry a
-                specialty encounter all the way to a clean claim, with no mistakes and no handoffs in between.
+                Four letters, one idea — that nothing should be lost in the space between a clinical moment and a clean
+                claim. <b>Zero Error Revenue Automation</b>: no error introduced, no work repeated, nothing left in the
+                gaps.
               </p>
               <p>
-                As the platform grew from automating steps into running the cycle on its own, the meaning grew with it —
-                a <b>Zero-friction Engine for Revenue Autonomy</b>. Same four letters. Same promise:{" "}
-                <span className="accent">zero</span>.
+                The meaning has grown as the platform has — from automating the steps to running the cycle on its own: a{" "}
+                <b>Zero-friction Engine for Revenue Autonomy</b>. The letters never change. Neither does what they point
+                to — <span className="accent">zero</span>.
               </p>
             </div>
           </div>
