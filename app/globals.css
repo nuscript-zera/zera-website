@@ -1,5 +1,11 @@
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&display=swap');
+/* self-hosted fonts (no third-party requests) */
+@font-face{font-family:'Satoshi';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/Satoshi-Regular.woff2') format('woff2')}
+@font-face{font-family:'Satoshi';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/Satoshi-Medium.woff2') format('woff2')}
+@font-face{font-family:'Satoshi';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/Satoshi-Bold.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/JetBrainsMono-400.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/JetBrainsMono-500.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/JetBrainsMono-600.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/JetBrainsMono-700.woff2') format('woff2')}
 
 /* ============================================================
    Zera — color & type system
@@ -12,7 +18,7 @@
    Text on DARK:  #EEF3FB (--ink) · #94A3B8 (--muted) · #6B7A90 (--faint)
    Light surfaces:  #F5F7FA (--l-bg) · #EAEEF4 (--l-bg2) · borders #DEE5EF (--l-line)
    Text on LIGHT:  #0F172A (--l-ink) · #51617A (--l-muted) · #7A8AA0 (--l-faint)
-   Fonts:  Satoshi (display + body) · Geist Mono (labels + eyebrows)
+   Fonts:  Satoshi (display + body) · JetBrains Mono (labels + eyebrows)
    ============================================================ */
 :root{
   --bg:#080C15; --bg2:#0A0F1A; --ink:#EEF3FB; --muted:#94A3B8; --faint:#6B7A90;
@@ -28,8 +34,8 @@ body{background:var(--bg);color:var(--ink);font-family:'Satoshi',-apple-system,s
   line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
-.mono{font-family:'Geist Mono',monospace}
-.eyebrow{font-family:'Geist Mono',monospace;font-weight:600;font-size:.8rem;
+.mono{font-family:'JetBrains Mono',monospace}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.8rem;
   letter-spacing:.13em;text-transform:uppercase;color:var(--blue4)}
 h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .accent{color:var(--blue4)}
@@ -76,7 +82,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .hero .cta .btn{padding:14px 22px;font-size:1rem}
 .telemetry{margin-top:50px;display:inline-flex;align-items:center;flex-wrap:wrap;
   border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);padding:4px;
-  font-family:'Geist Mono',monospace;font-size:.76rem;letter-spacing:.04em}
+  font-family:'JetBrains Mono',monospace;font-size:.76rem;letter-spacing:.04em}
 .telemetry .cell{padding:9px 16px;color:var(--muted);white-space:nowrap;border-right:1px solid var(--line2)}
 .telemetry .cell:last-child{border-right:0}
 .telemetry .cell b{color:var(--ink);font-weight:500}
@@ -88,14 +94,14 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .flow{margin-top:56px;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0}
 .flowstep{position:relative;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025);
   padding:22px 22px 20px;backdrop-filter:blur(2px)}
-.flowstep .fk{font-family:'Geist Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.13em;
+.flowstep .fk{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.13em;
   text-transform:uppercase;color:var(--blue4)}
 .flowstep h4{font-size:1.28rem;font-weight:700;letter-spacing:-0.02em;color:var(--ink);margin-top:9px}
 .flowstep p{color:var(--muted);font-size:.95rem;line-height:1.5;margin-top:8px}
-.flowstep .fnum{position:absolute;top:16px;right:18px;font-family:'Geist Mono',monospace;font-size:.72rem;color:var(--faint)}
+.flowstep .fnum{position:absolute;top:16px;right:18px;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--faint)}
 .flowchev{display:flex;align-items:center;justify-content:center;color:var(--blue);width:56px}
 .flowchev svg{width:26px;height:26px}
-.flowcap{margin-top:18px;font-family:'Geist Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.12em;
+.flowcap{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;color:var(--faint)}
 .flowcap b{color:var(--blue4);font-weight:600}
 .flow-mini{margin-top:42px}
@@ -111,7 +117,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .pagehead .wrap{position:relative;z-index:1}
 .pagehead h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.04;margin-top:16px;max-width:20ch;color:var(--ink)}
 .pagehead .sub{color:var(--muted);font-size:1.25rem;line-height:1.55;margin-top:18px;max-width:62ch}
-.pagehead .credline{margin-top:28px;padding-top:18px;border-top:1px solid var(--line2);font-family:'Geist Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:none;line-height:1.7}
+.pagehead .credline{margin-top:28px;padding-top:18px;border-top:1px solid var(--line2);font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:none;line-height:1.7}
 .pagehead .credline .ci{white-space:nowrap}
 .pagehead .credline .sep{margin:0 .55em;opacity:.55}
 
@@ -133,7 +139,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .stat .n{font-size:2.6rem;font-weight:700;letter-spacing:-0.03em;line-height:1;color:var(--l-ink)}
 .stat .n .u{font-size:1.5rem;color:var(--blue);margin-left:2px}
 .stat .k{color:var(--l-muted);font-size:1rem;line-height:1.45;margin-top:12px;max-width:30ch}
-.stat .src{font-family:'Geist Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--l-muted);margin-top:12px}
+.stat .src{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--l-muted);margin-top:12px}
 
 /* products / capability cards (light) */
 .products{display:grid;grid-template-columns:3fr 2fr;gap:22px;margin-top:52px}
@@ -143,8 +149,8 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .pcard:hover{border-color:rgba(37,99,235,.4);transform:translateY(-3px);box-shadow:0 30px 60px -34px rgba(37,99,235,.28)}
 .pcard .top{display:flex;align-items:center;justify-content:space-between;gap:14px}
 .pcard h3{font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;color:var(--l-ink)}
-.pcard h3 .fmr{font-family:'Geist Mono',monospace;font-size:.64rem;font-weight:500;letter-spacing:.02em;color:var(--l-faint);white-space:nowrap;vertical-align:middle;margin-left:8px}
-.tag{font-family:'Geist Mono',monospace;font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+.pcard h3 .fmr{font-family:'JetBrains Mono',monospace;font-size:.64rem;font-weight:500;letter-spacing:.02em;color:var(--l-faint);white-space:nowrap;vertical-align:middle;margin-left:8px}
+.tag{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border-radius:6px;border:1px solid var(--l-line)}
 .tag .d{width:6px;height:6px;border-radius:50%}
 .tag.live{color:var(--blue);border-color:rgba(37,99,235,.3);background:rgba(37,99,235,.06)}
@@ -158,7 +164,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .pcard.soft{background:#fff}
 .pcard.soft:hover{transform:none;box-shadow:none;border-color:var(--l-line)}
 .pcard .caps{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.pcard .caps li{font-family:'Geist Mono',monospace;font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+.pcard .caps li{font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
   color:var(--l-muted);border:1px solid var(--l-line);border-radius:6px;padding:5px 9px}
 
 /* thesis (dark) */
@@ -172,7 +178,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
   border-radius:18px;background:#fff;padding:34px 34px}
 .frow:nth-child(even){grid-template-columns:1.1fr .9fr}
 .frow:nth-child(even) .fbody{order:2}
-.frow .fk{font-family:'Geist Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.frow .fk{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 .frow h3{font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;color:var(--l-ink);margin-top:10px}
 .frow p{color:var(--l-muted);font-size:1.08rem;line-height:1.62;margin-top:12px}
 .frow .fart{border:1px solid var(--l-line);border-radius:14px;background:var(--l-bg);min-height:200px;padding:22px;
@@ -193,7 +199,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .gate-stop.done .gate-mark{border-color:var(--blue);background:rgba(37,99,235,.1);color:var(--blue)}
 .gate-stop.sign .gate-mark{border-radius:7px;border-color:var(--l-ink);background:var(--l-ink);color:#fff}
 .gate-txt{margin-top:13px}
-.gate-k{font-family:'Geist Mono',monospace;font-size:.58rem;font-weight:600;letter-spacing:.13em;
+.gate-k{font-family:'JetBrains Mono',monospace;font-size:.58rem;font-weight:600;letter-spacing:.13em;
   text-transform:uppercase;color:var(--blue);min-height:.85rem}
 .gate-stop.sign .gate-k{color:var(--l-ink)}
 .gate-lbl{font-weight:700;font-size:1.02rem;letter-spacing:-0.01em;color:var(--l-ink);margin-top:5px}
@@ -205,7 +211,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 
 /* five analyzers — inside the pre-sign gate (product) */
 .analyzers{margin-top:28px;padding-top:24px;border-top:1px solid var(--l-line)}
-.analyzers .ahead{font-family:'Geist Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.13em;
+.analyzers .ahead{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.13em;
   text-transform:uppercase;color:var(--l-faint);margin-bottom:16px}
 .agrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .analyzer{border:1px solid var(--l-line);border-radius:12px;background:var(--l-bg);padding:15px 15px}
@@ -215,7 +221,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 
 /* EHR intelligence-layer chips (product) */
 .formats{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.formats .fmt{font-family:'Geist Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.03em;color:var(--l-muted);
+.formats .fmt{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.03em;color:var(--l-muted);
   border:1px solid var(--l-line);border-radius:8px;padding:9px 13px;background:#fff}
 .formats .fmt b{color:var(--l-ink);font-weight:700}
 
@@ -230,14 +236,14 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .specrow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
 .spec{border:1px solid var(--l-line);border-radius:14px;background:#fff;padding:22px 22px}
 .spec.lead-spec{border-color:var(--blue);box-shadow:0 24px 50px -34px rgba(37,99,235,.4)}
-.spec .sk{font-family:'Geist Mono',monospace;font-size:.6rem;font-weight:600;letter-spacing:.12em;
+.spec .sk{font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;color:var(--l-faint)}
 .spec.lead-spec .sk{color:var(--blue)}
 .spec h3{font-size:1.16rem;font-weight:700;letter-spacing:-0.01em;color:var(--l-ink);margin-top:9px}
 .spec p{font-size:.92rem;color:var(--l-muted);line-height:1.45;margin-top:8px}
 .specnext{margin-top:22px;display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;
   border:1px dashed var(--l-line);border-radius:12px;padding:18px 22px;background:#fff}
-.specnext .snk{font-family:'Geist Mono',monospace;font-size:.64rem;font-weight:700;letter-spacing:.13em;
+.specnext .snk{font-family:'JetBrains Mono',monospace;font-size:.64rem;font-weight:700;letter-spacing:.13em;
   text-transform:uppercase;color:var(--blue);white-space:nowrap;margin-top:3px}
 .specnext p{color:var(--l-muted);font-size:1.02rem;line-height:1.55;max-width:70ch}
 .specnext p b{color:var(--l-ink);font-weight:700}
@@ -269,7 +275,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .team .tlink:hover{gap:13px}
 .people{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}
 .person{border:1px solid var(--l-line);border-radius:18px;background:#fff;padding:30px 30px}
-.person .prole{font-family:'Geist Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.person .prole{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
 .person h3{font-size:1.4rem;font-weight:700;letter-spacing:-0.02em;color:var(--l-ink);margin-top:9px}
 .person p{color:var(--l-muted);font-size:1.04rem;line-height:1.6;margin-top:12px}
 
@@ -282,7 +288,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .prose ul{color:var(--l-muted);font-size:1.0625rem;line-height:1.75;margin:0 0 16px 22px}
 .prose li{margin-bottom:6px}
 .prose a{color:var(--blue);font-weight:500}
-.prose .upd{font-family:'Geist Mono',monospace;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--l-faint);margin-bottom:26px}
+.prose .upd{font-family:'JetBrains Mono',monospace;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--l-faint);margin-bottom:26px}
 
 /* careers/cta band (dark) */
 .careers{position:relative;overflow:hidden;text-align:center;padding:118px 0;background:var(--bg)}
@@ -298,7 +304,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .contact{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start;margin-top:6px}
 .contact h2{font-size:1.6rem;font-weight:700;letter-spacing:-0.01em;color:var(--l-ink);margin-bottom:22px}
 .cform .field{margin-bottom:16px}
-.cform label{display:block;font-family:'Geist Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
+.cform label{display:block;font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
 .cform input,.cform select,.cform textarea{width:100%;font-family:'Satoshi',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
 .cform input::placeholder,.cform textarea::placeholder{color:#aeb8c6}
 .cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
@@ -310,7 +316,7 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .hqcard{border:1px solid var(--l-line);border-radius:16px;background:#fff;padding:18px 26px}
 .hqcard .row{padding:18px 0;border-top:1px solid var(--l-line)}
 .hqcard .row:first-child{border-top:0}
-.hqcard .rlabel{font-family:'Geist Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
+.hqcard .rlabel{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
 .hqcard .rval{font-size:1.02rem;color:var(--l-ink);font-weight:500;line-height:1.5}
 .hqcard a.rval{color:var(--blue);font-weight:700;display:inline-block}
 .hqcard .maplink{display:inline-block;margin-top:9px;color:var(--blue);font-weight:700;font-size:.9rem}
@@ -327,12 +333,12 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .foot .belief h2 .accent{color:var(--blue)}
 .foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
 .foot .brand{margin-bottom:12px;color:var(--l-ink);width:fit-content}
-.foot .foottag{display:block;font-family:'Geist Mono',monospace;font-weight:600;font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
+.foot .foottag{display:block;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
 .foot .footlogo{height:28px;width:auto;display:block}
 .foot .desc{color:var(--l-muted);font-size:1.15rem;line-height:1.6;max-width:38ch}
 .foot .footmail{display:inline-block;margin-top:16px;color:var(--blue);font-weight:700;font-size:1.02rem;transition:opacity .2s}
 .foot .footmail:hover{opacity:.75}
-.foot .col h4{font-family:'Geist Mono',monospace;font-weight:600;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
+.foot .col h4{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
 .foot .col a{display:block;color:var(--l-muted);font-size:1.11rem;margin-bottom:12px;transition:color .2s;width:fit-content}
 .foot .col a:hover{color:var(--l-ink)}
 .foot .investor{margin-top:14px;color:var(--blue);font-weight:500}
