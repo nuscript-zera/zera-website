@@ -10,6 +10,14 @@ function Chevron() {
   );
 }
 
+function Check() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -155,13 +163,12 @@ export default function Home() {
               <div className="top">
                 <h3>Full-cycle RCM</h3>
                 <span className="tag dev">
-                  <span className="d"></span>On the roadmap
+                  <span className="d"></span>Integrating
                 </span>
               </div>
               <p>
-                Documentation intelligence is the foundation. Denial analytics, A/R aging, and end-to-end claims
-                workflow build on top of the same clean data — shipping as the platform matures with its founding
-                cohort.
+                The claim and RCM engines — denial analytics, A/R, and end-to-end claims workflow — are already built
+                and wiring into the platform now, on top of the same clean documentation data.
               </p>
               <Link className="plink muted" href="/product">
                 See the roadmap →
@@ -200,22 +207,92 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHO IT'S FOR · light */}
-      <section className="section light team" id="who">
+      {/* SECURITY & TRUST · light */}
+      <section className="section light" id="security">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Security &amp; trust</span>
+            <h2>Clinical and financial data demands trust.</h2>
+            <p className="lead">
+              Zera is engineered for protected health information from the ground up — so how your data is handled is
+              never an open question.
+            </p>
+          </div>
+          <div className="trustgrid reveal">
+            <div className="trustitem">
+              <div className="ti"><Check /> BAA with every practice</div>
+              <p>We sign a Business Associate Agreement before any protected health information is processed — no exceptions.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><Check /> SOC 2 Type I certified</div>
+              <p>Independently audited security controls, with SOC 2 Type II in progress.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><Check /> Isolated by tenant</div>
+              <p>Each organization&apos;s data is separated with customer-scoped keys, deployed US-only.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><Check /> Your data stays yours</div>
+              <p>We never use your data to train shared models. A private, per-provider loop personalizes Zera to each clinician.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><Check /> Audit-defensible</div>
+              <p>A complete, timestamped trail from the first word spoken to the final code.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><Check /> Provider in control</div>
+              <p>Role-based access, and the clinician always has final sign-off on every note and code.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO IT'S FOR · light tint */}
+      <section className="section light tint team" id="who">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">Who it&apos;s for</span>
-            <h2>Purpose-built for specialty medicine — starting with retina.</h2>
+            <h2>Purpose-built for ophthalmology. Retina at the tip of the spear.</h2>
             <p className="lead">
-              Retina is where coding is hardest and the dollars are largest: high-cost injectable drugs, J-code unit
-              math, laterality modifiers, and frequent visits. Get it wrong and a single claim can be worth thousands.
-              Zera earns its keep where the stakes — and the complexity — are highest, then extends across ambulatory
-              specialty care.
+              Ophthalmology is the most documentation-dense surgical specialty, with one of the highest concentrations
+              of uncaptured Medicare Advantage risk-adjustment data. We go deep here first — and lead with retina, where
+              the coding is hardest and the dollars are largest: high-cost injectables, J-code unit math, laterality
+              modifiers, and frequent visits.
             </p>
-            <Link className="tlink" href="/product">
-              See how Zera handles retina →
-            </Link>
           </div>
+          <div className="specrow reveal">
+            <div className="spec lead-spec">
+              <div className="sk">Near-term focus</div>
+              <h3>Retina</h3>
+              <p>Purpose-built injection workflow — anti-VEGF documentation, J-code units, and laterality.</p>
+            </div>
+            <div className="spec">
+              <div className="sk">Ophthalmology</div>
+              <h3>Glaucoma</h3>
+              <p>Laterality enforcement and diagnostic-test coding logic.</p>
+            </div>
+            <div className="spec">
+              <div className="sk">Ophthalmology</div>
+              <h3>Cataract / Refractive</h3>
+              <p>Pre- and post-op chart fidelity and surgical coding.</p>
+            </div>
+            <div className="spec">
+              <div className="sk">Ophthalmology</div>
+              <h3>Comprehensive</h3>
+              <p>VA, IOP, slit-lamp, fundus, and gonioscopy captured cleanly.</p>
+            </div>
+          </div>
+          <div className="specnext reveal">
+            <span className="snk">Same engine, next</span>
+            <p>
+              <b>Ophthalmology first. Cardiology next.</b> The intelligence layer — clinical NLU, HCC reasoning, coding
+              logic — is shared. The vocabulary, workflows, and payer rules are purpose-built per specialty. Generic
+              platforms can&apos;t match this depth; single-specialty tools can&apos;t match this reach.
+            </p>
+          </div>
+          <Link className="tlink reveal" href="/product">
+            See how the platform works →
+          </Link>
         </div>
       </section>
 

@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHead, CtaBand } from "@/components/Shared";
+import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
   title: "Product",
   description:
-    "Zera collapses note, code, and claim into a single AI pass for specialty medicine — with word-level provenance, a specialty-aware coding engine, and a full-cycle RCM roadmap.",
+    "Zera collapses note, code, and claim into a single AI pass for specialty medicine — with a pre-sign validation gate, word-level provenance, and full-cycle RCM engines built and integrating.",
   alternates: { canonical: "https://zera.health/product" },
 };
+
+function ACheck() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  );
+}
 
 export default function ProductPage() {
   return (
@@ -165,6 +174,32 @@ export default function ProductPage() {
                 the lane — so a gap never has the chance to become a denial, an appeal, or a write-off three days later.
               </p>
             </div>
+
+            <div className="analyzers">
+              <div className="ahead">Five checks run concurrently, as the note is composed</div>
+              <div className="agrid">
+                <div className="analyzer">
+                  <div className="an"><ACheck /> Laterality</div>
+                  <div className="ad">OD / OS / OU enforcement</div>
+                </div>
+                <div className="analyzer">
+                  <div className="an"><ACheck /> HCC capture</div>
+                  <div className="ad">Risk-adjustment conditions flagged</div>
+                </div>
+                <div className="analyzer">
+                  <div className="an"><ACheck /> MEAT validation</div>
+                  <div className="ad">Documentation supports each condition</div>
+                </div>
+                <div className="analyzer">
+                  <div className="an"><ACheck /> ICD-10 specificity</div>
+                  <div className="ad">Vague codes flagged for precision</div>
+                </div>
+                <div className="analyzer">
+                  <div className="an"><ACheck /> J-code units</div>
+                  <div className="ad">Drug-unit math reconciled</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -193,6 +228,27 @@ export default function ProductPage() {
               <h3>Approve, don&apos;t retype</h3>
               <p>The clinician reviews and signs off. Corrections improve the record instead of living in a side file.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Works with your stack */}
+      <section className="section light">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Works with your stack</span>
+            <h2>An intelligence layer, not a rip-and-replace.</h2>
+            <p className="lead">
+              Zera runs alongside the systems you already own. No EHR replacement, no workflow disruption, no staff
+              layoffs. It produces output in six EHR-ready formats today, with direct, real-time integrations rolling
+              out.
+            </p>
+          </div>
+          <div className="formats reveal">
+            <span className="fmt"><b>6</b> EHR-ready output formats</span>
+            <span className="fmt">Runs alongside your EHR</span>
+            <span className="fmt">Direct integrations — rolling out</span>
+            <span className="fmt">No rip-and-replace</span>
           </div>
         </div>
       </section>
@@ -227,17 +283,29 @@ export default function ProductPage() {
             </article>
             <article className="pcard soft reveal">
               <div className="top">
-                <h3>Coming with the cohort</h3>
+                <h3>Built and integrating</h3>
                 <span className="tag dev">
-                  <span className="d"></span>Next
+                  <span className="d"></span>Wiring in
                 </span>
               </div>
               <p>
-                Built on the same clean data, shipping alongside our founding practices: denial analytics · A/R aging ·
-                end-to-end claims workflow · payer-rule intelligence.
+                The four RCM engines and orchestrator are already built — denial analytics, A/R, payer-rule
+                intelligence, and end-to-end claims workflow — wiring into the platform alongside our founding cohort.
               </p>
             </article>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section light">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">FAQ</span>
+            <h2>Questions, answered.</h2>
+            <p className="lead">What practices ask before their first Zera demo.</p>
+          </div>
+          <FAQ />
         </div>
       </section>
 

@@ -199,6 +199,58 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
 .gate-note p{color:var(--l-muted);font-size:1.02rem;line-height:1.55;max-width:70ch;margin:0 auto}
 .gate-note p b{color:var(--l-ink);font-weight:700}
 
+/* five analyzers — inside the pre-sign gate (product) */
+.analyzers{margin-top:28px;padding-top:24px;border-top:1px solid var(--l-line)}
+.analyzers .ahead{font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--l-faint);margin-bottom:16px}
+.agrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.analyzer{border:1px solid var(--l-line);border-radius:12px;background:var(--l-bg);padding:15px 15px}
+.analyzer .an{font-weight:700;font-size:.95rem;color:var(--l-ink);letter-spacing:-0.01em;display:flex;align-items:center;gap:7px}
+.analyzer .an svg{width:14px;height:14px;color:var(--blue);flex:none}
+.analyzer .ad{font-size:.8rem;color:var(--l-muted);line-height:1.4;margin-top:6px}
+
+/* EHR intelligence-layer chips (product) */
+.formats{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.formats .fmt{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.03em;color:var(--l-muted);
+  border:1px solid var(--l-line);border-radius:8px;padding:9px 13px;background:#fff}
+.formats .fmt b{color:var(--l-ink);font-weight:700}
+
+/* trust / security grid (light) */
+.trustgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 24px;margin-top:48px}
+.trustitem{border-top:1px solid var(--blue);padding-top:22px}
+.trustitem .ti{display:flex;align-items:center;gap:9px;font-weight:700;font-size:1.12rem;color:var(--l-ink);letter-spacing:-0.01em}
+.trustitem .ti svg{width:16px;height:16px;color:var(--blue);flex:none}
+.trustitem p{color:var(--l-muted);font-size:1rem;line-height:1.55;margin-top:10px}
+
+/* specialties (light) */
+.specrow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.spec{border:1px solid var(--l-line);border-radius:14px;background:#fff;padding:22px 22px}
+.spec.lead-spec{border-color:var(--blue);box-shadow:0 24px 50px -34px rgba(37,99,235,.4)}
+.spec .sk{font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--l-faint)}
+.spec.lead-spec .sk{color:var(--blue)}
+.spec h3{font-size:1.16rem;font-weight:700;letter-spacing:-0.01em;color:var(--l-ink);margin-top:9px}
+.spec p{font-size:.92rem;color:var(--l-muted);line-height:1.45;margin-top:8px}
+.specnext{margin-top:22px;display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;
+  border:1px dashed var(--l-line);border-radius:12px;padding:18px 22px;background:#fff}
+.specnext .snk{font-family:'JetBrains Mono',monospace;font-size:.64rem;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--blue);white-space:nowrap;margin-top:3px}
+.specnext p{color:var(--l-muted);font-size:1.02rem;line-height:1.55;max-width:70ch}
+.specnext p b{color:var(--l-ink);font-weight:700}
+
+/* FAQ accordion (light) */
+.faqlist{margin-top:40px;border-top:1px solid var(--l-line)}
+.faqitem{border-bottom:1px solid var(--l-line)}
+.faqq{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:22px 4px;text-align:left;background:none;border:0;cursor:pointer;font-family:'Satoshi',sans-serif}
+.faqq span{font-weight:700;font-size:1.1rem;letter-spacing:-0.01em;color:var(--l-ink);transition:color .2s}
+.faqitem[data-open="true"] .faqq span,.faqq:hover span{color:var(--blue)}
+.faqq .fi{flex:none;width:20px;height:20px;color:var(--l-faint);transition:transform .28s,color .2s}
+.faqitem[data-open="true"] .faqq .fi{transform:rotate(45deg);color:var(--blue)}
+.faqa{overflow:hidden;max-height:0;transition:max-height .32s ease}
+.faqitem[data-open="true"] .faqa{max-height:440px}
+.faqa p{color:var(--l-muted);font-size:1.04rem;line-height:1.65;padding:0 4px 24px;max-width:78ch}
+
 /* pillars (dark) */
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
 .pillar{border-top:1px solid var(--blue4);padding-top:24px}
@@ -317,9 +369,13 @@ h1,h2{font-weight:700;letter-spacing:-0.02em;line-height:1.04}
   .navmenu.open a:not(.btn){color:var(--l-ink);font-size:1.08rem;padding:11px 16px}
   .navmenu.open .btn{margin-top:8px;justify-content:center}
   .products,.stats,.pillars,.people,.foot .grid,.contact{grid-template-columns:1fr}
+  .agrid{grid-template-columns:repeat(2,1fr)}
+  .trustgrid{grid-template-columns:1fr}
+  .specrow{grid-template-columns:repeat(2,1fr)}
   .hero{padding:140px 0 74px}.section{padding:78px 0}.telemetry{font-size:.7rem}
   .pagehead{padding:128px 0 54px}
   .cform .two{grid-template-columns:1fr}
 }
-@media(max-width:520px){.wrap{padding:0 20px}.telemetry .cell{border-right:0;padding:7px 12px}}
+@media(max-width:520px){.wrap{padding:0 20px}.telemetry .cell{border-right:0;padding:7px 12px}
+  .agrid,.specrow{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none;opacity:1;transform:none}.dot{animation:none}}
