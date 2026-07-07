@@ -75,8 +75,8 @@ export default function CompanyPage() {
               </p>
               <p>
                 The meaning has grown as the platform has — from automating individual steps to fully running the cycle
-                on its own — evolving into a <b>Zero-friction Engine for Revenue Autonomy</b>. The letters never change.
-                Neither does the ultimate destination — <span className="accent">zero</span>.
+                on its own — evolving into a <span className="accent">Zero-friction Engine for Revenue Autonomy</span>. The letters never change.
+                Neither does the ultimate destination — zero.
               </p>
             </div>
           </div>
