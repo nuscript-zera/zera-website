@@ -49,7 +49,7 @@ export default function Home() {
               <span className="fnum">01</span>
               <div className="fk">Capture</div>
               <h4>Note</h4>
-              <p>Ambient conversation or dictation becomes a structured, specialty-aware clinical note.</p>
+              <p>Ambient conversation becomes a structured, specialty-aware clinical note.</p>
             </div>
             <Chevron />
             <div className="flowstep">

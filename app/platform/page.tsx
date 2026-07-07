@@ -77,7 +77,7 @@ export default function ProductPage() {
                 <div className="fk">01 · Capture → Note</div>
                 <h3>The encounter writes itself.</h3>
                 <p>
-                  Ambient conversation or structured dictation is transcribed with medical-grade speech recognition and
+                  Ambient conversation is transcribed with medical-grade speech recognition and
                   shaped into a specialty-aware clinical note. Zera understands the vocabulary of specialty care —
                   laterality, drug names, injection details — instead of flattening them into generic text.
                 </p>
