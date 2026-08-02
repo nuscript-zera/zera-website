@@ -47,9 +47,10 @@ export default function CompanyPage() {
               as one continuous system.
             </p>
             <p>
-              We&apos;re deliberately starting narrow — specialty medicine, beginning with retina — because that&apos;s
-              where the coding is hardest, the dollars are largest, and getting it right matters most. Prove it where
-              it&apos;s hardest, then expand.
+              Retina has some of the hardest coding in medicine — anti-VEGF drug units, OD/OS laterality, diabetic
+              retinopathy staging, MEAT documentation — and the most revenue at stake when any of it is wrong.
+              That&apos;s exactly why we built Zera for it. We go deep on your specialty instead of spreading thin across
+              all of medicine.
             </p>
           </div>
         </div>
@@ -86,11 +87,12 @@ export default function CompanyPage() {
       <section className="section light tint">
         <div className="wrap">
           <div className="shead reveal">
-            <span className="eyebrow">Team</span>
-            <h2>Founder-led, operator-built.</h2>
+            <span className="eyebrow">Founder-led, operator-built</span>
+            <h2>Who&apos;s behind Zera.</h2>
             <p className="lead">
-              Zera is led by a founder who has spent a career inside the work it automates. Senior engineering and
-              clinical hires are joining as we scale alongside the founding cohort.
+              Zera is led by a founder who has spent a career inside the work it automates — someone personally
+              accountable for getting your coding and claims right, backed by a track record of shipping production
+              healthcare AI at scale.
             </p>
           </div>
           <div className="person reveal" style={{ maxWidth: "720px", marginTop: "40px" }}>

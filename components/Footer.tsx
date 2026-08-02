@@ -35,9 +35,6 @@ export default function Footer() {
             <h4>Connect</h4>
             <Link href="/contact">Contact</Link>
             <a href="mailto:hello@zera.health">Sales &amp; pilots</a>
-            <a className="investor" href="mailto:arvind@zera.health">
-              For investors — get in touch →
-            </a>
           </div>
         </div>
         <div className="base">
