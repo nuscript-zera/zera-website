@@ -34,9 +34,7 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 .mono{font-family:'Commit Mono',sans-serif}
 .eyebrow{font-family:'Commit Mono',monospace;font-weight:500;font-size:.85rem;
-  letter-spacing:.13em;text-transform:uppercase;color:var(--blue4);
-  display:inline-flex;align-items:center;gap:10px;vertical-align:middle}
-.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
+  letter-spacing:.13em;text-transform:uppercase;color:var(--blue4)}
 h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 .accent{color:var(--blue4)}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:'General Sans',sans-serif;font-weight:500;font-size:.92rem;
@@ -360,7 +358,7 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 /* footer (light) */
 .foot{border-top:none;padding:64px 0 45px;background:var(--l-bg2)}
 .foot .belief{padding-bottom:44px;margin-bottom:44px;border-bottom:1px solid var(--l-line)}
-.foot .belief .eyebrow{display:inline-flex;color:var(--blue);margin-bottom:18px}
+.foot .belief .eyebrow{display:block;color:var(--blue);margin-bottom:18px}
 .foot .belief h2{font-size:clamp(2.1rem,4.8vw,3.4rem);font-weight:400;line-height:1.05;letter-spacing:-0.02em;color:var(--l-ink);max-width:24ch}
 .foot .belief h2 .accent{color:var(--coral-strong)}
 .foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
@@ -511,5 +509,9 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
   padding:clamp(36px,5vw,72px);
 }
 .thesis .eyebrow{display:inline-flex;color:var(--blue);margin-bottom:20px}
+
+/* eyebrow dot — only on focal panels: CTA card, WHY NOW, Founder's office */
+.careers .eyebrow,.thesis .eyebrow,.founder .eyebrow{display:inline-flex;align-items:center;gap:10px}
+.careers .eyebrow::before,.thesis .eyebrow::before,.founder .eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
 .thesis p{color:var(--l-ink);max-width:52ch;margin-top:0;font-weight:400}
 .thesis .thesis-card p .accent{color:var(--blue);font-weight:500}
