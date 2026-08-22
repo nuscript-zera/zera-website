@@ -479,3 +479,16 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 .flowstep .fnum{color:var(--l-faint)}
 .flowcap{color:var(--l-faint)}
 .flowcap b{color:var(--coral-strong)}
+
+/* ============================================================
+   WHY NOW — light gradient panel (soft periwinkle, Dialectica-style)
+   ============================================================ */
+.thesis .thesis-card{
+  background:linear-gradient(140deg,#C7D9FF 0%,#DCE4FB 46%,#EDF1FE 100%);
+  border:1px solid #C4D2F7;
+  border-radius:24px;
+  padding:clamp(36px,5vw,72px);
+}
+.thesis .eyebrow{display:block;color:var(--blue);margin-bottom:20px}
+.thesis p{color:var(--l-ink);max-width:52ch;margin-top:0;font-weight:400}
+.thesis .thesis-card p .accent{color:var(--blue);font-weight:500}

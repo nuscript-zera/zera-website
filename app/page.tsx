@@ -104,11 +104,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THESIS · dark */}
-      <section className="section dark thesis" id="thesis">
+      {/* WHY NOW · light gradient panel */}
+      <section className="section light thesis" id="thesis">
         <div className="wrap">
-          <span className="eyebrow reveal">Why now</span>
-          <div className="reveal">
+          <div className="thesis-card reveal">
+            <span className="eyebrow">Why now</span>
             <p>
               Most denials start upstream — in documentation and coding — long before a biller ever sees the claim. The
               old fix was to add people to each handoff and scrub claims on the way out. Modern language and reasoning
@@ -122,6 +122,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* END WHY NOW */}
 
       {/* HOW ZERA WORKS · light */}
       <section className="section light tint" id="how">
