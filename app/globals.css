@@ -74,7 +74,7 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
   background-size:64px 64px;-webkit-mask-image:radial-gradient(760px 520px at 50% 0%,#000,transparent 75%);
   mask-image:radial-gradient(760px 520px at 50% 0%,#000,transparent 75%)}
 .hero .wrap{position:relative;z-index:1}
-.hero h1{font-size:clamp(2.6rem,7vw,4.15rem);line-height:1.03;margin-top:22px;max-width:16ch}
+.hero h1{font-size:clamp(2.6rem,7vw,4.15rem);line-height:1.03;margin-top:22px;max-width:24ch}
 .hero .sub{font-size:clamp(1.18rem,1.7vw,1.42rem);line-height:1.55;color:var(--muted);max-width:60ch;margin-top:24px}
 .hero .cta{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
 .hero .cta .btn{padding:14px 22px;font-size:1rem}
@@ -302,15 +302,34 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 .prose a{color:var(--blue);font-weight:500}
 .prose .upd{font-family:'Commit Mono',sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--l-faint);margin-bottom:26px}
 
-/* careers/cta band (dark) */
-.careers{position:relative;overflow:hidden;text-align:center;padding:118px 0;background:var(--bg)}
-.careers::before{content:"";position:absolute;inset:0;z-index:0;
-  background:radial-gradient(700px 340px at 50% 120%,rgba(0,51,212,.3),transparent 62%)}
-.careers .wrap{position:relative;z-index:1}
-.careers h2{font-size:clamp(1.9rem,3.8vw,3rem);max-width:20ch;margin:16px auto 0}
-.careers .lead{color:var(--muted);font-size:1.4rem;line-height:1.55;margin:20px auto 0;max-width:54ch}
-.careers .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* careers/cta band — deep-blue card with right-flush concentric-arc decoration */
+.careers{position:relative;padding:96px 0;background:var(--l-bg)}
+.careers .cta-card{position:relative;overflow:hidden;border-radius:28px;
+  background:linear-gradient(118deg,#0E1E4A 0%,#132A86 48%,#1E4BE8 100%);
+  padding:clamp(40px,5.5vw,84px);min-height:430px;display:flex;align-items:center;
+  box-shadow:0 44px 96px -52px rgba(0,51,212,.6)}
+.careers .cta-body{position:relative;z-index:2;max-width:58%}
+.careers .eyebrow{display:inline-flex;align-items:center;gap:10px;color:rgba(255,255,255,.92)}
+.careers .eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:#fff;flex:none}
+.careers h2{font-size:clamp(1.9rem,3.6vw,2.9rem);color:#fff;max-width:18ch;margin-top:20px;line-height:1.06}
+.careers .lead{color:rgba(255,255,255,.74);font-size:1.24rem;line-height:1.5;margin-top:20px;max-width:46ch}
+.careers .cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
 .careers .cta .btn{padding:14px 24px;font-size:1rem}
+.careers .btn-primary{background:#fff;color:var(--blue)}
+.careers .btn-primary:hover{background:#eef1fe;color:var(--blue);transform:translateY(-1px);box-shadow:0 16px 32px -16px rgba(0,0,0,.55)}
+.careers .btn-ghost{border-color:rgba(255,255,255,.42);color:#fff}
+.careers .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);color:#fff}
+/* brand icon watermark — left half on the card, right half flush-cut by the edge */
+.careers .cta-orb{position:absolute;top:50%;right:0;transform:translateY(-50%);z-index:1;pointer-events:none}
+.careers .orb-mark{position:absolute;left:0;top:0;width:540px;height:540px;transform:translate(-50%,-50%);
+  background:#0C1A46;opacity:.42;
+  -webkit-mask-image:url('/zera-icon.png');-webkit-mask-repeat:no-repeat;-webkit-mask-position:center;-webkit-mask-size:contain;
+  mask-image:url('/zera-icon.png');mask-repeat:no-repeat;mask-position:center;mask-size:contain}
+@media(max-width:820px){
+  .careers .cta-body{max-width:100%}
+  .careers .cta-orb{opacity:.5;transform:translate(120px,-50%)}
+  .careers .cta-card{padding:36px 28px;min-height:0}
+}
 
 /* contact (light) */
 .contact{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start;margin-top:6px}

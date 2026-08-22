@@ -297,22 +297,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA · dark */}
+      {/* CTA · deep-blue card with right-flush arc decoration */}
       <section className="careers" id="cta">
-        <div className="wrap reveal">
-          <span className="eyebrow">Founding cohort</span>
-          <h2>Built by operators who ship healthcare AI at scale.</h2>
-          <p className="lead">
-            Zera comes from the team behind Dictra, which processes 2,000+ clinical minutes a day in production at
-            99.5% audited accuracy. We&apos;re opening a founding cohort of specialty practices now.
-          </p>
-          <div className="cta">
-            <Link href="/contact" className="btn btn-primary">
-              Book a demo
-            </Link>
-            <Link href="/company" className="btn btn-ghost">
-              Meet the team
-            </Link>
+        <div className="wrap">
+          <div className="cta-card reveal">
+            <div className="cta-orb" aria-hidden="true">
+              <span className="orb-mark"></span>
+            </div>
+            <div className="cta-body">
+              <span className="eyebrow">Founding cohort</span>
+              <h2>Built by operators who ship healthcare AI at scale.</h2>
+              <p className="lead">
+                Zera comes from the team behind Dictra, which processes 2,000+ clinical minutes a day in production at
+                99.5% audited accuracy. We&apos;re opening a founding cohort of specialty practices now.
+              </p>
+              <div className="cta">
+                <Link href="/contact" className="btn btn-primary">
+                  Book a demo
+                </Link>
+                <Link href="/company" className="btn btn-ghost">
+                  Meet the team
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
