@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <Link className="brand" href="/" aria-label="Zera home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/zera-logo.png" alt="Zera" className="footlogo" />
+              <img src="/zera-logo-white.png" alt="Zera" className="footlogo" />
             </Link>
             <span className="foottag" style={{ marginTop: "14px" }}>Revenue AI · Specialty medicine</span>
             <p className="desc">
