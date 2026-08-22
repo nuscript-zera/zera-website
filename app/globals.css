@@ -34,7 +34,9 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 .mono{font-family:'Commit Mono',sans-serif}
 .eyebrow{font-family:'Commit Mono',monospace;font-weight:500;font-size:.85rem;
-  letter-spacing:.13em;text-transform:uppercase;color:var(--blue4)}
+  letter-spacing:.13em;text-transform:uppercase;color:var(--blue4);
+  display:inline-flex;align-items:center;gap:10px;vertical-align:middle}
+.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
 h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 .accent{color:var(--blue4)}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:'General Sans',sans-serif;font-weight:500;font-size:.92rem;
@@ -309,8 +311,7 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
   padding:clamp(40px,5.5vw,84px);min-height:430px;display:flex;align-items:center;
   box-shadow:0 44px 96px -52px rgba(0,51,212,.6)}
 .careers .cta-body{position:relative;z-index:2;max-width:58%}
-.careers .eyebrow{display:inline-flex;align-items:center;gap:10px;color:rgba(255,255,255,.92)}
-.careers .eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:#fff;flex:none}
+.careers .eyebrow{color:rgba(255,255,255,.92)}
 .careers h2{font-size:clamp(1.9rem,3.6vw,2.9rem);color:#fff;max-width:18ch;margin-top:20px;line-height:1.06}
 .careers .lead{color:rgba(255,255,255,.74);font-size:1.24rem;line-height:1.5;margin-top:20px;max-width:46ch}
 .careers .cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
@@ -359,7 +360,7 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 /* footer (light) */
 .foot{border-top:none;padding:64px 0 45px;background:var(--l-bg2)}
 .foot .belief{padding-bottom:44px;margin-bottom:44px;border-bottom:1px solid var(--l-line)}
-.foot .belief .eyebrow{display:block;color:var(--blue);margin-bottom:18px}
+.foot .belief .eyebrow{display:inline-flex;color:var(--blue);margin-bottom:18px}
 .foot .belief h2{font-size:clamp(2.1rem,4.8vw,3.4rem);font-weight:400;line-height:1.05;letter-spacing:-0.02em;color:var(--l-ink);max-width:24ch}
 .foot .belief h2 .accent{color:var(--coral-strong)}
 .foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
@@ -509,6 +510,6 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
   border-radius:24px;
   padding:clamp(36px,5vw,72px);
 }
-.thesis .eyebrow{display:block;color:var(--blue);margin-bottom:20px}
+.thesis .eyebrow{display:inline-flex;color:var(--blue);margin-bottom:20px}
 .thesis p{color:var(--l-ink);max-width:52ch;margin-top:0;font-weight:400}
 .thesis .thesis-card p .accent{color:var(--blue);font-weight:500}
