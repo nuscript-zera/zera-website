@@ -41,7 +41,7 @@ export default function CompanyPage() {
               they&apos;ve fixed those breaks by hand thousands of times.
             </p>
             <p>
-              That team also built and runs Audryl, an AI clinical-documentation platform that processes over 2,000
+              That team also built and runs Dictra, an AI clinical-documentation platform that processes over 2,000
               clinical minutes a day in live production at 99.5% audited accuracy. Zera applies that same
               production-first discipline to a bigger surface: not just the note, but the note, the code, and the claim
               as one continuous system.
@@ -100,7 +100,7 @@ export default function CompanyPage() {
             <h3>Arvind Manohar</h3>
             <p>
               Twenty-five years across healthcare documentation and revenue cycle, and the technical founder behind both
-              Audryl and Zera. He&apos;s built the platform hands-on — and run the operations it&apos;s designed to
+              Dictra and Zera. He&apos;s built the platform hands-on — and run the operations it&apos;s designed to
               transform.
             </p>
           </div>
