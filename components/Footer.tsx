@@ -1,4 +1,7 @@
 import Link from "next/link";
+// Imported so Next fingerprints the URL with a content hash — updating the file
+// auto-busts the browser/CDN cache (no manual version bump needed).
+import logoWhite from "../public/zera-logo-white.png";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -15,7 +18,7 @@ export default function Footer() {
           <div>
             <Link className="brand" href="/" aria-label="Zera home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/zera-logo-white.png" alt="Zera" className="footlogo" />
+              <img src={logoWhite.src} width={logoWhite.width} height={logoWhite.height} alt="Zera" className="footlogo" />
             </Link>
             <span className="foottag" style={{ marginTop: "14px" }}>Revenue AI · Specialty medicine</span>
             <p className="desc">

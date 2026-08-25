@@ -2,6 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+// Imported so Next fingerprints the URL with a content hash — updating the file
+// auto-busts the browser/CDN cache (no manual version bump needed).
+import logoWhite from "../public/zera-logo-white.png";
+import logoDark from "../public/zera-logo.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,9 +23,9 @@ export default function Navbar() {
       <div className="wrap row">
         <Link className="brand" href="/" aria-label="Zera home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/zera-logo-white.png" alt="Zera" className="brandlogo logo-white" />
+          <img src={logoWhite.src} width={logoWhite.width} height={logoWhite.height} alt="Zera" className="brandlogo logo-white" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/zera-logo.png" alt="Zera" className="brandlogo logo-dark" />
+          <img src={logoDark.src} width={logoDark.width} height={logoDark.height} alt="Zera" className="brandlogo logo-dark" />
         </Link>
         <div className="navlinks">
           <Link href="/platform">Platform</Link>
