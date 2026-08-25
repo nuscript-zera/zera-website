@@ -31,11 +31,20 @@ export const metadata: Metadata = {
     siteName: "Zera",
     title: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
     description,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Zera",
     description,
+    images: ["/og-image.png"],
   },
 };
 
