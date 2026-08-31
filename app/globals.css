@@ -1,5 +1,5 @@
 /* self-hosted fonts (no third-party requests) — Zera brand system */
-@font-face{font-family:'General Sans';font-style:normal;font-weight:200 700;font-display:swap;src:url('/fonts/general-sans-variable.woff2') format('woff2')}
+@font-face{font-family:'Satoshi';font-style:normal;font-weight:300 900;font-display:swap;src:url('/fonts/Satoshi-Variable.woff2') format('woff2')}
 @font-face{font-family:'Commit Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/commit-mono-400.woff2') format('woff2')}
 @font-face{font-family:'Commit Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/commit-mono-500.woff2') format('woff2')}
 
@@ -15,7 +15,7 @@
    Text on DARK:  #EDF0F6 (--ink) · #94A3B8 (--muted) · #6E7C93 (--faint)
    Light surfaces:  #F4F6FC (--l-bg) · #EDF0F6 aqua (--l-bg2) · borders #D6DEFA (--l-line)
    Text on LIGHT:  #162A7D (--l-ink) · #637188 (--l-muted) · #8792A6 (--l-faint)
-   Fonts:  General Sans (display + body) · Commit Mono (labels + eyebrows + numbers) — shared with the Zera app
+   Fonts:  Satoshi (display + body) · Commit Mono (labels + eyebrows + numbers) — shared with the Zera app
    ============================================================ */
 :root{
   --bg:#0B1628; --bg2:#12213F; --ink:#EDF0F6; --muted:#94A3B8; --faint:#6E7C93;
@@ -28,16 +28,16 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'General Sans',-apple-system,sans-serif;font-weight:400;
-  line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font-family:'Satoshi',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-weight:500;
+  line-height:1.6;letter-spacing:.01em;font-size-adjust:0.5363;font-synthesis:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 .mono{font-family:'Commit Mono',sans-serif}
 .eyebrow{font-family:'Commit Mono',monospace;font-weight:500;font-size:.85rem;
   letter-spacing:.13em;text-transform:uppercase;color:var(--blue4)}
-h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
+h1,h2{font-weight:450;letter-spacing:-0.01em;line-height:1.05}
 .accent{color:var(--blue4)}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:'General Sans',sans-serif;font-weight:500;font-size:.92rem;
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Satoshi',sans-serif;font-weight:500;font-size:.92rem;
   border-radius:9px;padding:11px 18px;transition:all .2s;cursor:pointer;border:1px solid transparent;white-space:nowrap}
 .btn-primary{background:var(--blue);color:#fff}
 .btn-primary:hover{background:#1E4BE8;transform:translateY(-1px);box-shadow:0 12px 30px -12px rgba(0,51,212,.7)}
@@ -251,7 +251,7 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 .faqlist{margin-top:40px;border-top:1px solid var(--l-line)}
 .faqitem{border-bottom:1px solid var(--l-line)}
 .faqq{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
-  padding:22px 4px;text-align:left;background:none;border:0;cursor:pointer;font-family:'General Sans',sans-serif}
+  padding:22px 4px;text-align:left;background:none;border:0;cursor:pointer;font-family:'Satoshi',sans-serif}
 .faqq span{font-weight:500;font-size:1.1rem;letter-spacing:-0.01em;color:var(--l-ink);transition:color .2s}
 .faqitem[data-open="true"] .faqq span,.faqq:hover span{color:var(--blue)}
 .faqq .fi{flex:none;width:20px;height:20px;color:var(--l-faint);transition:transform .28s,color .2s}
@@ -287,7 +287,7 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 
 /* origin & meaning (company) */
 .origin{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:start;margin-top:46px}
-.origin-mark .oword{font-family:'General Sans',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
+.origin-mark .oword{font-family:'Satoshi',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
   letter-spacing:-.025em;color:#fff;line-height:1}
 .origin-mark .opron{font-family:'Commit Mono',sans-serif;font-weight:500;font-size:1.1rem;
   letter-spacing:.04em;color:var(--faint);margin-top:16px}
@@ -335,7 +335,7 @@ h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
 .contact h2{font-size:1.6rem;font-weight:500;letter-spacing:-0.01em;color:var(--l-ink);margin-bottom:22px}
 .cform .field{margin-bottom:16px}
 .cform label{display:block;font-family:'Commit Mono',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
-.cform input,.cform select,.cform textarea{width:100%;font-family:'General Sans',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
+.cform input,.cform select,.cform textarea{width:100%;font-family:'Satoshi',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
 .cform input::placeholder,.cform textarea::placeholder{color:#aeb8c6}
 .cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,51,212,.12)}
 .cform textarea{resize:vertical;min-height:120px}
