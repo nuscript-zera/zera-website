@@ -9,27 +9,27 @@
    Zera — brand design system (finalized)
    Owned by NuScript Systems, Inc. (Texas C-Corp)
    Core:
-     Blue-600  #0033D4  (--blue)   primary  — buttons, links, accents on light
+     Blue-600  #2563EB  (--blue)   primary  — buttons, links, accents on light
      Blue-300  #7D97F2  (--blue4)  accent   — highlights + links on DARK (navy) surfaces
-     Navy-700  #162A7D  (--l-ink)  ink      — headings + body on LIGHT sections; wordmark base
+     Slate-900 #0F172A  (--l-ink)  ink      — headings + body on LIGHT sections; wordmark base
      Coral     #FF6B4A / #C43A1A (--coral / --coral-strong) — rationed revenue/"get-paid" accent
    Dark surfaces (navy):  #0B1628 (--bg) base · #12213F (--bg2) panels
    Text on DARK:  #EDF0F6 (--ink) · #94A3B8 (--muted) · #6E7C93 (--faint)
    Light surfaces:  #F4F6FC (--l-bg) · #EDF0F6 aqua (--l-bg2) · borders #D6DEFA (--l-line)
-   Text on LIGHT:  #162A7D (--l-ink) · #637188 (--l-muted) · #8792A6 (--l-faint)
+   Text on LIGHT:  #0F172A (--l-ink) · #637188 (--l-muted) · #8792A6 (--l-faint)
    Fonts:  Satoshi (display + body) · Commit Mono (labels + eyebrows + numbers) — shared with the Zera app
    ============================================================ */
 :root{
   --bg:#0B1628; --bg2:#12213F; --ink:#EDF0F6; --muted:#94A3B8; --faint:#6E7C93;
-  --blue:#0033D4; --blue4:#8FB4FF;
+  --blue:#2563EB; --blue4:#8FB4FF;
   --coral:#FF6B4A; --coral-strong:#C43A1A; --coral-tint:#FFE7E0;
   --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.06);
-  --l-bg:#F4F6FC; --l-bg2:#EDF0F6; --l-ink:#162A7D; --l-muted:#637188; --l-faint:#8792A6;
+  --l-bg:#F4F6FC; --l-bg2:#EDF0F6; --l-ink:#0F172A; --l-muted:#637188; --l-faint:#8792A6;
   --l-line:#D6DEFA;
   --maxw:1180px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;font-size:15.5px}/* Satoshi reads ~3% larger than General Sans at the same nominal size (bigger x-height); scale the rem root down a touch so the overall type feels the same. Adjust 15.5→16 to revert, 15.5→15.25 for a hair smaller. */
 body{background:var(--bg);color:var(--ink);font-family:'Satoshi',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-weight:500;
   line-height:1.6;letter-spacing:.01em;font-size-adjust:0.5363;font-synthesis:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
