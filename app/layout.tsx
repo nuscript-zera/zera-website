@@ -25,6 +25,16 @@ export const metadata: Metadata = {
     "claim denial prevention",
   ],
   alternates: { canonical: "https://zera.health" },
+  // Versioned icon links force browsers (and the Windows taskbar) to refetch the
+  // favicon after the mark changed — the separate favicon cache ignores a normal
+  // page refresh, so a changed URL is what actually busts it. Bump ?v on any
+  // future icon change. favicon.ico is a real multi-size .ico generated from the
+  // Zera mark; Next serves /icon.png from app/.
+  icons: {
+    icon: [{ url: "/icon.png?v=2", type: "image/png" }],
+    shortcut: [{ url: "/favicon.ico?v=2" }],
+    apple: [{ url: "/icon.png?v=2", type: "image/png" }],
+  },
   openGraph: {
     type: "website",
     url: "https://zera.health",
