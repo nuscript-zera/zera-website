@@ -62,16 +62,18 @@ export default function ContactPage() {
       </section>
 
       <section className="section dark founder">
-        <div className="wrap reveal">
-          <span className="eyebrow">Founder&apos;s office</span>
-          <p className="quote">&ldquo;Show me where your revenue leaks, and I&apos;ll show you one clean line.&rdquo;</p>
-          <p>
-            If you&apos;re an investor, a strategic partner, or a practice leader weighing something bigger than a
-            standard demo — I&apos;d rather hear from you directly than through a form.
-          </p>
-          <a className="fmail" href="mailto:arvind@zera.health">
-            Write to the founder&apos;s office →
-          </a>
+        <div className="wrap">
+          <div className="founder-card reveal">
+            <span className="eyebrow">Founder&apos;s office</span>
+            <p className="quote">&ldquo;Show me where your revenue leaks, and I&apos;ll show you one clean line.&rdquo;</p>
+            <p>
+              If you&apos;re an investor, a strategic partner, or a practice leader weighing something bigger than a
+              standard demo — I&apos;d rather hear from you directly than through a form.
+            </p>
+            <a className="fmail" href="mailto:arvind@zera.health">
+              Write to the founder&apos;s office →
+            </a>
+          </div>
         </div>
       </section>
     </>
