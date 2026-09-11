@@ -1,30 +1,34 @@
-# Zera.health — Dictra-system re-skin
+# Zera.health → dictra.health design-system re-skin
 
-Full visual re-skin of zera.health onto the dictra.health design system.
-Everything lives in ONE stylesheet plus ONE added font — no markup changes.
+A faithful visual clone of the dictra.health system, applied to zera.health.
 
-## What to deploy (2 files)
+## Files to deploy (5)
 
-1. Replace  →  app/globals.css
-2. Add      →  public/fonts/InstrumentSans-Variable.woff2
+Replace:
+  app/globals.css
+  app/page.tsx              (WHY NOW → dark section; CTA motif removed)
+  components/Shared.tsx     (CTA motif removed)
+  components/Footer.tsx     (Dictra footer: 3 compliance pills + mail icon)
+Add:
+  public/fonts/InstrumentSans-Variable.woff2
 
-That's it. No changes to any page.tsx, component, layout, or config.
-(JetBrains Mono is already in public/fonts on the live repo.)
+(JetBrains Mono is already present in public/fonts on the live repo.)
 
 ## What changed
 
-- Fonts: Satoshi → Instrument Sans (display/body/UI); Commit Mono → JetBrains Mono (labels).
-- Palette: Dictra system — white #FFFFFF canvas, ink #0F172A, body #475569,
-  borders #E2E8F0, sunken #F1F5F9, blue tint #E7F0FF, single blue accent #2563EB,
-  dark surfaces on lifted navy #14213A.
-- Type: 17px root, Instrument fluid scale, headings 600 / -0.02em, JetBrains Mono
-  uppercase eyebrow/footnote/labels.
-- Radius: 0.75rem buttons.
-- Coral: removed entirely (blue is the single accent).
-- Hero & inner headers: clean white canvas, no blue glow.
-- CTA cards + WHY NOW panel: navy #14213A family.
+- Fonts: Satoshi → Instrument Sans; Commit Mono → JetBrains Mono.
+- Palette: white #FFFFFF canvas, ink #0F172A, body #475569, borders #E2E8F0,
+  sunken #F1F5F9, blue tint #E7F0FF, single blue accent #2563EB, all dark
+  surfaces on one lifted navy #14213A. Coral removed entirely.
+- Type: 17px root, Instrument fluid scale, headings 600 / -0.02em; a complete
+  element-by-element sweep to Dictra's steps (t-body, t-small, t-h3/h4,
+  t-stat, t-label / t-label-sm).
+- Hero & inner headers: clean white canvas, no glow.
+- WHY NOW: styled as the Founder's Office (full-width navy, quote statement).
+- CTA + footer: merged into one continuous #14213A block (centered CTA, no
+  card, no motif) — matching Dictra.
+- Footer: matched to Dictra (sans belief eyebrow, #7cb0ff accents, 4-col grid,
+  17px links, mail icon, HIPAA / SOC 2 / BAA pills).
 
 ## Revert
-
-The previous stylesheet is preserved as app/globals.css.orig in the working repo
-if you ever need to roll back.
+Previous stylesheet preserved as app/globals.css.orig in the working repo.

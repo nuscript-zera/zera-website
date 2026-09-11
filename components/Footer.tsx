@@ -25,6 +25,7 @@ export default function Footer() {
               The autonomous revenue platform for specialty medicine. Note to code to claim, in one system.
             </p>
             <a className="footmail" href="mailto:hello@zera.health">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
               hello@zera.health
             </a>
           </div>
@@ -53,12 +54,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="baseright">
-            <span className="badge">
-              <span className="chk">✓</span>HIPAA Compliant
-            </span>
-            <span className="badge">
-              <span className="chk">✓</span>BAA Available
-            </span>
+            <span className="badge">HIPAA</span>
+            <span className="badge">SOC 2</span>
+            <span className="badge">BAA</span>
           </div>
         </div>
       </div>

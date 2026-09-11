@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* WHY NOW · light gradient panel */}
-      <section className="section light thesis" id="thesis">
+      <section className="section dark thesis" id="thesis">
         <div className="wrap">
           <div className="thesis-card reveal">
             <span className="eyebrow">Why now</span>
@@ -301,9 +301,6 @@ export default function Home() {
       <section className="careers" id="cta">
         <div className="wrap">
           <div className="cta-card reveal">
-            <div className="cta-orb" aria-hidden="true">
-              <span className="orb-mark"></span>
-            </div>
             <div className="cta-body">
               <span className="eyebrow">Founding cohort</span>
               <h2>Built by operators who ship healthcare AI at scale.</h2>

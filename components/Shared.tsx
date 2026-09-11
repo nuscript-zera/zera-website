@@ -20,9 +20,6 @@ export function CtaBand() {
     <section className="careers">
       <div className="wrap">
         <div className="cta-card reveal">
-          <div className="cta-orb" aria-hidden="true">
-            <span className="orb-mark"></span>
-          </div>
           <div className="cta-body">
             <span className="eyebrow">Get started</span>
             <h2>See Zera run your encounters — note to claim.</h2>
