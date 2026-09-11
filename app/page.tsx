@@ -302,7 +302,6 @@ export default function Home() {
         <div className="wrap">
           <div className="cta-card reveal">
             <div className="cta-body">
-              <span className="eyebrow">Founding cohort</span>
               <h2>Built by operators who ship healthcare AI at scale.</h2>
               <p className="lead">
                 Zera comes from the team behind Dictra, which processes 2,000+ clinical minutes a day in production at

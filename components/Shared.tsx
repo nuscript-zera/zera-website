@@ -21,7 +21,6 @@ export function CtaBand() {
       <div className="wrap">
         <div className="cta-card reveal">
           <div className="cta-body">
-            <span className="eyebrow">Get started</span>
             <h2>See Zera run your encounters — note to claim.</h2>
             <p className="lead">
               Book a 30-minute working demo on your own specialty and payer mix. We&apos;re onboarding a small group of

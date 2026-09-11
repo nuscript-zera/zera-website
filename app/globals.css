@@ -584,7 +584,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 
 /* ---- FOOTER — match Dictra exactly ---- */
 .foot .belief{border-bottom:1px solid rgba(255,255,255,.10)}
-.foot .belief .eyebrow{font-family:'Instrument Sans',sans-serif;text-transform:none;font-size:.9rem;
+.foot .belief .eyebrow{font-family:'Instrument Sans',sans-serif;text-transform:capitalize;font-size:.9rem;
   font-weight:600;letter-spacing:0;color:#7cb0ff}
 .foot .belief h2 .accent{color:#7cb0ff}
 .foot .grid{grid-template-columns:2fr 1fr 1fr}
@@ -631,6 +631,6 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    sans, title-case, in the primary blue (t-eyebrow).
    ============================================================ */
 .section .eyebrow,.careers .eyebrow{
-  font-family:'Instrument Sans',sans-serif;text-transform:none;
+  font-family:'Instrument Sans',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:var(--blue)}
 .section.dark .eyebrow,.careers .eyebrow{color:#7cb0ff}
