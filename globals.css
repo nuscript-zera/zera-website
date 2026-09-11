@@ -620,3 +620,17 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 /* labels — small .62rem/.10em */
 .flowstep .fk,.stat .src,.tag,.pcard h3 .fmr,.pcard .caps li,.gate-k,.analyzers .ahead,
 .specnext .snk,.spec .sk{font-size:.62rem;letter-spacing:.10em}
+
+/* WHY NOW description — lighter than the Founder's Office quote (long paragraph) */
+.thesis p{font-weight:500}
+
+/* ============================================================
+   EYEBROWS — Dictra rule
+   Mono uppercase kicker ONLY at page-top (home hero + inner-page
+   headers, i.e. .hero / .pagehead). Every in-page SECTION eyebrow is
+   sans, title-case, in the primary blue (t-eyebrow).
+   ============================================================ */
+.section .eyebrow,.careers .eyebrow{
+  font-family:'Instrument Sans',sans-serif;text-transform:none;
+  font-size:.9rem;font-weight:600;letter-spacing:0;color:var(--blue)}
+.section.dark .eyebrow,.careers .eyebrow{color:#7cb0ff}
