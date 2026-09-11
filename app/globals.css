@@ -634,3 +634,12 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
   font-family:'Instrument Sans',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:var(--blue)}
 .section.dark .eyebrow,.careers .eyebrow{color:#7cb0ff}
+
+/* ============================================================
+   Light-slate tonal step (Dictra):
+   - the first section after a white hero / page-header opens on
+     the light slate (#F1F5F9), for a soft step down from white
+   - the Pipeline step's internal example cards use the same slate
+   ============================================================ */
+.hero + .section.light,.pagehead + .section.light{background:var(--l-bg2)}
+.frow .fart{background:var(--l-bg2)}
