@@ -643,3 +643,11 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    ============================================================ */
 .hero + .section.light,.pagehead + .section.light{background:var(--l-bg2)}
 .frow .fart{background:var(--l-bg2)}
+
+/* Faint grid texture on inner-page headers — matches the home hero */
+.pagehead::after{content:"";position:absolute;inset:0;z-index:0;opacity:.6;pointer-events:none;
+  background-image:linear-gradient(#EAF0FB 1px,transparent 1px),linear-gradient(90deg,#EAF0FB 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(760px 520px at 50% 0%,#000,transparent 75%);
+          mask-image:radial-gradient(760px 520px at 50% 0%,#000,transparent 75%)}
+.pagehead .wrap{position:relative;z-index:1}
