@@ -1,5 +1,5 @@
-/* self-hosted fonts — Zera on the NuScript/Dictra system (Instrument Sans + JetBrains Mono) */
-@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/InstrumentSans-Variable.woff2') format('woff2')}
+/* self-hosted fonts — Zera on the NuScript/Dictra system (Figtree + JetBrains Mono) */
+@font-face{font-family:'Figtree';font-style:normal;font-weight:300 900;font-display:swap;src:url('/fonts/Figtree-Variable.woff2') format('woff2')}
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url('/fonts/jetbrains-mono-variable.woff2') format('woff2')}
 
 /* ============================================================
@@ -14,7 +14,7 @@
    Text on DARK:  #EDF0F6 (--ink) · #94A3B8 (--muted) · #6E7C93 (--faint)
    Light surfaces:  #F4F6FC (--l-bg) · #EDF0F6 aqua (--l-bg2) · borders #D6DEFA (--l-line)
    Text on LIGHT:  #0F172A (--l-ink) · #637188 (--l-muted) · #8792A6 (--l-faint)
-   Fonts:  Instrument Sans (display + body) · JetBrains Mono (labels + eyebrows + numbers) — NuScript/Dictra system
+   Fonts:  Figtree (display + body) · JetBrains Mono (labels + eyebrows + numbers) — Zera system
    ============================================================ */
 :root{
   /* Dark surfaces — Dictra lifted navy (#14213A) family */
@@ -31,7 +31,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;font-size:106.25%}
-body{background:var(--bg);color:var(--ink);font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-weight:400;
+body{background:var(--bg);color:var(--ink);font-family:'Figtree',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-weight:400;
   line-height:1.6;font-synthesis:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:clip}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
@@ -40,7 +40,7 @@ a{color:inherit;text-decoration:none}
   letter-spacing:.13em;text-transform:uppercase;color:var(--blue4)}
 h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .accent{color:var(--blue4)}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Instrument Sans',sans-serif;font-weight:500;font-size:.92rem;
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Figtree',sans-serif;font-weight:500;font-size:.92rem;
   border-radius:0.75rem;padding:11px 18px;transition:all .2s;cursor:pointer;border:1px solid transparent;white-space:nowrap}
 .btn-primary{background:var(--blue);color:#fff}
 .btn-primary:hover{background:#1E4BE8;transform:translateY(-1px);box-shadow:0 12px 30px -12px rgba(0,51,212,.7)}
@@ -254,7 +254,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .faqlist{margin-top:40px;border-top:1px solid var(--l-line)}
 .faqitem{border-bottom:1px solid var(--l-line)}
 .faqq{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
-  padding:22px 4px;text-align:left;background:none;border:0;cursor:pointer;font-family:'Instrument Sans',sans-serif}
+  padding:22px 4px;text-align:left;background:none;border:0;cursor:pointer;font-family:'Figtree',sans-serif}
 .faqq span{font-weight:500;font-size:1.1rem;letter-spacing:-0.01em;color:var(--l-ink);transition:color .2s}
 .faqitem[data-open="true"] .faqq span,.faqq:hover span{color:var(--blue)}
 .faqq .fi{flex:none;width:20px;height:20px;color:var(--l-faint);transition:transform .28s,color .2s}
@@ -290,7 +290,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 
 /* origin & meaning (company) */
 .origin{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:start;margin-top:46px}
-.origin-mark .oword{font-family:'Instrument Sans',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
+.origin-mark .oword{font-family:'Figtree',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
   letter-spacing:-.025em;color:#fff;line-height:1}
 .origin-mark .opron{font-family:'JetBrains Mono',sans-serif;font-weight:500;font-size:1.1rem;
   letter-spacing:.04em;color:var(--faint);margin-top:16px}
@@ -338,7 +338,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .contact h2{font-size:1.6rem;font-weight:500;letter-spacing:-0.01em;color:var(--l-ink);margin-bottom:22px}
 .cform .field{margin-bottom:16px}
 .cform label{display:block;font-family:'JetBrains Mono',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
-.cform input,.cform select,.cform textarea{width:100%;font-family:'Instrument Sans',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
+.cform input,.cform select,.cform textarea{width:100%;font-family:'Figtree',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
 .cform input::placeholder,.cform textarea::placeholder{color:#aeb8c6}
 .cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,51,212,.12)}
 .cform textarea{resize:vertical;min-height:120px}
@@ -516,7 +516,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 
 
 /* ============================================================
-   DICTRA TYPE FINISH — Instrument Sans headings at 600 / -0.02em
+   DICTRA TYPE FINISH — Figtree headings at 600 / -0.02em
    (h3/h4 -0.01em), applied last so it wins over the lighter Zera
    heading weights while all sizes/layout stay put.
    ============================================================ */
@@ -584,7 +584,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 
 /* ---- FOOTER — match Dictra exactly ---- */
 .foot .belief{border-bottom:1px solid rgba(255,255,255,.10)}
-.foot .belief .eyebrow{font-family:'Instrument Sans',sans-serif;text-transform:capitalize;font-size:.9rem;
+.foot .belief .eyebrow{font-family:'Figtree',sans-serif;text-transform:capitalize;font-size:.9rem;
   font-weight:600;letter-spacing:0;color:#7cb0ff}
 .foot .belief h2 .accent{color:#7cb0ff}
 .foot .grid{grid-template-columns:2fr 1fr 1fr}
@@ -631,7 +631,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    sans, title-case, in the primary blue (t-eyebrow).
    ============================================================ */
 .section .eyebrow,.careers .eyebrow{
-  font-family:'Instrument Sans',sans-serif;text-transform:capitalize;
+  font-family:'Figtree',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:var(--blue)}
 .section.dark .eyebrow,.careers .eyebrow{color:#7cb0ff}
 
@@ -666,7 +666,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 }
 /* eyebrow matches the Founder's Office: sans Title Case, #7cb0ff, leading dot */
 .thesis .thesis-card .eyebrow{
-  font-family:'Instrument Sans',sans-serif;text-transform:capitalize;
+  font-family:'Figtree',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:#7cb0ff;margin-bottom:14px;
   display:inline-flex;align-items:center;gap:10px}
 .thesis .thesis-card .eyebrow::before{content:"";display:block;width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
