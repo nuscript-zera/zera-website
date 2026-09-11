@@ -1,0 +1,56 @@
+/* ============================================================
+   Zera app — typography drop-in
+   System sans:  Figtree      (variable, weights 300–900)
+   Monospace:    JetBrains Mono (variable, weights 100–800)
+   These are the exact same font files the zera.health marketing
+   site loads, so the app and site render byte-identical faces.
+   ============================================================ */
+
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 300 900;          /* variable range */
+  font-display: swap;
+  src: url('/fonts/Figtree-Variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100 800;          /* variable range */
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-variable.woff2') format('woff2');
+}
+
+/* ---- Tokens ------------------------------------------------
+   Reference these instead of hard-coding family names, so a
+   future face swap is a one-line change here.                  */
+:root {
+  --font-sans: 'Figtree', ui-sans-serif, system-ui, -apple-system,
+               'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular,
+               Menlo, Consolas, monospace;
+}
+
+/* ---- Base application of the sans face ---------------------
+   (Adjust the selector to match your app's root element.)      */
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings on the marketing site sit at 600 / -0.02em.
+   Mirror that in the app for a matched voice: */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Codes, labels, tabular / monospaced UI */
+.mono,
+code, kbd, pre, samp {
+  font-family: var(--font-mono);
+}
