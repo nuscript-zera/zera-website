@@ -664,10 +664,12 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
   border-radius:1rem;
   padding:clamp(32px,5vw,48px);
 }
+/* eyebrow matches the Founder's Office: sans Title Case, #7cb0ff, leading dot */
 .thesis .thesis-card .eyebrow{
-  font-family:'JetBrains Mono',ui-monospace,monospace;text-transform:uppercase;
-  font-size:.72rem;font-weight:500;letter-spacing:.12em;color:#7cb0ff;margin-bottom:14px}
-.thesis .thesis-card .eyebrow::before{display:none}
+  font-family:'Instrument Sans',sans-serif;text-transform:capitalize;
+  font-size:.9rem;font-weight:600;letter-spacing:0;color:#7cb0ff;margin-bottom:14px;
+  display:inline-flex;align-items:center;gap:10px}
+.thesis .thesis-card .eyebrow::before{content:"";display:block;width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
 .thesis .thesis-card p{
   font-size:var(--fs-h3);font-weight:400;line-height:1.3;letter-spacing:-0.01em;
   color:var(--ink);max-width:46rem}
