@@ -601,7 +601,9 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 
 /* ---- GENUINE 100% TYPE SWEEP to Dictra steps ---- */
 /* sub-heads */
-.contact h2,.prose h2,.pillar h3{font-size:var(--fs-h3);font-weight:600;letter-spacing:-0.01em;line-height:1.2}
+.contact h2,.prose h2{font-size:var(--fs-h3);font-weight:600;letter-spacing:-0.01em;line-height:1.2}
+/* Traceable Truth pillar sub-heads — one step below --fs-h3 so they read as sub-heads, not headlines */
+.pillar h3{font-size:clamp(1.2rem,1.1rem + 0.45vw,1.4rem);font-weight:600;letter-spacing:-0.01em;line-height:1.2}
 .spec h3,.faqq span,.trustitem .ti{font-size:var(--fs-h4);font-weight:600;letter-spacing:-0.005em;line-height:1.3}
 /* body copy -> t-body 1rem/1.6 */
 .pcard p,.frow p,.pillar p,.person p,.faqa p,.gate-note p,.specnext p,.origin-copy p,.founder p,
