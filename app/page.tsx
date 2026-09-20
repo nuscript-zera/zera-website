@@ -315,6 +315,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECURITY & TRUST · light */}
+      <section className="section light" id="security">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Security &amp; trust</span>
+            <h2>Your patients&apos; data, handled the way you&apos;d want yours handled.</h2>
+            <p className="lead">
+              Zera is engineered for protected health information from the ground up — so how your data is handled is
+              never an open question.
+            </p>
+          </div>
+          <div className="trustgrid reveal">
+            <div className="trustitem">
+              <div className="ti"><ACheck /> BAA with every practice</div>
+              <p>We sign a Business Associate Agreement before any protected health information is processed — no exceptions.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><ACheck /> SOC 2 Type I certified</div>
+              <p>Independently audited security controls, with SOC 2 Type II in progress.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><ACheck /> Isolated by tenant</div>
+              <p>Each organization&apos;s data is separated with customer-scoped keys, deployed US-only.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><ACheck /> Your data stays yours</div>
+              <p>We never use your data to train shared models. A private, per-provider loop personalizes Zera to each clinician.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><ACheck /> Audit-defensible</div>
+              <p>A complete, timestamped trail from the first word spoken to the final code.</p>
+            </div>
+            <div className="trustitem">
+              <div className="ti"><ACheck /> Provider in control</div>
+              <p>Role-based access, and the clinician always has final sign-off on every note and code.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA · deep-blue card */}
       <section className="careers" id="cta">
         <div className="wrap">
