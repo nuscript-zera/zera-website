@@ -21,26 +21,43 @@ function ACheck() {
 export default function Home() {
   return (
     <>
-      {/* HERO · light */}
-      <header className="hero">
+      {/* HERO · light — split: copy left, ophthalmology clip right */}
+      <header className="hero split">
         <div className="wrap">
-          <span className="eyebrow reveal">Revenue AI for Specialty Medicine</span>
-          <h1 className="reveal">
-            Turn every patient encounter into<br />
-            <span className="accent">clean, defensible revenue.</span>
-          </h1>
-          <p className="sub reveal">
-            You see the patient. Zera captures the encounter, creates the clinical note, generates the codes, and
-            identifies documentation gaps before you sign. Every step stays connected, and every code can be traced back
-            to its source.
-          </p>
-          <div className="cta reveal">
-            <Link href="/contact" className="btn btn-primary">
-              Book a demo
-            </Link>
-            <Link href="/platform" className="btn btn-ghost">
-              See how it works
-            </Link>
+          <div className="hero-copy">
+            <span className="eyebrow reveal">Revenue AI for Specialty Medicine</span>
+            <h1 className="reveal">
+              Turn every patient encounter into <span className="accent">clean, defensible revenue.</span>
+            </h1>
+            <p className="sub reveal">
+              You see the patient. Zera captures the encounter, creates the clinical note, generates the codes, and
+              identifies documentation gaps before you sign. Every step stays connected, and every code can be traced back
+              to its source.
+            </p>
+            <div className="cta reveal">
+              <Link href="/contact" className="btn btn-primary">
+                Book a demo
+              </Link>
+              <Link href="/platform" className="btn btn-ghost">
+                See how it works
+              </Link>
+            </div>
+          </div>
+          <div className="herovid reveal">
+            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+            <video
+              className="herovid-el"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/hero-exam-poster.jpg"
+              aria-label="A patient during a slit-lamp ophthalmology exam"
+            >
+              <source src="/hero-exam.mp4" type="video/mp4" />
+            </video>
+            <span className="vlabel">Specialty exam</span>
           </div>
         </div>
       </header>
