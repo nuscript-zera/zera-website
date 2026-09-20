@@ -72,7 +72,6 @@ export default function ContactForm() {
       <button type="submit" className="btn btn-primary">
         Send inquiry
       </button>
-      <p className="cform-note">We respond within one business day. Opens your email client with the message ready to send.</p>
     </form>
   );
 }
