@@ -65,22 +65,6 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* Why we started with retina */}
-      <section className="section light tint">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">Why retina</span>
-            <h2>Why we started with retina.</h2>
-            <p className="lead">
-              If you can get retina right, you can build for specialty medicine. Retina combines anti-VEGF drug units,
-              OD/OS laterality, disease staging, recurring injections, and MEAT documentation — and the most revenue at
-              stake when any of it is wrong. We started there because we set out to build an intelligence layer that
-              could handle specialty complexity, not the average office visit.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* The name is the promise */}
       <section className="section dark">
         <div className="wrap">

@@ -362,11 +362,11 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .foot{border-top:none;padding:64px 0 45px;background:var(--l-bg2)}
 .foot .belief{padding-bottom:44px;margin-bottom:44px;border-bottom:1px solid var(--l-line)}
 .foot .belief .eyebrow{display:block;color:var(--blue);margin-bottom:18px}
-.foot .belief h2{font-size:clamp(2.1rem,4.8vw,3.4rem);font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:var(--l-ink);max-width:24ch}
+.foot .belief h2{font-size:clamp(2.1rem,4.8vw,3.4rem);font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:var(--l-ink);max-width:28ch}
 .foot .belief h2 .accent{color:var(--blue)}
 .foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
 .foot .brand{margin-bottom:12px;color:var(--l-ink);width:fit-content}
-.foot .foottag{display:block;font-family:'JetBrains Mono',sans-serif;font-weight:500;font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
+.foot .foottag{display:block;font-family:'Figtree',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
 .foot .footlogo{height:28px;width:auto;display:block}
 .foot .desc{color:var(--l-muted);font-size:1.15rem;line-height:1.6;max-width:38ch}
 .foot .footmail{display:inline-block;margin-top:16px;color:var(--blue);font-weight:500;font-size:1.02rem;transition:opacity .2s}
@@ -696,8 +696,8 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
   font-family:'Figtree',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:#7cb0ff;margin-bottom:14px}
 
-/* ---- Home hero: Title-Case Figtree eyebrow (instead of mono all-caps) ---- */
-.hero .eyebrow{font-family:'Figtree',sans-serif;text-transform:none;letter-spacing:0;font-weight:600;font-size:.95rem;color:var(--blue)}
+/* ---- Home hero: Figtree UPPERCASE tracked eyebrow (corporate micro-label) ---- */
+.hero .eyebrow{font-family:'Figtree',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-weight:500;font-size:.78rem;color:var(--blue)}
 
 /* ---- Note/Code/Claim now live in a dedicated dark band: translucent panels on
    the dark section (overrides the global white .flowstep) ---- */
@@ -717,7 +717,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    Applied to every section eyebrow site-wide + inner-page headers
    + focal-card labels. Colors are left to the existing rules
    (brand blue on light, #7cb0ff on dark). The Home hero eyebrow
-   keeps its deliberate Title-Case treatment and is untouched.
+   uses the same uppercase treatment (see the .hero .eyebrow rule).
    Reversible: delete this block to restore the soft capitalize look.
    ============================================================ */
 .section .eyebrow,
@@ -726,10 +726,26 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .thesis .eyebrow,
 .thesis .thesis-card .eyebrow,
 .founder .eyebrow,
-.founder .founder-card .eyebrow{
+.founder .founder-card .eyebrow,
+.foot .belief .eyebrow{
   font-family:'Figtree',sans-serif;
   text-transform:uppercase;
   font-weight:500;
   font-size:.78rem;
   letter-spacing:.22em;
 }
+
+/* ============================================================
+   CONTACT / DEMO PAGE — form intro line + "What you'll see"
+   numbered steps (dark section). Uses dark tokens; --line is the
+   subtle white divider already defined in :root.
+   ============================================================ */
+.contact .cintro{color:var(--l-muted);font-size:1.08rem;line-height:1.5;margin:-10px 0 26px}
+.steps{margin-top:48px;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:auto 1fr;gap:26px;padding:22px 2px;
+  border-bottom:1px solid var(--line);align-items:baseline}
+.step .snum{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.85rem;
+  font-weight:500;letter-spacing:.08em;color:var(--blue4)}
+.step .sbody h4{font-size:1.22rem;font-weight:500;letter-spacing:-0.01em;color:var(--ink)}
+.step .sbody p{color:var(--muted);font-size:1.02rem;line-height:1.55;margin-top:6px;max-width:60ch}
+@media (max-width:640px){.step{gap:18px}}
