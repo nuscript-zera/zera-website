@@ -710,3 +710,26 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 /* Workflow-band payoff line: sentence-case Figtree statement, left-aligned —
    not the mono uppercase label style */
 #workflow .flowcap{font-family:'Figtree',sans-serif;text-transform:none;letter-spacing:0;font-weight:500;font-size:1.05rem;color:var(--muted);text-align:left;margin-top:30px}
+
+/* ============================================================
+   CORPORATE MICRO-LABEL EYEBROWS  (matches nuscriptsystems.com)
+   Figtree · UPPERCASE · 500 weight · 0.22em tracking · 0.78rem.
+   Applied to every section eyebrow site-wide + inner-page headers
+   + focal-card labels. Colors are left to the existing rules
+   (brand blue on light, #7cb0ff on dark). The Home hero eyebrow
+   keeps its deliberate Title-Case treatment and is untouched.
+   Reversible: delete this block to restore the soft capitalize look.
+   ============================================================ */
+.section .eyebrow,
+.careers .eyebrow,
+.pagehead .eyebrow,
+.thesis .eyebrow,
+.thesis .thesis-card .eyebrow,
+.founder .eyebrow,
+.founder .founder-card .eyebrow{
+  font-family:'Figtree',sans-serif;
+  text-transform:uppercase;
+  font-weight:500;
+  font-size:.78rem;
+  letter-spacing:.22em;
+}
