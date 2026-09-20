@@ -28,7 +28,10 @@ export default function ContactPage() {
           <div className="contact">
             <div className="reveal">
               <h2>Book a 30-minute working demo.</h2>
-              <p className="cintro">We&apos;ll bring the platform. You bring the complexity.</p>
+              <p className="cintro">
+                We&apos;ll bring the platform; you bring the complexity — a real encounter, your specialty workflow, and
+                your payer mix. In thirty minutes, you&apos;ll see one clean pass from note to claim.
+              </p>
               <ContactForm />
             </div>
 
@@ -63,68 +66,6 @@ export default function ContactPage() {
                 </a>
               </div>
             </aside>
-          </div>
-        </div>
-      </section>
-
-      {/* What you'll see */}
-      <section className="section dark">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">Live walkthrough</span>
-            <h2>What you&apos;ll see.</h2>
-          </div>
-          <div className="steps reveal">
-            <div className="step">
-              <div className="snum">01</div>
-              <div className="sbody">
-                <h4>Capture</h4>
-                <p>Watch a real encounter become structured clinical documentation.</p>
-              </div>
-            </div>
-            <div className="step">
-              <div className="snum">02</div>
-              <div className="sbody">
-                <h4>Code</h4>
-                <p>See how Zera derives CPT, ICD-10, modifiers, and J-code units directly from the note.</p>
-              </div>
-            </div>
-            <div className="step">
-              <div className="snum">03</div>
-              <div className="sbody">
-                <h4>Validate</h4>
-                <p>See the pre-sign checks identify gaps before the provider signs.</p>
-              </div>
-            </div>
-            <div className="step">
-              <div className="snum">04</div>
-              <div className="sbody">
-                <h4>Trace</h4>
-                <p>Click a code and trace it back to the exact documentation and moment in the encounter.</p>
-              </div>
-            </div>
-            <div className="step">
-              <div className="snum">05</div>
-              <div className="sbody">
-                <h4>Move forward</h4>
-                <p>See how clean clinical information becomes the foundation for the revenue cycle.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Working session */}
-      <section className="section light tint">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">This isn&apos;t a slide presentation</span>
-            <h2>It&apos;s a working session.</h2>
-            <p className="lead">
-              Bring your specialty workflow, typical encounters, payer mix, documentation requirements, and coding
-              challenges. We&apos;ll use them to show you exactly where Zera fits into your existing operation — and what
-              happens when the note, the code, and the revenue cycle finally speak the same language.
-            </p>
           </div>
         </div>
       </section>

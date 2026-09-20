@@ -736,19 +736,9 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 }
 
 /* ============================================================
-   CONTACT / DEMO PAGE — form intro line + "What you'll see"
-   numbered steps (dark section). Uses dark tokens; --line is the
-   subtle white divider already defined in :root.
+   CONTACT / DEMO PAGE — form intro line
    ============================================================ */
-.contact .cintro{color:var(--l-muted);font-size:1.08rem;line-height:1.5;margin:-10px 0 26px}
-.steps{margin-top:48px;border-top:1px solid var(--line)}
-.step{display:grid;grid-template-columns:auto 1fr;gap:26px;padding:22px 2px;
-  border-bottom:1px solid var(--line);align-items:baseline}
-.step .snum{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.85rem;
-  font-weight:500;letter-spacing:.08em;color:var(--blue4)}
-.step .sbody h4{font-size:1.22rem;font-weight:500;letter-spacing:-0.01em;color:var(--ink)}
-.step .sbody p{color:var(--muted);font-size:1.02rem;line-height:1.55;margin-top:6px;max-width:60ch}
-@media (max-width:640px){.step{gap:18px}}
+.contact .cintro{color:var(--l-muted);font-size:1.08rem;line-height:1.6;margin:-10px 0 26px;max-width:52ch}
 
 /* Footer logo tagline → Figtree tracked uppercase.
    Final override: the mono label block (~L548) and the .72rem size
