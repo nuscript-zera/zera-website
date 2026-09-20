@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 export const metadata: Metadata = {
   title: "Platform",
   description:
-    "Zera collapses note, code, and claim into a single AI pass for specialty medicine — with a pre-sign validation gate, word-level provenance, and full-cycle RCM engines built and integrating.",
+    "Zera is the revenue intelligence layer for specialty medicine — it captures the encounter, creates the documentation, generates the coding, and validates the record before it is signed, with word-level provenance. Full-cycle RCM is built and coming next.",
   alternates: { canonical: "https://zera.health/platform" },
 };
 
@@ -35,10 +35,10 @@ export default function ProductPage() {
         eyebrow="Platform"
         title={
           <>
-            One pass from <span className="accent">note to claim</span>.
+            One intelligent workflow <span className="accent">from note to claim</span>.
           </>
         }
-        sub="Zera is the documentation-intelligence hub for specialty medicine. It captures the encounter, produces the note, assigns the codes, and assembles a claim-ready record — with the physician approving at every step, and every code traceable to its source."
+        sub="Zera is the revenue intelligence layer for specialty medicine. It captures the encounter, creates the clinical documentation, generates the coding, and validates the record before it is signed. Every step stays connected, every code has a source, and the provider remains in control."
       >
         <div className="flow flow-mini reveal" role="img" aria-label="The Zera pipeline: Note to Code to Claim">
           <div className="flowstep">
@@ -56,17 +56,17 @@ export default function ProductPage() {
           <div className="flowstep">
             <div className="fk">Submit</div>
             <h4>Claim</h4>
-            <p>Clean and payer-ready, the first time</p>
+            <p>A claim-ready record, fully documented</p>
           </div>
         </div>
       </PageHead>
 
-      {/* Pipeline recap */}
+      {/* Pipeline */}
       <section className="section light">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">The pipeline</span>
-            <h2>Three steps, no handoffs.</h2>
+            <h2>Three steps. One continuous workflow.</h2>
             <p className="lead">
               The same visit, carried end to end by one system instead of four people re-keying it.
             </p>
@@ -77,9 +77,9 @@ export default function ProductPage() {
                 <div className="fk">01 · Capture → Note</div>
                 <h3>The encounter writes itself.</h3>
                 <p>
-                  Ambient conversation is transcribed with medical-grade speech recognition and
-                  shaped into a specialty-aware clinical note. Zera understands the vocabulary of specialty care —
-                  laterality, drug names, injection details — instead of flattening them into generic text.
+                  Ambient conversation is transcribed with medical-grade speech recognition and shaped into a
+                  specialty-aware clinical note. Zera understands the vocabulary of specialty care — laterality, drug
+                  names, injection details — instead of flattening them into generic text.
                 </p>
               </div>
               <div className="fart">
@@ -96,9 +96,9 @@ export default function ProductPage() {
                 <div className="fk">02 · Note → Code</div>
                 <h3>Coding that shows its work.</h3>
                 <p>
-                  Zera assigns CPT and ICD-10 codes, applies the right modifiers, and computes J-code drug units
-                  directly from the note. A cross-walk calculator and modifier engine handle the parts that trip up
-                  human coders under volume — and each suggestion links back to the documentation behind it.
+                  Zera generates CPT and ICD-10 codes, applies the right modifiers, and calculates J-code drug units
+                  directly from the documentation. A cross-walk calculator and modifier engine handle the parts that
+                  trip up human coders under volume — and each suggestion links back to the documentation behind it.
                 </p>
               </div>
               <div className="fart">
@@ -111,11 +111,10 @@ export default function ProductPage() {
             <div className="frow reveal">
               <div className="fbody">
                 <div className="fk">03 · Code → Claim</div>
-                <h3>A clean claim, the first time.</h3>
+                <h3>Clean information moves forward.</h3>
                 <p>
-                  Approved codes assemble into a payer-ready claim with its justification attached. Because the claim is
-                  grounded in the documentation from the start, the errors that drive first-pass denials — missing
-                  detail, mismatched codes, wrong units — never make it out the door.
+                  Once approved, the documented and coded encounter becomes a claim-ready record — grounded in the
+                  documentation from the start, with no re-keying between systems and no context lost between teams.
                 </p>
               </div>
               <div className="fart">
@@ -133,10 +132,11 @@ export default function ProductPage() {
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">The pre-sign gate</span>
-            <h2>Caught before the note is signed.</h2>
+            <h2>Catch the problem before the note is signed.</h2>
             <p className="lead">
-              Everyone else scrubs claims on the way out the door. Zera works one step earlier — on the live, unsigned
-              note, while the patient is still in the exam lane.
+              Most revenue-cycle systems work downstream. Zera works upstream — while the note is still open, it
+              continuously checks the encounter for documentation and coding gaps, and surfaces them to the provider
+              before they sign.
             </p>
           </div>
 
@@ -201,7 +201,8 @@ export default function ProductPage() {
             <div className="gate-note">
               <p>
                 Everything left of the signature is still live and free to fix. Zera works <b>here</b> — upstream, in
-                the lane — so a gap never has the chance to become a denial, an appeal, or a write-off three days later.
+                the lane — so a gap gets resolved in seconds instead of becoming a denial, an appeal, or a write-off
+                weeks later.
               </p>
             </div>
 
@@ -238,11 +239,12 @@ export default function ProductPage() {
       <section className="section dark">
         <div className="wrap">
           <div className="shead reveal">
-            <span className="eyebrow">Traceable truth</span>
+            <span className="eyebrow">Traceable Truth</span>
             <h2>Defensible by design.</h2>
             <p className="lead">
-              The hardest part of trusting AI in revenue is proving where a code came from. Zera makes provenance a
-              first-class feature, not an afterthought.
+              The hardest question in AI-generated coding isn&apos;t &ldquo;what code did the AI choose?&rdquo; — it&apos;s
+              &ldquo;why?&rdquo; Zera makes the answer visible: every phrase timestamped, every code linked to the
+              documentation that supports it.
             </p>
           </div>
           <div className="pillars">
@@ -252,26 +254,25 @@ export default function ProductPage() {
             </div>
             <div className="pillar reveal">
               <h3>Code-to-source links</h3>
-              <p>Click a code and land on the exact moment it was justified. No guessing, no reconstruction.</p>
+              <p>Every code links to the documentation that supports it. If the evidence isn&apos;t there, Zera doesn&apos;t manufacture it.</p>
             </div>
             <div className="pillar reveal">
-              <h3>Approve, don&apos;t retype</h3>
+              <h3>The provider has the final word</h3>
               <p>The clinician reviews and signs off. Corrections improve the record instead of living in a side file.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Works with your stack */}
+      {/* Your EHR stays your EHR */}
       <section className="section light">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">Works with your stack</span>
-            <h2>An intelligence layer, not a rip-and-replace.</h2>
+            <h2>Your EHR stays your EHR.</h2>
             <p className="lead">
-              Zera runs alongside the systems you already own. No EHR replacement, no workflow disruption, no staff
-              layoffs. It produces output in six EHR-ready formats today, with direct, real-time integrations rolling
-              out.
+              Zera adds intelligence without forcing a rip-and-replace. It works alongside the systems your practice
+              already owns — six EHR-ready output formats today, with direct, real-time integrations rolling out.
             </p>
           </div>
           <div className="formats reveal">
@@ -283,6 +284,49 @@ export default function ProductPage() {
         </div>
       </section>
 
+      {/* Built for specialty complexity */}
+      <section className="section light tint team">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Built for specialty medicine</span>
+            <h2>Built for specialty complexity.</h2>
+            <p className="lead">
+              Start where the details matter most — laterality, drug names and doses, disease staging, modifiers, and
+              J-code units. We began with retina, one of the hardest places to get the details right.
+            </p>
+          </div>
+          <div className="specrow reveal">
+            <div className="spec lead-spec">
+              <div className="sk">Near-term focus</div>
+              <h3>Retina</h3>
+              <p>Purpose-built injection workflow — anti-VEGF documentation, J-code units, and laterality.</p>
+            </div>
+            <div className="spec">
+              <div className="sk">Ophthalmology</div>
+              <h3>Glaucoma</h3>
+              <p>Laterality enforcement and diagnostic-test coding logic.</p>
+            </div>
+            <div className="spec">
+              <div className="sk">Ophthalmology</div>
+              <h3>Cataract / Refractive</h3>
+              <p>Pre- and post-op chart fidelity and surgical coding.</p>
+            </div>
+            <div className="spec">
+              <div className="sk">Ophthalmology</div>
+              <h3>Comprehensive</h3>
+              <p>VA, IOP, slit-lamp, fundus, and gonioscopy captured cleanly.</p>
+            </div>
+          </div>
+          <div className="specnext reveal">
+            <span className="snk">Same engine, next</span>
+            <p>
+              <b>Cardiology is next</b> — the same engine, with the vocabulary, workflows and payer rules built for that
+              specialty rather than borrowed from a generic template.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Roadmap */}
       <section className="section light tint">
         <div className="wrap">
@@ -290,8 +334,8 @@ export default function ProductPage() {
             <span className="eyebrow">Roadmap</span>
             <h2>Documentation first. Then the full cycle.</h2>
             <p className="lead">
-              Clean documentation and coding are the foundation everything else stands on. With that in place, Zera
-              extends into the back half of the revenue cycle.
+              Build the revenue cycle on clean information. With the front of the cycle working in production, Zera
+              extends into the rest.
             </p>
           </div>
           <div className="products">
@@ -302,27 +346,36 @@ export default function ProductPage() {
                   <span className="d"></span>Live
                 </span>
               </div>
-              <p>The documentation-intelligence hub: capture, specialty-aware notes, coding, modifiers, J-code units, and Traceable Truth review.</p>
+              <p>The working front of the revenue cycle — capture, documentation, coding, and validation, in production today.</p>
               <ul className="caps">
-                <li>Note capture</li>
+                <li>Ambient capture</li>
+                <li>Specialty-aware notes</li>
                 <li>CPT + ICD-10</li>
                 <li>Modifier engine</li>
                 <li>J-code math</li>
-                <li>Provenance review</li>
+                <li>Pre-sign validation</li>
+                <li>Traceable Truth</li>
               </ul>
             </article>
             <article className="pcard soft reveal">
               <div className="top">
-                <h3>Full revenue cycle</h3>
+                <h3>Built and coming next</h3>
                 <span className="tag dev">
                   <span className="d"></span>Built · Soon
                 </span>
               </div>
               <p>
-                Denial analytics, A/R, payer-rule intelligence, and end-to-end claims. The RCM engines are already
-                built — coming to the platform next.
+                Claim submission, denial analytics, A/R intelligence, payer-rule intelligence, and end-to-end RCM
+                automation. The RCM engines are already built — coming to the platform next.
               </p>
             </article>
+          </div>
+          <div className="specnext reveal">
+            <span className="snk">The destination</span>
+            <p>
+              <b>An autonomous revenue platform for specialty medicine</b> — one intelligent system carrying clinical
+              truth all the way to payment.
+            </p>
           </div>
         </div>
       </section>
