@@ -21,10 +21,10 @@ function ACheck() {
 export default function Home() {
   return (
     <>
-      {/* HERO · dark */}
+      {/* HERO · light */}
       <header className="hero">
         <div className="wrap">
-          <span className="eyebrow reveal">Revenue AI for specialty medicine</span>
+          <span className="eyebrow reveal">Revenue AI for Specialty Medicine</span>
           <h1 className="reveal">
             Turn every patient encounter into<br />
             <span className="accent">clean, defensible revenue.</span>
@@ -42,8 +42,17 @@ export default function Home() {
               See how it works
             </Link>
           </div>
+        </div>
+      </header>
 
-          {/* SIGNATURE — Note → Code → Claim */}
+      {/* NOTE. CODE. CLAIM. · dark workflow band */}
+      <section className="section dark" id="workflow">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">The workflow</span>
+            <h2>Note. Code. Claim.</h2>
+            <p className="lead">One intelligent workflow. Zero unnecessary handoffs.</p>
+          </div>
           <div className="flow reveal" role="img" aria-label="The Zera pipeline: Note to Code to Claim">
             <div className="flowstep">
               <span className="fnum">01</span>
@@ -66,11 +75,11 @@ export default function Home() {
               <p>Approved documentation and coding flow into a claim-ready record — no re-keying, no lost context.</p>
             </div>
           </div>
-          <p className="flowcap reveal">
+          <p className="flowcap reveal" style={{ textAlign: "center", marginTop: "34px" }}>
             Less documentation <b>·</b> less rework <b>·</b> fewer revenue leaks
           </p>
         </div>
-      </header>
+      </section>
 
       {/* THE PROBLEM · light */}
       <section className="section light" id="problem">
