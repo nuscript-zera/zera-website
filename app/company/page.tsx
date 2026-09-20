@@ -51,7 +51,7 @@ export default function CompanyPage() {
       </section>
 
       {/* From documentation to revenue */}
-      <section className="section dark">
+      <section className="section light">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">Proof in production</span>

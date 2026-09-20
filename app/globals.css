@@ -747,22 +747,32 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .foot .foottag{font-family:'Figtree',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
 
 /* ============================================================
-   LEGAL PAGES — numbered sections (§ 01, § 02 …) sitting in a
-   left gutter, matching the numbered-section signature on
-   nuscriptsystems.com. The whole text column is indented so body
-   copy lines up under the headings; section numbers hang in the
-   gutter. Add class "legal" to the .prose wrapper on Privacy/Terms.
-   Numbering is automatic via a CSS counter — reorder or add sections
-   and they renumber themselves.
+   LEGAL PAGES — inline numbered section headings ("1. Heading"),
+   matching dictra.health/privacy-policy: the number is part of the
+   heading, no gutter, no indent, with generous spacing between
+   sections. Add class "legal" to the .prose wrapper on Privacy /
+   Terms. Numbering is automatic via a CSS counter, so sections
+   renumber themselves if reordered.
    ============================================================ */
-.prose.legal{counter-reset:sec;padding-left:3.4rem}
-.prose.legal h2{position:relative;counter-increment:sec}
-.prose.legal h2::before{
-  content:"§ " counter(sec,decimal-leading-zero);
-  position:absolute;left:-3.4rem;top:.12em;
-  font-family:'JetBrains Mono',ui-monospace,monospace;
-  font-size:.82rem;font-weight:500;letter-spacing:.03em;color:var(--blue)}
-@media (max-width:640px){
-  .prose.legal{padding-left:2.6rem}
-  .prose.legal h2::before{left:-2.6rem;font-size:.72rem}
+.prose.legal{counter-reset:sec;padding-left:clamp(0px,7vw,104px)}
+.prose.legal h2{counter-increment:sec;font-size:1.7rem;font-weight:600;
+  letter-spacing:-0.015em;margin:52px 0 14px}
+.prose.legal h2::before{content:counter(sec) ". "}
+@media (max-width:768px){.prose.legal{padding-left:0}}
+
+/* ============================================================
+   FOUNDER'S OFFICE on a LIGHT section — fully light card
+   (light surface, dark text, brand-blue accents). Scoped to
+   .section.light so the dark-gradient treatment still applies
+   anywhere the card sits on a dark section.
+   ============================================================ */
+.section.light.founder .founder-card{
+  background:#fff;
+  border:1px solid var(--l-line);
+  box-shadow:0 18px 44px -26px rgba(15,23,41,.18);
 }
+.section.light.founder .founder-card .eyebrow{color:var(--blue)}
+.section.light.founder .quote{color:var(--l-ink)}
+.section.light.founder .quote .accent{color:var(--blue)}
+.section.light.founder p{color:var(--l-muted)}
+.section.light.founder .fmail{color:var(--blue)}

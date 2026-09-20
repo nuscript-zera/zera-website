@@ -71,7 +71,7 @@ export default function ContactPage() {
       </section>
 
       {/* Founder's office */}
-      <section className="section dark founder">
+      <section className="section light founder">
         <div className="wrap">
           <div className="founder-card reveal">
             <span className="eyebrow">Founder&apos;s office</span>
