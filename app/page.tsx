@@ -75,8 +75,8 @@ export default function Home() {
               <p>Approved documentation and coding flow into a claim-ready record — no re-keying, no lost context.</p>
             </div>
           </div>
-          <p className="flowcap reveal" style={{ textAlign: "center", marginTop: "34px" }}>
-            Less documentation <b>·</b> less rework <b>·</b> fewer revenue leaks
+          <p className="flowcap reveal">
+            Less documentation. Less rework. Fewer revenue leaks.
           </p>
         </div>
       </section>

@@ -706,3 +706,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .section.dark .flowstep p{color:var(--muted)}
 .section.dark .flowstep .fk{color:var(--blue4)}
 .section.dark .flowstep .fnum{color:var(--faint)}
+
+/* Workflow-band payoff line: sentence-case Figtree statement, left-aligned —
+   not the mono uppercase label style */
+#workflow .flowcap{font-family:'Figtree',sans-serif;text-transform:none;letter-spacing:0;font-weight:500;font-size:1.05rem;color:var(--muted);text-align:left;margin-top:30px}
