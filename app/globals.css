@@ -767,9 +767,9 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    anywhere the card sits on a dark section.
    ============================================================ */
 .section.light.founder .founder-card{
-  background:#fff;
-  border:1px solid var(--l-line);
-  box-shadow:0 18px 44px -26px rgba(15,23,41,.18);
+  background:linear-gradient(135deg,#F4F8FF 0%,#EAF1FC 55%,#E2ECFB 100%);
+  border:1px solid #DCE6F6;
+  box-shadow:none;
 }
 .section.light.founder .founder-card .eyebrow{color:var(--blue)}
 .section.light.founder .quote{color:var(--l-ink)}
