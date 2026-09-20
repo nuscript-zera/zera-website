@@ -709,7 +709,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 
 /* Workflow-band payoff line: sentence-case Figtree statement, left-aligned —
    not the mono uppercase label style */
-#workflow .flowcap{font-family:'Figtree',sans-serif;text-transform:none;letter-spacing:0;font-weight:500;font-size:1.05rem;color:var(--muted);text-align:left;margin-top:30px}
+#workflow .flowcap{font-family:'JetBrains Mono',ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-weight:500;font-size:.72rem;color:var(--muted);text-align:left;margin-top:30px}
 
 /* ============================================================
    CORPORATE MICRO-LABEL EYEBROWS  (matches nuscriptsystems.com)

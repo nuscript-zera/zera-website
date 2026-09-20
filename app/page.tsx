@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
           <p className="flowcap reveal">
-            Less documentation. Less rework. Fewer revenue leaks.
+            Less documentation · Less rework · Fewer revenue leaks
           </p>
         </div>
       </section>
