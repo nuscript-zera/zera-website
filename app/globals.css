@@ -695,3 +695,11 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .founder .founder-card .eyebrow{
   font-family:'Figtree',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:#7cb0ff;margin-bottom:14px}
+
+/* ---- Home hero Note/Code/Claim cards: dark theme — navy cards that stand out
+   on the light hero, instead of white-on-white ---- */
+.hero .flowstep{background:var(--bg);border-color:rgba(255,255,255,.08);box-shadow:0 16px 36px -18px rgba(11,22,40,.4);backdrop-filter:none}
+.hero .flowstep h4{color:var(--ink)}
+.hero .flowstep p{color:var(--muted)}
+.hero .flowstep .fk{color:var(--blue4)}
+.hero .flowstep .fnum{color:var(--faint)}
