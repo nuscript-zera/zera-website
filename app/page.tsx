@@ -10,9 +10,9 @@ function Chevron() {
   );
 }
 
-function Check() {
+function ACheck() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M20 6 9 17l-5-5" />
     </svg>
   );
@@ -26,12 +26,13 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow reveal">Revenue AI for specialty medicine</span>
           <h1 className="reveal">
-            Note. Code. Claim.<br />
-            <span className="accent">One AI. Zero handoffs.</span>
+            Turn every patient encounter into<br />
+            <span className="accent">clean, defensible revenue.</span>
           </h1>
           <p className="sub reveal">
-            You see the patient. Zera writes the note, assigns the codes, and builds the claim — then flags what&apos;s
-            wrong while you can still fix it. Every code points back to the words you actually said.
+            You see the patient. Zera captures the encounter, creates the clinical note, generates the codes, and
+            identifies documentation gaps before you sign. Every step stays connected, and every code can be traced back
+            to its source.
           </p>
           <div className="cta reveal">
             <Link href="/contact" className="btn btn-primary">
@@ -48,25 +49,25 @@ export default function Home() {
               <span className="fnum">01</span>
               <div className="fk">Capture</div>
               <h4>Note</h4>
-              <p>The conversation becomes a structured, specialty-aware note. No typing. No templates. No after-hours charting.</p>
+              <p>Zera listens to the visit and turns the conversation into a structured, specialty-aware clinical note.</p>
             </div>
             <Chevron />
             <div className="flowstep">
               <span className="fnum">02</span>
               <div className="fk">Encode</div>
               <h4>Code</h4>
-              <p>CPT, ICD-10, modifiers and J-code units come straight from what was documented — not from a guess.</p>
+              <p>CPT, ICD-10, modifiers and J-code units, straight from the documentation. If it isn&apos;t supported, Zera doesn&apos;t guess.</p>
             </div>
             <Chevron />
             <div className="flowstep">
               <span className="fnum">03</span>
-              <div className="fk">Submit</div>
+              <div className="fk">Claim</div>
               <h4>Claim</h4>
-              <p>A clean, defensible claim the first time — nothing re-keyed, nothing lost between people.</p>
+              <p>Approved documentation and coding flow into a claim-ready record — no re-keying, no lost context.</p>
             </div>
           </div>
           <p className="flowcap reveal">
-            Zera won&apos;t let you sign a note that&apos;s coded wrong <b>·</b> caught in the lane, not scrubbed downstream
+            Less documentation <b>·</b> less rework <b>·</b> fewer revenue leaks
           </p>
         </div>
       </header>
@@ -76,12 +77,12 @@ export default function Home() {
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">The problem</span>
-            <h2>The error is made in the room. It&apos;s found six weeks later.</h2>
+            <h2>Your revenue cycle starts in the exam room.</h2>
             <p className="lead">
-              You inject the right eye. The code says left. Nobody catches it until the denial comes back — and by then
-              you&apos;ve moved on, the patient has moved on, and someone in billing is reconstructing a visit they
-              weren&apos;t in. Every handoff between you, the scribe, the coder and the biller loses a little more of
-              what actually happened.
+              A missing diagnosis. The wrong laterality. An incomplete procedure note. A missed HCC. The wrong modifier.
+              Incorrect drug units. They look like small documentation problems — but downstream they become coding
+              corrections, claim rework, denials, appeals, and lost revenue. Zera catches it before it leaves the room,
+              working where the information is created: while the encounter is still live and the note is still editable.
             </p>
           </div>
           <div className="stats reveal">
@@ -104,162 +105,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY NOW · light gradient panel */}
-      <section className="section dark thesis" id="thesis">
+      {/* PRE-SIGN GATE · light tint */}
+      <section className="section light tint" id="presign">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">The pre-sign gate</span>
+            <h2>Don&apos;t discover the error six weeks later.</h2>
+            <p className="lead">
+              Fix it while the patient is still in the lane. Most systems check the claim after the work is already
+              done — Zera works earlier. As the note is being created, it checks the encounter and surfaces anything that
+              doesn&apos;t line up before the provider signs. The best time to fix a documentation problem is before it
+              becomes a billing problem.
+            </p>
+          </div>
+          <div className="analyzers reveal">
+            <div className="ahead">Five checks run concurrently, as the note is composed</div>
+            <div className="agrid">
+              <div className="analyzer">
+                <div className="an"><ACheck /> Laterality</div>
+                <div className="ad">OD / OS / OU enforcement</div>
+              </div>
+              <div className="analyzer">
+                <div className="an"><ACheck /> HCC capture</div>
+                <div className="ad">Risk-adjustment conditions flagged</div>
+              </div>
+              <div className="analyzer">
+                <div className="an"><ACheck /> MEAT validation</div>
+                <div className="ad">Documentation supports each condition</div>
+              </div>
+              <div className="analyzer">
+                <div className="an"><ACheck /> ICD-10 specificity</div>
+                <div className="ad">Vague codes flagged for precision</div>
+              </div>
+              <div className="analyzer">
+                <div className="an"><ACheck /> J-code units</div>
+                <div className="ad">Drug-unit math reconciled</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NOT ANOTHER SCRIBE · dark */}
+      <section className="section dark thesis" id="layer">
         <div className="wrap">
           <div className="thesis-card reveal">
-            <span className="eyebrow">Why now</span>
+            <span className="eyebrow">The intelligence layer</span>
             <p>
-              Almost every denial is decided upstream, in the note, long before a biller sees the claim. The old answer
-              was more people at every handoff and a scrubber at the end. Modern reasoning models let us do the
-              opposite:{" "}
-              <span className="accent">
-                catch it on the live note and let you fix it before you sign — while the patient is still in the lane,
-                when the fix costs nothing.
-              </span>{" "}
-              That&apos;s Zera.
+              Ambient documentation is only the first step. Zera connects the entire path —{" "}
+              <span className="accent">encounter → documentation → coding → validation → claim</span> — into one
+              continuous workflow. That&apos;s the difference between an AI scribe and a revenue platform.
             </p>
           </div>
         </div>
       </section>
-      {/* END WHY NOW */}
 
-      {/* HOW ZERA WORKS · light */}
-      <section className="section light tint" id="how">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">What you get</span>
-            <h2>Not another scribe. The part that decides whether you get paid.</h2>
-            <p className="lead">
-              Zera works at the front of the revenue cycle — where clean claims are actually won or lost.
-            </p>
-          </div>
-          <div className="products">
-            <article className="pcard reveal">
-              <div className="top">
-                <h3>Zera Platform</h3>
-                <span className="tag live">
-                  <span className="d"></span>Live
-                </span>
-              </div>
-              <p>
-                Zera listens to the visit, writes the note, and works out the codes, modifiers and J-code units that go
-                with it. Then it checks its own work: if the eye is wrong, the drug isn&apos;t identified, or the code
-                isn&apos;t supported by what you documented, it refuses to let the note be signed and tells you exactly
-                why — sourced to the CMS release it checked against. Built for the complexity of specialty medicine,
-                not the average office visit.
-              </p>
-              <ul className="caps">
-                <li>Speech-to-structure</li>
-                <li>CPT + ICD-10 coding</li>
-                <li>Modifier engine</li>
-                <li>J-code unit math</li>
-                <li>Pre-sign gate</li>
-                <li>Traceable Truth</li>
-                <li>HIPAA + BAA</li>
-              </ul>
-              <Link className="plink" href="/platform">
-                Explore the platform →
-              </Link>
-            </article>
-            <article className="pcard soft reveal">
-              <div className="top">
-                <h3>Full-cycle RCM</h3>
-                <span className="tag dev">
-                  <span className="d"></span>In development
-                </span>
-              </div>
-              <p>
-                Claim submission, denial analytics and A/R come next — built on the same clean documentation data, so
-                the claim arrives already carrying its own justification.
-              </p>
-              <Link className="plink muted" href="/platform">
-                See the roadmap →
-              </Link>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* TRACEABLE TRUTH · dark */}
-      <section className="section dark" id="trust">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">Traceable Truth</span>
-            <h2>Click a code. Hear yourself say it.</h2>
-            <p className="lead">
-              Zera doesn&apos;t ask you to trust a black box. Every code links to the exact, timestamped second of the
-              encounter it came from — click it, play it, read the line. That&apos;s what makes it defensible in an
-              audit, and what makes it signable without reading the whole note twice.
-            </p>
-          </div>
-          <div className="pillars">
-            <div className="pillar reveal">
-              <h3>Word-level provenance</h3>
-              <p>Timestamped transcript tied to a synced audio player. Nothing is asserted without a source.</p>
-            </div>
-            <div className="pillar reveal">
-              <h3>Abstains, never guesses</h3>
-              <p>If the dose wasn&apos;t stated or the eye wasn&apos;t documented, Zera says so. It shows no code and no dollar figure it can&apos;t source.</p>
-            </div>
-            <div className="pillar reveal">
-              <h3>You have the last word</h3>
-              <p>Zera drafts; you approve. Your edits flow back through the record, not around it.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECURITY & TRUST · light */}
-      <section className="section light" id="security">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">Security &amp; trust</span>
-            <h2>Your patients&apos; data, handled the way you&apos;d want yours handled.</h2>
-            <p className="lead">
-              Zera is engineered for protected health information from the ground up — so how your data is handled is
-              never an open question.
-            </p>
-          </div>
-          <div className="trustgrid reveal">
-            <div className="trustitem">
-              <div className="ti"><Check /> BAA with every practice</div>
-              <p>We sign a Business Associate Agreement before any protected health information is processed — no exceptions.</p>
-            </div>
-            <div className="trustitem">
-              <div className="ti"><Check /> SOC 2 Type I certified</div>
-              <p>Independently audited security controls, with SOC 2 Type II in progress.</p>
-            </div>
-            <div className="trustitem">
-              <div className="ti"><Check /> Isolated by tenant</div>
-              <p>Each organization&apos;s data is separated with customer-scoped keys, deployed US-only.</p>
-            </div>
-            <div className="trustitem">
-              <div className="ti"><Check /> Your data stays yours</div>
-              <p>We never use your data to train shared models. A private, per-provider loop personalizes Zera to each clinician.</p>
-            </div>
-            <div className="trustitem">
-              <div className="ti"><Check /> Audit-defensible</div>
-              <p>A complete, timestamped trail from the first word spoken to the final code.</p>
-            </div>
-            <div className="trustitem">
-              <div className="ti"><Check /> Provider in control</div>
-              <p>Role-based access, and the clinician always has final sign-off on every note and code.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHO IT'S FOR · light tint */}
+      {/* BUILT FOR SPECIALTY MEDICINE · light tint */}
       <section className="section light tint team" id="who">
         <div className="wrap">
           <div className="shead reveal">
-            <span className="eyebrow">Who it&apos;s for</span>
-            <h2>We started with retina, because it&apos;s the hardest.</h2>
+            <span className="eyebrow">Built for specialty medicine</span>
+            <h2>Specialty care isn&apos;t generic medicine.</h2>
             <p className="lead">
-              Anti-VEGF units. Which eye. Staging that changes the code. Injections every four weeks on the same
-              patient. If a coding engine survives retina, everything after it is easier — so that&apos;s where we
-              started, and we&apos;re working outward from there across ophthalmology.
+              The details matter: laterality, drug names and doses, procedure details, disease staging, modifiers,
+              J-code units, and specialty-specific documentation. We started with retina because it&apos;s one of the
+              hardest places to get the details right — and we&apos;re working outward from there across ophthalmology.
             </p>
           </div>
           <div className="specrow reveal">
@@ -291,21 +201,121 @@ export default function Home() {
               specialty rather than borrowed from a generic template.
             </p>
           </div>
-          <Link className="tlink reveal" href="/platform">
-            See how the platform works →
-          </Link>
         </div>
       </section>
 
-      {/* CTA · deep-blue card with right-flush arc decoration */}
+      {/* TRACEABLE TRUTH · dark */}
+      <section className="section dark" id="trust">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Traceable Truth</span>
+            <h2>Click a code. Hear yourself say it.</h2>
+            <p className="lead">
+              Zera makes every important coding decision traceable. Click a code and see the documentation behind it —
+              follow the timestamp, listen to the exact moment in the encounter. AI does the work; you remain in control.
+            </p>
+          </div>
+          <div className="pillars">
+            <div className="pillar reveal">
+              <h3>Word-level provenance</h3>
+              <p>Every phrase is timestamped and tied to a synced audio player. Nothing is asserted without a source.</p>
+            </div>
+            <div className="pillar reveal">
+              <h3>Abstains, never guesses</h3>
+              <p>If the dose wasn&apos;t stated or the eye wasn&apos;t documented, Zera says so. It shows no code it can&apos;t support.</p>
+            </div>
+            <div className="pillar reveal">
+              <h3>You have the last word</h3>
+              <p>Zera drafts; you approve. Your edits flow back through the record, not around it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WORKS WITH YOUR SYSTEMS · light */}
+      <section className="section light" id="stack">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Works with your stack</span>
+            <h2>Works with the systems you already have.</h2>
+            <p className="lead">
+              An intelligence layer, not another system you have to replace. Zera isn&apos;t your EHR — it works
+              alongside the systems your practice already uses. No rip-and-replace, no workflow overhaul, no rebuilding
+              your practice around another piece of software.
+            </p>
+          </div>
+          <div className="formats reveal">
+            <span className="fmt"><b>6</b> EHR-ready output formats</span>
+            <span className="fmt">Runs alongside your EHR</span>
+            <span className="fmt">Direct integrations — rolling out</span>
+            <span className="fmt">No rip-and-replace</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ROADMAP · light tint */}
+      <section className="section light tint" id="roadmap">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Roadmap</span>
+            <h2>From documentation to the full revenue cycle.</h2>
+            <p className="lead">
+              Today, Zera fixes the front of the revenue cycle. Tomorrow, it runs more of it — one intelligent revenue
+              system, from patient encounter to payment.
+            </p>
+          </div>
+          <div className="products">
+            <article className="pcard reveal">
+              <div className="top">
+                <h3>Available today</h3>
+                <span className="tag live">
+                  <span className="d"></span>Live
+                </span>
+              </div>
+              <p>The working front of the revenue cycle — capture, documentation, coding and validation, running in production now.</p>
+              <ul className="caps">
+                <li>Ambient capture</li>
+                <li>Specialty-aware notes</li>
+                <li>CPT + ICD-10 coding</li>
+                <li>Modifier intelligence</li>
+                <li>J-code unit calculation</li>
+                <li>Pre-sign validation</li>
+                <li>Traceable Truth</li>
+              </ul>
+              <Link className="plink" href="/platform">
+                Explore the platform →
+              </Link>
+            </article>
+            <article className="pcard soft reveal">
+              <div className="top">
+                <h3>Coming next</h3>
+                <span className="tag dev">
+                  <span className="d"></span>Built · Soon
+                </span>
+              </div>
+              <p>
+                Claims, denial analytics, A/R intelligence, payer-rule intelligence, and end-to-end revenue-cycle
+                automation — built on the same clean documentation data, so the claim arrives already carrying its own
+                justification.
+              </p>
+              <Link className="plink muted" href="/platform">
+                See the roadmap →
+              </Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA · deep-blue card */}
       <section className="careers" id="cta">
         <div className="wrap">
           <div className="cta-card reveal">
             <div className="cta-body">
-              <h2>Built by people who&apos;ve done this work for 25 years.</h2>
+              <h2>Built by people who have done the work.</h2>
               <p className="lead">
-                Zera comes from the team behind Dictra, which processes 2,000+ clinical minutes a day in production at
-                99.5% audited accuracy. We&apos;re opening a founding cohort of specialty practices now.
+                25+ years inside healthcare documentation and revenue cycle. Zera comes from the team behind Dictra, a
+                production AI clinical-documentation platform processing 2,000+ clinical minutes a day at 99.5% audited
+                accuracy. Production is the test — not the launch. The path from care to payment should be one clean line.
               </p>
               <div className="cta">
                 <Link href="/contact" className="btn btn-primary">
