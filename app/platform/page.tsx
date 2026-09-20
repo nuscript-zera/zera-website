@@ -327,6 +327,39 @@ export default function ProductPage() {
         </div>
       </section>
 
+      {/* Depth vs breadth — positioning contrast */}
+      <section className="section dark">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Depth, not breadth</span>
+            <h2>Generic AI codes the visit. Zera codes the specialty.</h2>
+            <p className="lead">
+              Most ambient tools are tuned across all of medicine, so they&apos;re strongest on the general office
+              visit. Specialty revenue lives somewhere else — in the drug units, the modifiers, and the laterality that
+              general-purpose models treat as edge cases.
+            </p>
+          </div>
+          <div className="vs reveal">
+            <div className="vs-col them">
+              <div className="vs-h">General-purpose ambient AI</div>
+              <ul>
+                <li>Tuned across all of medicine</li>
+                <li>Optimized for the general office visit — E/M, problem lists, risk capture</li>
+                <li>Specialty procedural detail — drug units, modifiers, laterality — treated as edge cases</li>
+              </ul>
+            </div>
+            <div className="vs-col us">
+              <div className="vs-h">Zera — built for specialty</div>
+              <ul>
+                <li><ACheck /> Built for one specialty at a time — its vocabulary, modifiers, and payer rules</li>
+                <li><ACheck /> The procedural details are the product, not the exception</li>
+                <li><ACheck /> Validated before signature, with every code traceable to its source</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Roadmap */}
       <section className="section light tint">
         <div className="wrap">

@@ -797,3 +797,22 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
   .hero.split .wrap{grid-template-columns:1fr;gap:34px}
   .hero.split h1,.hero.split .sub{max-width:none}
 }
+
+/* ============================================================
+   PLATFORM — "Depth, not breadth" positioning contrast (dark).
+   Two columns: the generic alternative (muted) vs Zera (accented).
+   ============================================================ */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:48px}
+.vs-col{border:1px solid var(--line);border-radius:16px;padding:28px 26px}
+.vs-col.them{background:rgba(255,255,255,.02)}
+.vs-col.us{border-color:rgba(96,165,250,.35);background:rgba(37,99,235,.10)}
+.vs-col .vs-h{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.68rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:20px}
+.vs-col.us .vs-h{color:var(--blue4)}
+.vs-col ul{list-style:none;margin:0;padding:0;display:grid;gap:15px}
+.vs-col li{font-size:1.02rem;line-height:1.5;color:var(--muted)}
+.vs-col.them li{padding-left:24px;position:relative}
+.vs-col.them li::before{content:"—";position:absolute;left:0;color:var(--faint)}
+.vs-col.us li{display:flex;gap:11px;align-items:flex-start;color:var(--ink)}
+.vs-col.us li svg{width:17px;height:17px;color:var(--blue4);flex:none;margin-top:3px}
+@media (max-width:760px){.vs{grid-template-columns:1fr}}
