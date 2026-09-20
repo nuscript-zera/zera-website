@@ -109,32 +109,8 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* Founder */}
-      <section className="section light tint">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">Founder-led, operator-built</span>
-            <h2>Who&apos;s behind Zera.</h2>
-            <p className="lead">
-              Zera is led by a founder who has spent a career inside the work it automates — someone personally
-              accountable for getting your coding and claims right, backed by a track record of shipping production
-              healthcare AI at scale.
-            </p>
-          </div>
-          <div className="person reveal" style={{ maxWidth: "720px", marginTop: "40px" }}>
-            <div className="prole">Founder &amp; CEO</div>
-            <h3>Arvind Manohar</h3>
-            <p>
-              Twenty-five years across healthcare documentation and revenue cycle, and the technical founder behind both
-              Dictra and Zera. He&apos;s built the platform hands-on — and run the operations it&apos;s designed to
-              transform.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* How we work */}
-      <section className="section dark">
+      <section className="section light tint">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">How we work</span>
@@ -162,20 +138,6 @@ export default function CompanyPage() {
                 Production is the test, not the launch.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our belief */}
-      <section className="section light">
-        <div className="wrap">
-          <div className="shead reveal">
-            <span className="eyebrow">Our belief</span>
-            <h2>The path from care to payment should be one clean line.</h2>
-            <p className="lead">
-              Clinical truth should travel all the way to revenue — undistorted, unrepeated, unlost. That&apos;s what
-              we&apos;re building.
-            </p>
           </div>
         </div>
       </section>
