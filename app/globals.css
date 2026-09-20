@@ -749,3 +749,30 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .step .sbody h4{font-size:1.22rem;font-weight:500;letter-spacing:-0.01em;color:var(--ink)}
 .step .sbody p{color:var(--muted);font-size:1.02rem;line-height:1.55;margin-top:6px;max-width:60ch}
 @media (max-width:640px){.step{gap:18px}}
+
+/* Footer logo tagline → Figtree tracked uppercase.
+   Final override: the mono label block (~L548) and the .72rem size
+   rule (~L621) also target .foot .foottag and come after L369, so
+   this last rule is what actually lands. */
+.foot .foottag{font-family:'Figtree',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+
+/* ============================================================
+   LEGAL PAGES — numbered sections (§ 01, § 02 …) sitting in a
+   left gutter, matching the numbered-section signature on
+   nuscriptsystems.com. The whole text column is indented so body
+   copy lines up under the headings; section numbers hang in the
+   gutter. Add class "legal" to the .prose wrapper on Privacy/Terms.
+   Numbering is automatic via a CSS counter — reorder or add sections
+   and they renumber themselves.
+   ============================================================ */
+.prose.legal{counter-reset:sec;padding-left:3.4rem}
+.prose.legal h2{position:relative;counter-increment:sec}
+.prose.legal h2::before{
+  content:"§ " counter(sec,decimal-leading-zero);
+  position:absolute;left:-3.4rem;top:.12em;
+  font-family:'JetBrains Mono',ui-monospace,monospace;
+  font-size:.82rem;font-weight:500;letter-spacing:.03em;color:var(--blue)}
+@media (max-width:640px){
+  .prose.legal{padding-left:2.6rem}
+  .prose.legal h2::before{left:-2.6rem;font-size:.72rem}
+}

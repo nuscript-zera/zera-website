@@ -18,7 +18,7 @@ export default function TermsPage() {
 
       <section className="section light">
         <div className="wrap">
-          <div className="prose reveal">
+          <div className="prose legal reveal">
             <p className="upd">Last updated: 5 July 2026</p>
 
             <p>
