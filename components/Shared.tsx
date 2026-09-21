@@ -15,6 +15,37 @@ export function PageHead({ eyebrow, title, sub, note, children }: { eyebrow: str
   );
 }
 
+export function BleedHead({
+  title,
+  sub,
+  image,
+  imageAlt = "",
+  children,
+}: {
+  title: ReactNode;
+  sub?: string;
+  image: string;
+  imageAlt?: string;
+  children?: ReactNode;
+}) {
+  return (
+    <header className="hero fb bleedhead">
+      <div className="hero-bg" aria-hidden="true">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="hero-bg-el" src={image} alt={imageAlt} />
+      </div>
+      <div className="hero-scrim" aria-hidden="true" />
+      <div className="wrap">
+        <div className="fbcopy reveal">
+          <h1>{title}</h1>
+          {sub && <p className="sub">{sub}</p>}
+          {children}
+        </div>
+      </div>
+    </header>
+  );
+}
+
 export function CtaBand() {
   return (
     <section className="careers">

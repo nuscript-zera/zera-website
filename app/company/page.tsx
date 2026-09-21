@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { PageHead, CtaBand } from "@/components/Shared";
+import Link from "next/link";
+import { BleedHead, CtaBand } from "@/components/Shared";
 
 export const metadata: Metadata = {
   title: "Company",
@@ -11,22 +12,21 @@ export const metadata: Metadata = {
 export default function CompanyPage() {
   return (
     <>
-      <PageHead
-        eyebrow="Company"
-        title={
-          <>
-            We&apos;re building the <span className="accent">revenue engine</span> for specialty medicine.
-          </>
-        }
+      <BleedHead
+        title="We&apos;re building the revenue engine for specialty medicine."
         sub="Because we&apos;ve spent decades inside the work we&apos;re automating. Zera is a product of NuScript Systems, Inc. — production-grade AI for the journey from clinical care to revenue."
-        note={
-          <>
-            <span className="ci">25+ years in healthcare documentation &amp; RCM</span>
-            <span className="sep">·</span>
-            <span className="ci">Production AI shipping at scale today</span>
-          </>
-        }
-      />
+        image="/hero-company.jpg"
+        imageAlt="The Zera team at work"
+      >
+        <div className="cta">
+          <Link href="/contact" className="btn btn-primary">
+            Book a demo
+          </Link>
+          <Link href="/platform" className="btn btn-ghost">
+            See the platform
+          </Link>
+        </div>
+      </BleedHead>
 
       {/* Our story */}
       <section className="section light">

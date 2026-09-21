@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PageHead, CtaBand } from "@/components/Shared";
+import { BleedHead, CtaBand } from "@/components/Shared";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
@@ -18,51 +18,27 @@ function ACheck() {
   );
 }
 
-function Chevron() {
-  return (
-    <div className="flowchev" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8 5l7 7-7 7" />
-      </svg>
-    </div>
-  );
-}
-
 export default function ProductPage() {
   return (
     <>
-      <PageHead
-        eyebrow="Platform"
-        title={
-          <>
-            One intelligent workflow <span className="accent">from note to claim</span>.
-          </>
-        }
-        sub="Zera is the revenue intelligence layer for specialty medicine. It captures the encounter, creates the clinical documentation, generates the coding, and validates the record before it is signed. Every step stays connected, every code has a source, and the provider remains in control."
+      <BleedHead
+        title="One intelligent workflow from note to claim."
+        sub="Zera is the revenue intelligence layer for specialty medicine — it captures the encounter, generates the coding, and validates the record before it is signed, with word-level provenance."
+        image="/hero-platform.jpg"
+        imageAlt="Abstract blue cubes"
       >
-        <div className="flow flow-mini reveal" role="img" aria-label="The Zera pipeline: Note to Code to Claim">
-          <div className="flowstep">
-            <div className="fk">Capture</div>
-            <h4>Note</h4>
-            <p>Ambient encounter → specialty-aware note</p>
-          </div>
-          <Chevron />
-          <div className="flowstep">
-            <div className="fk">Encode</div>
-            <h4>Code</h4>
-            <p>CPT, ICD-10, modifiers &amp; J-code units</p>
-          </div>
-          <Chevron />
-          <div className="flowstep">
-            <div className="fk">Submit</div>
-            <h4>Claim</h4>
-            <p>A claim-ready record, fully documented</p>
-          </div>
+        <div className="cta">
+          <Link href="/contact" className="btn btn-primary">
+            Book a demo
+          </Link>
+          <a href="#pipeline" className="btn btn-ghost">
+            See the pipeline
+          </a>
         </div>
-      </PageHead>
+      </BleedHead>
 
       {/* Pipeline */}
-      <section className="section light">
+      <section className="section light" id="pipeline">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">The pipeline</span>

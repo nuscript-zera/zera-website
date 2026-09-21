@@ -804,6 +804,8 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .hero.fb .cta .btn{padding:14px 22px;font-size:1rem}
 .hero.fb .btn-ghost{border-color:rgba(255,255,255,.42);color:#fff;background:transparent}
 .hero.fb .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.10);color:#fff}
+/* Inner-page image heroes (Platform/Company/Contact) sit shorter than the Home video hero */
+.hero.fb.bleedhead{min-height:clamp(420px,58vh,600px)}
 @media (max-width:760px){
   .hero.fb{min-height:auto;padding:118px 0 84px}
   .hero.fb .fbcopy{max-width:none}
