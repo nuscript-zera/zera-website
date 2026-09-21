@@ -21,20 +21,31 @@ function ACheck() {
 export default function Home() {
   return (
     <>
-      {/* HERO · light — split: copy left, ophthalmology clip right */}
-      <header className="hero split">
+      {/* HERO · full-bleed ophthalmology video */}
+      <header className="hero fb">
+        <div className="hero-bg" aria-hidden="true">
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+          <video
+            className="hero-bg-el"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/hero-fullbleed-poster.jpg"
+          >
+            <source src="/hero-fullbleed.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className="hero-scrim" aria-hidden="true" />
         <div className="wrap">
-          <div className="hero-copy">
-            <span className="eyebrow reveal">Revenue AI for Specialty Medicine</span>
-            <h1 className="reveal">
-              Turn every patient encounter into <span className="accent">clean, defensible revenue.</span>
-            </h1>
-            <p className="sub reveal">
-              You see the patient. Zera captures the encounter, creates the clinical note, generates the codes, and
-              identifies documentation gaps before you sign. Every step stays connected, and every code can be traced back
-              to its source.
+          <div className="fbcopy reveal">
+            <h1>Revenue AI that turns every specialty encounter into a clean, defensible claim.</h1>
+            <p className="sub">
+              Zera captures the encounter, generates the coding, and catches documentation gaps before you sign — every
+              code traceable to its source.
             </p>
-            <div className="cta reveal">
+            <div className="cta">
               <Link href="/contact" className="btn btn-primary">
                 Book a demo
               </Link>
@@ -42,22 +53,6 @@ export default function Home() {
                 See how it works
               </Link>
             </div>
-          </div>
-          <div className="herovid reveal">
-            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-            <video
-              className="herovid-el"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              poster="/hero-exam-poster.jpg"
-              aria-label="A patient during a slit-lamp ophthalmology exam"
-            >
-              <source src="/hero-exam.mp4" type="video/mp4" />
-            </video>
-            <span className="vlabel">Specialty exam</span>
           </div>
         </div>
       </header>
