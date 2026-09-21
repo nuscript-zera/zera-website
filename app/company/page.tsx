@@ -69,7 +69,7 @@ export default function CompanyPage() {
       <section className="section dark">
         <div className="wrap">
           <div className="shead reveal">
-            <span className="eyebrow">The name is the promise</span>
+            <span className="eyebrow">Origin &amp; meaning</span>
             <h2>The name is the promise.</h2>
           </div>
           <div className="origin reveal">
