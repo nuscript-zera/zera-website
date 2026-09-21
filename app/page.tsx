@@ -377,18 +377,19 @@ export default function Home() {
         <div className="wrap">
           <div className="cta-card reveal">
             <div className="cta-body">
-              <h2>Built by people who have done the work.</h2>
+              <span className="eyebrow">Ophthalmology today · cardiology next</span>
+              <h2>See what Zera does for ophthalmology.</h2>
               <p className="lead">
-                25+ years inside healthcare documentation and revenue cycle. Zera comes from the team behind Dictra, a
-                production AI clinical-documentation platform processing 2,000+ clinical minutes a day at 99.5% audited
-                accuracy. Production is the test — not the launch. The path from care to payment should be one clean line.
+                Bring your workflow and payer mix, and we&apos;ll move a real encounter from conversation to note to
+                code to a clean, defensible claim — in a 30-minute working demo. Built by the team behind Dictra, in
+                production at 99.5% audited accuracy.
               </p>
               <div className="cta">
                 <Link href="/contact" className="btn btn-primary">
                   Book a demo
                 </Link>
-                <Link href="/company" className="btn btn-ghost">
-                  Meet the team
+                <Link href="/platform" className="btn btn-ghost">
+                  See how it works
                 </Link>
               </div>
             </div>
