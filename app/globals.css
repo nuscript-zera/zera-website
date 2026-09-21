@@ -785,7 +785,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 /* Full-bleed video hero (Suki-style): video behind a left-anchored
    scrim, single white headline, transparent nav floats over it. */
 .hero.fb{position:relative;overflow:hidden;background:#080d18;
-  padding:85px 0 40px;min-height:clamp(620px,92vh,900px);display:flex;align-items:center}
+  padding:124px 0 84px;min-height:clamp(560px,84vh,820px);display:flex;align-items:center}
 .hero.fb::before,.hero.fb::after{display:none}
 .hero.fb .hero-bg{position:absolute;inset:0;z-index:0}
 .hero.fb .hero-bg-el{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
@@ -796,7 +796,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
     linear-gradient(0deg,rgba(8,13,24,.55) 0%,rgba(8,13,24,0) 42%)}
 .hero.fb .wrap{position:relative;z-index:2;width:100%}
 .hero.fb .fbcopy{max-width:44rem}
-.hero.fb h1{color:#fff;font-size:var(--fs-display);font-weight:600;line-height:1.06;
+.hero.fb h1{color:#fff;font-size:clamp(1.95rem,1.45rem + 1.85vw,3.0rem);font-weight:600;line-height:1.1;
   letter-spacing:-0.02em;max-width:20ch}
 .hero.fb .sub{color:rgba(255,255,255,.82);font-size:var(--fs-lead);
   line-height:1.55;margin-top:22px;max-width:42ch}
@@ -804,10 +804,14 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 .hero.fb .cta .btn{padding:14px 22px;font-size:1rem}
 .hero.fb .btn-ghost{border-color:rgba(255,255,255,.42);color:#fff;background:transparent}
 .hero.fb .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.10);color:#fff}
-/* Inner-page image heroes (Platform/Company/Contact) sit shorter than the Home video hero */
-.hero.fb.bleedhead{min-height:clamp(420px,58vh,600px)}
+/* Inner-page image heroes (Platform/Company/Contact) sit shorter than the Home
+   video hero, with generous top/bottom breathing room. The headline size is
+   inherited from .hero.fb h1 (restrained clamp) so it reads as a page header
+   rather than oversized hero text at every breakpoint. */
+.hero.fb.bleedhead{min-height:clamp(440px,52vh,580px);padding:132px 0 88px}
 @media (max-width:760px){
   .hero.fb{min-height:auto;padding:118px 0 84px}
+  .hero.fb.bleedhead{min-height:auto;padding:112px 0 72px}
   .hero.fb .fbcopy{max-width:none}
   .hero.fb .hero-scrim{background:linear-gradient(0deg,rgba(8,13,24,.86) 0%,rgba(8,13,24,.52) 48%,rgba(8,13,24,.6) 100%)}
 }
