@@ -744,7 +744,7 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    Final override: the mono label block (~L548) and the .72rem size
    rule (~L621) also target .foot .foottag and come after L369, so
    this last rule is what actually lands. */
-.foot .foottag{font-family:'Figtree',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+.foot .foottag,.foot .col h4{font-family:'Figtree',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
 
 /* ============================================================
    LEGAL PAGES — inline numbered section headings ("1. Heading"),
@@ -782,20 +782,22 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    Muted, looping, playsinline <video> with a poster frame.
    Stacks on narrow screens.
    ============================================================ */
-.hero.split .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,5vw,64px);align-items:center}
-.hero.split .hero-copy{min-width:0}
-.hero.split h1{max-width:16ch}
-.hero.split .sub{max-width:48ch}
+.hero.split .wrap{display:grid;grid-template-columns:1.9fr 1fr;gap:clamp(32px,5vw,60px);align-items:stretch}
+.hero.split .hero-copy{min-width:0;display:flex;flex-direction:column;justify-content:center}
+.hero.split h1{max-width:18ch}
+.hero.split .sub{max-width:52ch}
 .herovid{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--l-line);
-  box-shadow:0 30px 60px -34px rgba(20,33,58,.35);aspect-ratio:16/9;background:#0b1120}
-.herovid .herovid-el{width:100%;height:100%;object-fit:cover;display:block}
+  box-shadow:0 30px 60px -34px rgba(20,33,58,.35);background:#0b1120;min-height:440px}
+.herovid .herovid-el{width:100%;height:100%;object-fit:cover;object-position:38% center;display:block}
 .herovid .vlabel{position:absolute;left:14px;bottom:12px;z-index:2;
   font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.62rem;font-weight:500;
   letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(11,17,32,.55);
   backdrop-filter:blur(4px);padding:6px 10px;border-radius:999px}
 @media (max-width:860px){
   .hero.split .wrap{grid-template-columns:1fr;gap:34px}
+  .hero.split .hero-copy{justify-content:flex-start}
   .hero.split h1,.hero.split .sub{max-width:none}
+  .herovid{aspect-ratio:16/9;min-height:0}
 }
 
 /* ============================================================
