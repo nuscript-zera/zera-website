@@ -807,8 +807,11 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
 /* Inner-page image heroes (Platform/Company/Contact) sit shorter than the Home
    video hero, with generous top/bottom breathing room. The headline size is
    inherited from .hero.fb h1 (restrained clamp) so it reads as a page header
-   rather than oversized hero text at every breakpoint. */
-.hero.fb.bleedhead{min-height:clamp(440px,52vh,580px);padding:132px 0 88px}
+   rather than oversized hero text at every breakpoint. The min-height floor is
+   set above the tallest page's content block (Company, ~632px incl. padding) so
+   all three heroes render at an identical height with copy centered, regardless
+   of how many lines each headline wraps to. */
+.hero.fb.bleedhead{min-height:clamp(660px,62vh,720px);padding:132px 0 88px}
 @media (max-width:760px){
   .hero.fb{min-height:auto;padding:118px 0 84px}
   .hero.fb.bleedhead{min-height:auto;padding:112px 0 72px}
