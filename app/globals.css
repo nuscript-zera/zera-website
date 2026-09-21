@@ -796,9 +796,9 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
     linear-gradient(0deg,rgba(8,13,24,.55) 0%,rgba(8,13,24,0) 42%)}
 .hero.fb .wrap{position:relative;z-index:2;width:100%}
 .hero.fb .fbcopy{max-width:44rem}
-.hero.fb h1{color:#fff;font-size:clamp(2.5rem,5vw,4.05rem);font-weight:600;line-height:1.06;
+.hero.fb h1{color:#fff;font-size:var(--fs-display);font-weight:600;line-height:1.06;
   letter-spacing:-0.02em;max-width:20ch}
-.hero.fb .sub{color:rgba(255,255,255,.82);font-size:clamp(1.08rem,1.5vw,1.3rem);
+.hero.fb .sub{color:rgba(255,255,255,.82);font-size:var(--fs-lead);
   line-height:1.55;margin-top:22px;max-width:42ch}
 .hero.fb .cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
 .hero.fb .cta .btn{padding:14px 22px;font-size:1rem}
@@ -814,6 +814,10 @@ h1,h2{font-weight:400;letter-spacing:-0.01em;line-height:1.1}
    dark treatment on scroll (.scrolled) and on pages without a .hero.fb. */
 body:has(.hero.fb) .nav:not(.scrolled) .navlinks a:not(.btn){color:rgba(255,255,255,.9)}
 body:has(.hero.fb) .nav:not(.scrolled) .navlinks a:not(.btn):hover{color:#fff;background:rgba(255,255,255,.14)}
+/* Force the white wordmark over the dark full-bleed hero (top state);
+   the normal dark logo returns on scroll via .nav.scrolled. */
+body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-white{display:block}
+body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-dark{display:none}
 
 /* ============================================================
    PLATFORM — "Depth, not breadth" positioning contrast (dark).
