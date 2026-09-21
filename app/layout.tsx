@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   // future icon change. favicon.ico is a real multi-size .ico generated from the
   // Zera mark; Next serves /icon.png from app/.
   icons: {
-    icon: [{ url: "/icon.png?v=2", type: "image/png" }],
-    shortcut: [{ url: "/favicon.ico?v=2" }],
-    apple: [{ url: "/icon.png?v=2", type: "image/png" }],
+    icon: [{ url: "/icon.png?v=3", type: "image/png" }],
+    shortcut: [{ url: "/favicon.ico?v=3" }],
+    apple: [{ url: "/icon.png?v=3", type: "image/png" }],
   },
   openGraph: {
     type: "website",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.png?v=3",
         width: 1200,
         height: 630,
         alt: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zera",
     description,
-    images: ["/og-image.png"],
+    images: ["/og-image.png?v=3"],
   },
 };
 

@@ -15,7 +15,7 @@ export default function CompanyPage() {
       <BleedHead
         title="We&apos;re building the revenue engine for specialty medicine."
         sub="Because we&apos;ve spent decades inside the work we&apos;re automating. Zera is a product of NuScript Systems, Inc. — production-grade AI for the journey from clinical care to revenue."
-        image="/hero-company.jpg"
+        image="/hero-company.jpg?v=3"
         imageAlt="The Zera team at work"
       >
         <div className="cta">

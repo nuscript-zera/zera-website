@@ -24,7 +24,7 @@ export default function ProductPage() {
       <BleedHead
         title="One intelligent workflow from note to claim."
         sub="Zera is the revenue intelligence layer for specialty medicine — it captures the encounter, generates the coding, and validates the record before it is signed, with word-level provenance."
-        image="/hero-platform.jpg"
+        image="/hero-platform.jpg?v=3"
         imageAlt="Abstract blue cubes"
       >
         <div className="cta">
