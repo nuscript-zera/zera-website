@@ -846,3 +846,21 @@ body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-dark{display:none}
 .vs-col.us li{display:flex;gap:11px;align-items:flex-start;color:var(--ink)}
 .vs-col.us li svg{width:17px;height:17px;color:var(--blue4);flex:none;margin-top:3px}
 @media (max-width:760px){.vs{grid-template-columns:1fr}}
+
+/* ============================================================
+   Large-display weight compensation.
+   Heading sizes are capped by their clamp() around a ~1200px
+   viewport, so on large external monitors (24"/27"+) the glyphs
+   are physically bigger at the same weight and read thin — most
+   visibly as dark text on light backgrounds. Step headings back
+   up to 600 on wide screens; laptops and iPad keep the lighter
+   500. Breakpoint sits above a 16" laptop (~1728px CSS) so only
+   true external monitors get the heavier weight. Placed last so
+   it wins over the per-heading 500 rules above. ============= */
+@media (min-width:1800px){
+  .hero h1,.pagehead h1,.hero.fb h1,
+  .shead h2,.foot .belief h2,.careers h2,.contact h2,.prose h2,.prose.legal h2,
+  .pcard h3,.frow h3,.person h3,.spec h3,.pillar h3,
+  .faqq span,.trustitem .ti,.origin-mark .oword,
+  .flowstep h4{font-weight:600}
+}
