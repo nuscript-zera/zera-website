@@ -71,23 +71,22 @@ export default function CompanyPage() {
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">Origin &amp; meaning</span>
-            <h2>The name is the promise.</h2>
+            <h2>Named for zero friction.</h2>
           </div>
           <div className="origin reveal">
             <div className="origin-mark">
               <div className="oword">Zera</div>
               <div className="opron">/ zee-ruh /</div>
-              <div className="oexp">Zero Error Revenue Automation</div>
+              <div className="oexp">From &ldquo;zero friction&rdquo;</div>
             </div>
             <div className="origin-copy">
               <p>
-                The original idea was simple — that nothing should be lost in the space between a clinical moment and a
-                clean claim. No error introduced, no work repeated, nothing left in the gaps.
+                Built for specialty medicine, Zera removes the friction that slows revenue down: the handoffs, re-keying
+                and rework between the note, the code and the claim. AI carries each encounter through one continuous
+                workflow, so revenue moves without getting stuck.
               </p>
-              <p>
-                As Zera has evolved, the destination has grown even bigger — from automating individual steps to running
-                the cycle itself — into a <span className="accent">Zero-friction Engine for Revenue Autonomy</span>. The
-                letters haven&apos;t changed. Neither has the destination: zero.
+              <p className="otag">
+                <span className="accent">Zero friction. Better revenue.</span>
               </p>
             </div>
           </div>

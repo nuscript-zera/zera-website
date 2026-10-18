@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const description =
-  "Zera is the autonomous revenue platform for specialty medicine. One AI takes each encounter from clinical note to correct code to clean claim — no handoffs, every code traceable to the source. Live at zera.health.";
+  "Zera is the AI revenue platform for specialty medicine. One AI takes each encounter from clinical note to correct code to clean claim — no handoffs, every code traceable to the source. Live at zera.health.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zera.health"),
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "specialty medicine RCM",
     "AI medical coding",
     "clinical documentation AI",
-    "autonomous RCM platform",
+    "AI RCM platform",
     "retina practice billing",
     "CPT coding automation",
     "claim denial prevention",

@@ -1036,3 +1036,6 @@ a:focus-visible,button:focus-visible,.btn:focus-visible,input:focus-visible,sele
 .gapcard .gflag{color:var(--tertiary)}
 .gapcard .ga{border-color:var(--input-border);font-weight:600}
 .gapcard .ga.plain{border-color:transparent}
+
+/* Company: origin closing line */
+.origin-copy .otag{margin-top:20px;font-size:1.25rem;font-weight:500;letter-spacing:-0.02em;line-height:1.3}

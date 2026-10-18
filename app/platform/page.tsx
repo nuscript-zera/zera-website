@@ -383,7 +383,7 @@ export default function ProductPage() {
           <div className="specnext reveal">
             <span className="snk">The destination</span>
             <p>
-              <b>An autonomous revenue platform for specialty medicine</b> — one intelligent system carrying clinical
+              <b>An AI revenue platform for specialty medicine</b> — one intelligent system carrying clinical
               truth all the way to payment.
             </p>
           </div>

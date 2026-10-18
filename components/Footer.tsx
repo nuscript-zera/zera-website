@@ -22,7 +22,7 @@ export default function Footer() {
             </Link>
             <span className="foottag" style={{ marginTop: "14px" }}>Revenue AI · Specialty medicine</span>
             <p className="desc">
-              The autonomous revenue platform for specialty medicine. Note to code to claim, in one system.
+              The AI revenue platform for specialty medicine. Note to code to claim, in one system.
             </p>
             <a className="footmail" href="mailto:hello@zera.health">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
