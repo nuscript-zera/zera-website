@@ -147,8 +147,8 @@ export default function ScribePage() {
         eyebrow="Zera Scribe"
         title="Get the note right, not just get it written."
         sub="Zera Scribe is the AI medical scribe for primary care and psychiatry. It turns visits or dictation into structured notes and flags gaps that could cost you at billing before you sign. When you want a second set of eyes, send the note for Professional Review."
-        image="/hero-scribe.jpg?v=1"
-        imageAlt="A physician talking with a patient across the desk"
+        image="/hero-scribe.jpg?v=2"
+        imageAlt="A physician talking with a patient at his desk"
       >
         <div className="cta">
           <TrialButton />
