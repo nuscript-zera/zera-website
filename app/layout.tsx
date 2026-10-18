@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   // future icon change. favicon.ico is a real multi-size .ico generated from the
   // Zera mark; Next serves /icon.png from app/.
   icons: {
-    icon: [{ url: "/icon.png?v=3", type: "image/png" }],
-    shortcut: [{ url: "/favicon.ico?v=3" }],
-    apple: [{ url: "/icon.png?v=3", type: "image/png" }],
+    icon: [{ url: "/icon.png?v=4", type: "image/png" }],
+    shortcut: [{ url: "/favicon.ico?v=4" }],
+    apple: [{ url: "/icon.png?v=4", type: "image/png" }],
   },
   openGraph: {
     type: "website",
