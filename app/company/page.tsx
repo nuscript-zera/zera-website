@@ -99,7 +99,7 @@ export default function CompanyPage() {
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">How we work</span>
-            <h2>AI-native. Operator-built. Production-first.</h2>
+            <h2>AI‑native. Operator‑built. Production‑first.</h2>
           </div>
           <div className="pillars">
             <div className="pillar reveal">
