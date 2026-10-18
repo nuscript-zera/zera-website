@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import logoWhite from "../public/zera-logo-white.png";
 import logoDark from "../public/zera-logo.png";
 
+const LOGIN_URL = "https://app.zera.health/sign-in";
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -31,6 +33,7 @@ export default function Navbar() {
           <Link href="/platform">Platform</Link>
           <Link href="/scribe">Scribe</Link>
           <Link href="/company">Company</Link>
+          <a href={LOGIN_URL} className="navlogin">Log in</a>
           <Link href="/contact" className="btn btn-primary">Book a demo</Link>
         </div>
         <button className="navtoggle" aria-label="Menu" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
@@ -43,6 +46,7 @@ export default function Navbar() {
         <Link href="/platform">Platform</Link>
         <Link href="/scribe">Scribe</Link>
         <Link href="/company">Company</Link>
+        <a href={LOGIN_URL}>Log in</a>
         <Link href="/contact" className="btn btn-primary">Book a demo</Link>
       </div>
     </nav>
