@@ -29,11 +29,13 @@ const faqs = [
   },
 ];
 
-export default function FAQ() {
+export type FaqItem = { q: string; a: string };
+
+export default function FAQ({ items = faqs }: { items?: FaqItem[] }) {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <div className="faqlist reveal">
-      {faqs.map((f, i) => {
+      {items.map((f, i) => {
         const isOpen = open === i;
         return (
           <div className="faqitem" key={i} data-open={isOpen}>

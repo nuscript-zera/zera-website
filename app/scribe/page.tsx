@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import { BleedHead } from "@/components/Shared";
+import FAQ, { type FaqItem } from "@/components/FAQ";
 
 const TRIAL_URL = "https://zerascribe.com";
 const PRICING_URL = "https://zerascribe.com/#pricing";
@@ -36,6 +38,39 @@ export const metadata: Metadata = {
   },
 };
 
+const GAPS = [
+  {
+    area: "Psychiatry",
+    gap: "Psychotherapy time isn’t documented separately from medication management.",
+    why: "Psychotherapy add-on codes are billed by time, separately from the E/M visit.",
+    actions: ["Add Time", "Send for Review", "Sign Anyway"],
+  },
+  {
+    area: "Primary care",
+    gap: "Chronic kidney disease is mentioned, but the stage isn’t documented.",
+    why: "The stage is needed for a specific diagnosis code.",
+    actions: ["Add Stage", "Send for Review", "Sign Anyway"],
+  },
+];
+
+const STEPS = [
+  {
+    k: "Capture",
+    h: "Record or dictate",
+    p: "Record the visit with the patient’s consent, or dictate your findings afterward. Either way works with every note format.",
+  },
+  {
+    k: "Review",
+    h: "Your note, ready",
+    p: "A structured note in SOAP, DAP, BIRP, GIRP or your own template. For recorded visits, each detail links back to the moment it was said.",
+  },
+  {
+    k: "Sign",
+    h: "Catch the gaps, then sign",
+    p: "Fix what’s flagged or send the note for Professional Review. Then copy it into your EHR.",
+  },
+];
+
 const WHO = [
   { h: "Primary care practices", p: "Family medicine, internal medicine and their clinicians." },
   { h: "Psychiatry and behavioral health practices", p: "Psychiatrists, psychiatric NPs and therapists." },
@@ -51,11 +86,49 @@ const FEATURES = [
   "BAA included",
 ];
 
+const TRUST = [
+  { t: "BAA before patient data", p: "Your Business Associate Agreement is in place at signup, before any patient information is processed." },
+  { t: "SOC 2 Type I complete", p: "Independently assessed security controls, with SOC 2 Type II in progress." },
+  { t: "US data storage", p: "Data is stored and processed in the United States, kept separate for each practice." },
+  { t: "Never used to train shared models", p: "Patient information is not used to train shared AI models, and it is never sold." },
+  { t: "You approve every note", p: "Zera Scribe never finalizes or sends a note on its own. The clinician signs." },
+  { t: "Encrypted and access-controlled", p: "Encrypted in transit and at rest, with role-based, logged access." },
+];
+
+const FAQS: FaqItem[] = [
+  {
+    q: "How is Zera Scribe different from other AI scribes?",
+    a: "Most AI scribes stop at writing the note. Zera Scribe also checks it for missing or inconsistent documentation before you sign, explains why each gap matters, and suggests ICD-10, CPT and E/M codes for you to review. It is built for primary care and psychiatry.",
+  },
+  {
+    q: "How do notes get into my EHR?",
+    a: "Copy the finished note, or individual sections, into any EHR. No integration project is needed. Zera Scribe can also export each note as an HL7, C-CDA or FHIR file for EHRs that can import them.",
+  },
+  {
+    q: "Can I sign a note that has a flag?",
+    a: "Yes. Flags are guidance, not a roadblock. Fix the note, send it for Professional Review, or sign on your own clinical judgment.",
+  },
+  {
+    q: "Is there a free trial?",
+    a: "Yes. 14 days free, with no credit card needed. If you don’t choose a plan, nothing is charged.",
+  },
+];
+
 function Check() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M20 6 9 17l-5-5" />
     </svg>
+  );
+}
+
+function Chevron() {
+  return (
+    <div className="flowchev" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M8 5l7 7-7 7" />
+      </svg>
+    </div>
   );
 }
 
@@ -69,14 +142,10 @@ function TrialButton() {
 
 export default function ScribePage() {
   return (
-    <>
+    <div className="scribe-page">
       <BleedHead
         eyebrow="Zera Scribe"
-        title={
-          <>
-            Get the note right, <span className="accent">not just get it written.</span>
-          </>
-        }
+        title="Get the note right, not just get it written."
         sub="Zera Scribe is the AI medical scribe for primary care and psychiatry. It turns visits or dictation into structured notes and flags gaps that could cost you at billing before you sign. When you want a second set of eyes, send the note for Professional Review."
         image="/hero-scribe.jpg?v=1"
         imageAlt="A physician talking with a patient across the desk"
@@ -87,11 +156,79 @@ export default function ScribePage() {
         </div>
       </BleedHead>
 
-      {/* Who it's for */}
+      {/* See the gap */}
       <section className="section light">
         <div className="wrap">
           <div className="shead reveal">
-            <h2>Who it&rsquo;s for</h2>
+            <span className="eyebrow">Checks before you sign</span>
+            <h2>See the gap before you sign.</h2>
+            <p className="lead">
+              Most AI scribes stop at the note. Zera Scribe checks it while the visit is still fresh, and shows you why
+              each gap matters.
+            </p>
+          </div>
+          <div className="gapcards">
+            {GAPS.map((g) => (
+              <div className="gapcard reveal" key={g.area}>
+                <div className="gk">{g.area}</div>
+                <div className="gflag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 8v4.5M12 16h.01" />
+                  </svg>
+                  Documentation gap
+                </div>
+                <p className="ggap">{g.gap}</p>
+                <div className="gwhy">
+                  <b>Why it matters</b>
+                  <span>{g.why}</span>
+                </div>
+                <div className="gacts" aria-hidden="true">
+                  {g.actions.map((a, i) => (
+                    <span key={a} className={i === 0 ? "ga primary" : i === g.actions.length - 1 ? "ga plain" : "ga"}>
+                      {a}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="gapnote reveal">
+            Flags never block signing. Zera Scribe also suggests ICD-10, CPT and E/M codes from what&rsquo;s
+            documented; you decide what to use, and nothing is billed automatically.
+          </p>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="section light">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">How it works</span>
+            <h2>From visit to signed note in three steps.</h2>
+          </div>
+          <div className="flow reveal">
+            {STEPS.map((s, i) => (
+              <Fragment key={s.k}>
+                {i > 0 && <Chevron />}
+                <div className="flowstep">
+                  <span className="fnum">0{i + 1}</span>
+                  <div className="fk">{s.k}</div>
+                  <h4>{s.h}</h4>
+                  <p>{s.p}</p>
+                </div>
+              </Fragment>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who it's for */}
+      <section className="section light tint">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Who it&rsquo;s for</span>
+            <h2>Built for primary care and psychiatry.</h2>
           </div>
           <div className="pillars">
             {WHO.map((w) => (
@@ -108,7 +245,8 @@ export default function ScribePage() {
       <section className="section light">
         <div className="wrap">
           <div className="shead reveal">
-            <h2>What you get</h2>
+            <span className="eyebrow">What you get</span>
+            <h2>Everything in one subscription.</h2>
           </div>
           <div className="agrid scribe-features reveal">
             {FEATURES.map((f) => (
@@ -119,6 +257,37 @@ export default function ScribePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Security */}
+      <section className="section light tint">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">Security and control</span>
+            <h2>Built for patient data from day one.</h2>
+          </div>
+          <div className="trustgrid reveal">
+            {TRUST.map((t) => (
+              <div className="trustitem" key={t.t}>
+                <div className="ti">
+                  <Check /> {t.t}
+                </div>
+                <p>{t.p}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section light">
+        <div className="wrap">
+          <div className="shead reveal">
+            <span className="eyebrow">FAQ</span>
+            <h2>Questions clinicians ask.</h2>
+          </div>
+          <FAQ items={FAQS} />
         </div>
       </section>
 
@@ -134,6 +303,6 @@ export default function ScribePage() {
           <p className="scribe-part">Zera Scribe is part of the Zera platform by NuScript Systems, Inc.</p>
         </div>
       </section>
-    </>
+    </div>
   );
 }
