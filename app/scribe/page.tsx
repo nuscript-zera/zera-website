@@ -304,7 +304,6 @@ export default function ScribePage() {
                   See plans and pricing
                 </a>
               </div>
-              <p className="scribe-part">Zera Scribe is part of the Zera platform by NuScript Systems, Inc.</p>
             </div>
           </div>
         </div>

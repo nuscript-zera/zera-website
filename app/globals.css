@@ -875,7 +875,6 @@ body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-dark{display:none}
 .agrid.scribe-features .analyzer{padding:20px 20px}
 .agrid.scribe-features .analyzer .an{font-size:1.02rem;align-items:flex-start;gap:10px;line-height:1.4}
 .agrid.scribe-features .analyzer .an svg{width:16px;height:16px;margin-top:4px}
-.careers.scribe-band .scribe-part{margin:48px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);max-width:40rem;font-size:.9rem;color:rgba(255,255,255,.5)}
 @media (max-width:900px){.agrid.scribe-features{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.agrid.scribe-features{grid-template-columns:1fr}}
 .hero.fb .eyebrow{color:var(--blue4);display:block;margin-bottom:16px}
