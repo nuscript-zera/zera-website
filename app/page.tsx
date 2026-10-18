@@ -40,7 +40,8 @@ export default function Home() {
         <div className="hero-scrim" aria-hidden="true" />
         <div className="wrap">
           <div className="fbcopy reveal">
-            <h1>Revenue AI that turns every specialty encounter into a clean, defensible claim.</h1>
+            <span className="eyebrow">Revenue AI</span>
+            <h1>Turn every specialty encounter into a clean, defensible claim.</h1>
             <p className="sub">
               Zera captures the encounter, generates the coding, and catches documentation gaps before you sign — every
               code traceable to its source.
