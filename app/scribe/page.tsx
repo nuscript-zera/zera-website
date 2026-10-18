@@ -83,7 +83,7 @@ const FEATURES = [
   "Documentation gap checks before you sign",
   "Copy notes into your EHR, or export HL7, C-CDA or FHIR files",
   "Optional Professional Review",
-  "BAA included",
+  "Problems caught before you sign, not found in a chart audit afterward",
 ];
 
 const TRUST = [
@@ -194,8 +194,8 @@ export default function ScribePage() {
             ))}
           </div>
           <p className="gapnote reveal">
-            Flags never block signing. Zera Scribe also suggests ICD-10, CPT and E/M codes from what&rsquo;s
-            documented; you decide what to use, and nothing is billed automatically.
+            You decide what to do with each flag. Zera Scribe also suggests ICD-10, CPT and E/M codes from what&rsquo;s
+            documented; you choose what to use, and nothing is billed automatically.
           </p>
         </div>
       </section>
