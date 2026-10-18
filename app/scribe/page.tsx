@@ -291,16 +291,22 @@ export default function ScribePage() {
         </div>
       </section>
 
-      {/* Start / pricing */}
-      <section className="section light scribe-end">
+      {/* Closing CTA band (same pattern as the other pages) */}
+      <section className="careers scribe-band">
         <div className="wrap">
-          <div className="scribe-cta reveal">
-            <TrialButton />
-            <p className="scribe-price">
-              <a href={PRICING_URL}>See plans and pricing at zerascribe.com.</a>
-            </p>
+          <div className="cta-card reveal">
+            <div className="cta-body">
+              <h2>Try Zera Scribe on your own visits.</h2>
+              <p className="lead">14 days free, no credit card. Notes copy into the EHR you already use.</p>
+              <div className="cta">
+                <TrialButton />
+                <a href={PRICING_URL} className="btn btn-ghost">
+                  See plans and pricing
+                </a>
+              </div>
+              <p className="scribe-part">Zera Scribe is part of the Zera platform by NuScript Systems, Inc.</p>
+            </div>
           </div>
-          <p className="scribe-part">Zera Scribe is part of the Zera platform by NuScript Systems, Inc.</p>
         </div>
       </section>
     </div>
