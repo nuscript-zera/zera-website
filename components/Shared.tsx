@@ -16,12 +16,14 @@ export function PageHead({ eyebrow, title, sub, note, children }: { eyebrow: str
 }
 
 export function BleedHead({
+  eyebrow,
   title,
   sub,
   image,
   imageAlt = "",
   children,
 }: {
+  eyebrow?: string;
   title: ReactNode;
   sub?: string;
   image: string;
@@ -37,6 +39,7 @@ export function BleedHead({
       <div className="hero-scrim" aria-hidden="true" />
       <div className="wrap">
         <div className="fbcopy reveal">
+          {eyebrow && <span className="eyebrow">{eyebrow}</span>}
           <h1>{title}</h1>
           {sub && <p className="sub">{sub}</p>}
           {children}

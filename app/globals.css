@@ -864,3 +864,26 @@ body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-dark{display:none}
   .faqq span,.trustitem .ti,.origin-mark .oword,
   .flowstep h4{font-weight:600}
 }
+
+/* ============================================================
+   Zera Scribe page (/scribe)
+   ============================================================ */
+.pagehead .cta{display:flex;align-items:center;gap:16px 20px;margin-top:34px;flex-wrap:wrap}
+.pagehead .cta .btn,.scribe-cta .btn{padding:14px 22px;font-size:1rem}
+.pagehead .ctanote{font-size:.95rem;color:var(--l-muted)}
+.agrid.scribe-features{grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.agrid.scribe-features .analyzer{padding:20px 20px}
+.agrid.scribe-features .analyzer .an{font-size:1.02rem;align-items:flex-start;gap:10px;line-height:1.4}
+.agrid.scribe-features .analyzer .an svg{width:16px;height:16px;margin-top:4px}
+.section.light.scribe-end{padding:88px 0 72px;background:var(--l-bg2)}
+.scribe-cta{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px}
+.scribe-price{font-size:1.05rem;color:var(--l-muted)}
+.scribe-price a{color:var(--blue);font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.scribe-price a:hover{text-decoration-thickness:2px}
+.scribe-part{margin-top:56px;padding-top:22px;border-top:1px solid var(--l-line);text-align:center;font-size:.9rem;color:var(--l-faint)}
+@media (max-width:900px){.agrid.scribe-features{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.agrid.scribe-features{grid-template-columns:1fr}}
+.hero.fb .eyebrow{color:var(--blue4);display:block;margin-bottom:16px}
+.hero.fb .cta{align-items:center}
+.hero.fb .ctanote{font-size:.95rem;color:rgba(255,255,255,.8)}
+.hero.fb h1 .accent{color:var(--blue4)}

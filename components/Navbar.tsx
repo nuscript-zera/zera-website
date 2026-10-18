@@ -29,6 +29,7 @@ export default function Navbar() {
         </Link>
         <div className="navlinks">
           <Link href="/platform">Platform</Link>
+          <Link href="/scribe">Scribe</Link>
           <Link href="/company">Company</Link>
           <Link href="/contact" className="btn btn-primary">Book a demo</Link>
         </div>
@@ -40,6 +41,7 @@ export default function Navbar() {
       </div>
       <div className={"navmenu" + (open ? " open" : "")} onClick={() => setOpen(false)}>
         <Link href="/platform">Platform</Link>
+        <Link href="/scribe">Scribe</Link>
         <Link href="/company">Company</Link>
         <Link href="/contact" className="btn btn-primary">Book a demo</Link>
       </div>

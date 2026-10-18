@@ -32,6 +32,7 @@ export default function Footer() {
           <div className="col">
             <h4>Explore</h4>
             <Link href="/platform">Platform</Link>
+            <Link href="/scribe">Zera Scribe</Link>
             <Link href="/company">Company</Link>
             <Link href="/contact">Book a demo</Link>
           </div>
