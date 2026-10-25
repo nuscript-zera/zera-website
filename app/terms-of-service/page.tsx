@@ -19,13 +19,13 @@ export default function TermsPage() {
       <section className="section light">
         <div className="wrap">
           <div className="prose legal reveal">
-            <p className="upd">Last updated: 5 July 2026</p>
+            <p className="upd">Last updated: 25 October 2026</p>
 
             <p>
-              These Terms of Service (&quot;Terms&quot;) govern your access to and use of this website, zera.health (the
-              &quot;Site&quot;), operated by NuScript Systems, Inc. (&quot;NuScript,&quot; &quot;Zera,&quot;
-              &quot;we,&quot; &quot;us&quot;). By using the Site, you agree to these Terms. These Terms cover the
-              marketing Site only; use of the Zera platform is governed by a separate product agreement and Business
+              These Terms of Service (&ldquo;Terms&rdquo;) govern your use of this website, zera.health (the
+              &ldquo;Site&rdquo;), operated by NuScript Systems, Inc. d/b/a Zera (&ldquo;Zera,&rdquo; &ldquo;we,&rdquo;
+              &ldquo;us&rdquo;). By using the Site, you agree to these Terms. They cover the Site only. Zera Scribe is
+              governed by its own <a href="https://zerascribe.com/terms-of-service">Terms of Service</a> and Business
               Associate Agreement.
             </p>
 
@@ -37,8 +37,8 @@ export default function TermsPage() {
 
             <h2>Intellectual property</h2>
             <p>
-              The Site and its content — including text, design, logos, and the Zera and NuScript names and marks — are
-              owned by NuScript or its licensors and are protected by applicable laws. You may not copy, reproduce, or
+              The Site and its content — including text, design, logos, and the Zera name and marks — are owned by Zera
+              or its licensors and are protected by applicable laws. You may not copy, reproduce, or
               distribute Site content without our prior written permission.
             </p>
 
@@ -63,7 +63,7 @@ export default function TermsPage() {
 
             <h2>Limitation of liability</h2>
             <p>
-              To the fullest extent permitted by law, NuScript will not be liable for any indirect, incidental, or
+              To the fullest extent permitted by law, Zera will not be liable for any indirect, incidental, or
               consequential damages arising out of your use of the Site.
             </p>
 

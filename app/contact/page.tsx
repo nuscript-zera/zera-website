@@ -37,11 +37,9 @@ export default function ContactPage() {
               <div className="row">
                 <div className="rlabel">Entity</div>
                 <div className="rval">
-                  NuScript Systems, Inc.
+                  NuScript Systems, Inc. d/b/a Zera
                   <br />
                   Austin, TX
-                  <br />
-                  Zera is a product of NuScript Systems, Inc.
                 </div>
               </div>
               <div className="row">

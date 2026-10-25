@@ -5,7 +5,7 @@ import { BleedHead, CtaBand } from "@/components/Shared";
 export const metadata: Metadata = {
   title: "Company",
   description:
-    "Zera is a product of NuScript Systems, Inc., built by operators who have run healthcare documentation and revenue cycle for decades and shipped production healthcare AI at scale — production-grade AI for the journey from clinical care to revenue.",
+    "Zera helps practices get paid in full for the care they provide. Zera Scribe writes the note and flags what’s missing before the doctor signs.",
   alternates: { canonical: "https://zera.health/company" },
 };
 

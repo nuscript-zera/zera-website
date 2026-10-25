@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How NuScript Systems, Inc. collects, uses, and protects information on zera.health.",
+  description: "How Zera (NuScript Systems, Inc.) collects, uses, and protects information on zera.health.",
   alternates: { canonical: "https://zera.health/privacy-policy" },
 };
 
@@ -19,20 +19,21 @@ export default function PrivacyPage() {
       <section className="section light">
         <div className="wrap">
           <div className="prose legal reveal">
-            <p className="upd">Last updated: 5 July 2026</p>
+            <p className="upd">Last updated: 25 October 2026</p>
 
             <p>
-              This Privacy Policy explains how NuScript Systems, Inc. (&quot;NuScript,&quot; &quot;Zera,&quot;
-              &quot;we,&quot; &quot;us&quot;) handles information in connection with this website, zera.health (the
-              &quot;Site&quot;). It applies to the marketing Site only. The Zera platform is governed by its own
-              product-specific privacy terms and a Business Associate Agreement (BAA) entered into before any protected
-              health information is processed.
+              This Privacy Policy explains how NuScript Systems, Inc. d/b/a Zera (&ldquo;Zera,&rdquo; &ldquo;we,&rdquo;
+              &ldquo;us&rdquo;) handles information collected through this website, zera.health (the &ldquo;Site&rdquo;).
+              It applies to the Site only. Zera Scribe is covered by its own{" "}
+              <a href="https://zerascribe.com/privacy-policy">Privacy Policy</a>, and a Business Associate Agreement
+              (BAA) is signed before any protected health information is processed.
             </p>
 
             <h2>Who we are</h2>
             <p>
-              Zera is a product of NuScript Systems, Inc., a Texas corporation. For any privacy questions, contact us at{" "}
-              <a href="mailto:hello@zera.health">hello@zera.health</a>.
+              Zera is the business name of NuScript Systems, Inc., a Texas corporation, 5900 Balcones Drive, Ste 11995,
+              Austin, TX 78731. For privacy questions, contact{" "}
+              <a href="mailto:privacy@zera.health">privacy@zera.health</a>.
             </p>
 
             <h2>Information we collect</h2>
@@ -78,7 +79,7 @@ export default function PrivacyPage() {
             <p>
               Depending on your location, you may have rights to access, correct, or delete your personal information, or
               to object to certain processing. To exercise any of these, contact{" "}
-              <a href="mailto:hello@zera.health">hello@zera.health</a>.
+              <a href="mailto:privacy@zera.health">privacy@zera.health</a>.
             </p>
 
             <h2>Changes</h2>
@@ -89,8 +90,8 @@ export default function PrivacyPage() {
 
             <h2>Contact</h2>
             <p>
-              NuScript Systems, Inc. —{" "}
-              <a href="mailto:hello@zera.health">hello@zera.health</a>.
+              NuScript Systems, Inc. d/b/a Zera —{" "}
+              <a href="mailto:privacy@zera.health">privacy@zera.health</a>.
             </p>
           </div>
         </div>
