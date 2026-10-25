@@ -1045,3 +1045,6 @@ a:focus-visible,button:focus-visible,.btn:focus-visible,input:focus-visible,sele
 .navlinks .navlogin::before{content:"";position:absolute;left:-8px;top:50%;width:1px;height:18px;margin-top:-9px;background:var(--l-line)}
 body:has(.hero.fb) .nav:not(.scrolled) .navlinks .navlogin::before{background:rgba(255,255,255,.3)}
 .navlinks .btn{margin-left:8px}
+
+/* Company hero: experience line under the intro */
+.hero.fb .herocred{margin-top:14px;font-size:1rem;line-height:1.55;color:rgba(255,255,255,.72);max-width:34rem;text-wrap:pretty}

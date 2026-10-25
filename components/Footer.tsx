@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
         <div className="base">
           <div className="baseleft">
-            <span>© {year} Zera, a product of NuScript Systems, Inc.</span>
+            <span>© {year} NuScript Systems, Inc. d/b/a Zera. All rights reserved.</span>
             <div className="legal">
               <Link className="lg" href="/privacy-policy">
                 Privacy Policy
