@@ -1048,3 +1048,7 @@ body:has(.hero.fb) .nav:not(.scrolled) .navlinks .navlogin::before{background:rg
 
 /* Company hero: experience line under the intro */
 .hero.fb .herocred{margin-top:14px;font-size:1rem;line-height:1.55;color:rgba(255,255,255,.72);max-width:34rem;text-wrap:pretty}
+
+/* Footer belief line: one line on desktop (it is ~930px at 40px and the container is
+   968px+ from 1024px up); phones and tablets wrap naturally. */
+@media (min-width:1024px){.foot .belief h2{max-width:none;white-space:nowrap}}
