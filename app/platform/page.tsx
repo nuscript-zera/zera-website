@@ -25,8 +25,8 @@ export default function ProductPage() {
         eyebrow="Zera Platform"
         title="One intelligent workflow from note to claim."
         sub="Zera is the revenue intelligence layer for specialty medicine — it captures the encounter, generates the coding, and validates the record before it is signed, with word-level provenance."
-        image="/hero-platform.jpg?v=3"
-        imageAlt="Abstract blue cubes"
+        image="/hero-platform.jpg?v=4"
+        imageAlt="A nurse and a physician reviewing a record on a laptop"
       >
         <div className="cta">
           <Link href="/contact" className="btn btn-primary">

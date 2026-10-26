@@ -16,8 +16,8 @@ export default function ContactPage() {
         eyebrow="Book a demo"
         title="See what happens when the revenue cycle starts in the exam room."
         sub="Bring us a real encounter. We'll show you how Zera turns it into a specialty-aware note, accurate coding, validated documentation, and a claim-ready record — and exactly where it catches the problems conventional workflows discover later."
-        image="/hero-contact.jpg?v=3"
-        imageAlt="Abstract network"
+        image="/hero-contact.jpg?v=4"
+        imageAlt="Abstract blue cubes"
       />
 
       {/* Book a demo — form + details */}

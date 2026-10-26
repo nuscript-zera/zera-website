@@ -20,7 +20,6 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={logoWhite.src} width={logoWhite.width} height={logoWhite.height} alt="Zera" className="footlogo" />
             </Link>
-            <span className="foottag" style={{ marginTop: "14px" }}>Revenue AI · Specialty medicine</span>
             <p className="desc">
               The AI revenue platform for specialty medicine. Note to code to claim, in one system.
             </p>
