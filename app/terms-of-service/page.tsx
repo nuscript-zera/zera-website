@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms governing use of the Zera website, zera.health.",
+  description: "The terms governing use of the Zera Health website, zera.health.",
   alternates: { canonical: "https://zera.health/terms-of-service" },
 };
 
@@ -23,8 +23,8 @@ export default function TermsPage() {
 
             <p>
               These Terms of Service (&ldquo;Terms&rdquo;) govern your use of this website, zera.health (the
-              &ldquo;Site&rdquo;), operated by NuScript Systems, Inc. d/b/a Zera (&ldquo;Zera,&rdquo; &ldquo;we,&rdquo;
-              &ldquo;us&rdquo;). By using the Site, you agree to these Terms. They cover the Site only. Zera Scribe is
+              &ldquo;Site&rdquo;), operated by NuScript Systems, Inc., doing business as Zera Health and Zera
+              (&ldquo;Zera Health,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;). By using the Site, you agree to these Terms. They cover the Site only. Zera Scribe is
               governed by its own <a href="https://zerascribe.com/terms-of-service">Terms of Service</a> and Business
               Associate Agreement.
             </p>
@@ -37,7 +37,7 @@ export default function TermsPage() {
 
             <h2>Intellectual property</h2>
             <p>
-              The Site and its content — including text, design, logos, and the Zera name and marks — are owned by Zera
+              The Site and its content — including text, design, logos, and the Zera Health name and marks — are owned by Zera Health
               or its licensors and are protected by applicable laws. You may not copy, reproduce, or
               distribute Site content without our prior written permission.
             </p>
@@ -63,7 +63,7 @@ export default function TermsPage() {
 
             <h2>Limitation of liability</h2>
             <p>
-              To the fullest extent permitted by law, Zera will not be liable for any indirect, incidental, or
+              To the fullest extent permitted by law, Zera Health will not be liable for any indirect, incidental, or
               consequential damages arising out of your use of the Site.
             </p>
 

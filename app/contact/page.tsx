@@ -37,7 +37,7 @@ export default function ContactPage() {
               <div className="row">
                 <div className="rlabel">Entity</div>
                 <div className="rval">
-                  NuScript Systems, Inc. d/b/a Zera
+                  Zera Health
                   <br />
                   Austin, TX
                 </div>

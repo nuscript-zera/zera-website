@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
         <div className="base">
           <div className="baseleft">
-            <span>© {year} NuScript Systems, Inc. d/b/a Zera. All rights reserved.</span>
+            <span>© {year} Zera Health. All rights reserved.</span>
             <div className="legal">
               <Link className="lg" href="/privacy-policy">
                 Privacy Policy

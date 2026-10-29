@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Zera (NuScript Systems, Inc.) collects, uses, and protects information on zera.health.",
+  description: "How Zera Health (NuScript Systems, Inc.) collects, uses, and protects information on zera.health.",
   alternates: { canonical: "https://zera.health/privacy-policy" },
 };
 
@@ -22,8 +22,9 @@ export default function PrivacyPage() {
             <p className="upd">Last updated: 25 October 2026</p>
 
             <p>
-              This Privacy Policy explains how NuScript Systems, Inc. d/b/a Zera (&ldquo;Zera,&rdquo; &ldquo;we,&rdquo;
-              &ldquo;us&rdquo;) handles information collected through this website, zera.health (the &ldquo;Site&rdquo;).
+              This Privacy Policy explains how NuScript Systems, Inc., doing business as Zera Health and Zera
+              (&ldquo;Zera Health,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;), handles information collected through
+              this website, zera.health (the &ldquo;Site&rdquo;).
               It applies to the Site only. Zera Scribe is covered by its own{" "}
               <a href="https://zerascribe.com/privacy-policy">Privacy Policy</a>, and a Business Associate Agreement
               (BAA) is signed before any protected health information is processed.
@@ -31,7 +32,7 @@ export default function PrivacyPage() {
 
             <h2>Who we are</h2>
             <p>
-              Zera is the business name of NuScript Systems, Inc., a Texas corporation, 5900 Balcones Drive, Ste 11995,
+              Zera Health is the business name of NuScript Systems, Inc., a Texas corporation, 5900 Balcones Drive, Ste 11995,
               Austin, TX 78731. For privacy questions, contact{" "}
               <a href="mailto:privacy@zera.health">privacy@zera.health</a>.
             </p>
@@ -58,7 +59,7 @@ export default function PrivacyPage() {
             <h2>Protected health information</h2>
             <p>
               This marketing Site is not intended for the submission of patient data. Any handling of protected health
-              information occurs only within the Zera platform, under a signed BAA and applicable HIPAA safeguards — not
+              information occurs only within the Zera Health platform, under a signed BAA and applicable HIPAA safeguards — not
               through this Site.
             </p>
 
@@ -90,7 +91,7 @@ export default function PrivacyPage() {
 
             <h2>Contact</h2>
             <p>
-              NuScript Systems, Inc. d/b/a Zera —{" "}
+              NuScript Systems, Inc. d/b/a Zera Health —{" "}
               <a href="mailto:privacy@zera.health">privacy@zera.health</a>.
             </p>
           </div>
