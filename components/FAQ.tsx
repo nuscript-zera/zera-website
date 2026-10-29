@@ -4,20 +4,24 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "What is Zera?",
-    a: "Zera is an AI revenue platform for ambulatory specialty medicine. It captures the encounter, generates the documentation, and produces the codes in one real-time workflow — with the provider always in control. Note and Code are live today; the full claim and RCM engines are built and coming to the platform next.",
+    q: "What is Zera Revenue?",
+    a: "Zera Revenue is Zera's coding and claims product for specialty medicine. It codes the visit from the note, checks the codes against the documentation before signing, and prepares the claim, with the provider always in control. It starts with ophthalmology, including retina, in early 2027.",
   },
   {
-    q: "Which specialties does Zera support?",
-    a: "Ophthalmology is live today — purpose-built for retina, glaucoma, cataract/refractive, and comprehensive workflows, with retina as our near-term focus. Cardiology is next. The intelligence layer is shared across specialties; the vocabulary, workflows, and payer rules are purpose-built for each one.",
+    q: "How does Zera Revenue relate to Zera Scribe?",
+    a: "Zera Scribe, available now for primary care and psychiatry at zerascribe.com, writes the note and flags what's missing before the doctor signs. Zera Revenue builds on the same system to carry the visit through coding to the claim. Practices that move from Zera Scribe to Zera Revenue switch plans; they don't pay for both.",
+  },
+  {
+    q: "Which specialties does Zera Revenue support?",
+    a: "Ophthalmology first, with retina as the starting point, followed by glaucoma, cataract/refractive and comprehensive workflows. More specialties follow one at a time, each with its own vocabulary, workflows and payer rules.",
   },
   {
     q: "Does Zera replace my EHR?",
-    a: "No. Zera is an intelligence layer, not an EHR replacement. It runs alongside the systems you already own — no rip-and-replace, no workflow disruption, no staff layoffs. Zera produces output in six EHR-ready formats today, with direct, real-time integrations rolling out.",
+    a: "No. Zera is an intelligence layer, not an EHR replacement. It runs alongside the systems you already own — no rip-and-replace, no workflow disruption. Zera produces output in six EHR-ready formats today, with direct integrations rolling out.",
   },
   {
-    q: "How does Zera prevent denials?",
-    a: "Five checks run concurrently as the note is composed: laterality enforcement, HCC condition flagging, MEAT documentation validation, ICD-10 specificity checking, and J-code unit reconciliation. Issues surface to the provider before they sign — not after a denial arrives weeks later.",
+    q: "How does Zera Revenue prevent denials?",
+    a: "Five checks run as the note is composed: laterality, HCC condition flagging, MEAT documentation validation, ICD-10 specificity and J-code unit reconciliation. Issues surface to the provider before they sign — not after a denial arrives weeks later.",
   },
   {
     q: "Is Zera HIPAA compliant?",
@@ -25,7 +29,7 @@ const faqs = [
   },
   {
     q: "Can Zera run the whole revenue cycle for us?",
-    a: "Yes. Run Zera yourself, or choose Zera Managed RCM — the same platform, operated for you by a dedicated revenue-cycle team. Same software, same intelligence layer; you choose who runs the operation.",
+    a: "Yes. Run Zera Revenue yourself, or choose Zera Managed RCM — the same platform, operated for you by a dedicated revenue-cycle team. Same software, same intelligence layer; you choose who runs the operation.",
   },
 ];
 

@@ -5,8 +5,9 @@ import type { FormEvent } from "react";
 
 const interests = [
   { v: "demo", label: "Book a demo — see Zera on my encounters" },
-  { v: "pilot", label: "Start a 90-day pilot" },
-  { v: "founding", label: "Founding cohort — early access (retina / specialty)" },
+  { v: "scribe", label: "Zera Scribe for my practice (primary care or psychiatry)" },
+  { v: "pilot", label: "Start a 90-day Zera Revenue pilot" },
+  { v: "founding", label: "Zera Revenue founding cohort (ophthalmology / retina)" },
   { v: "partnership", label: "Partnership or affiliate RCM" },
   { v: "investment", label: "Investment" },
   { v: "other", label: "Something else" },

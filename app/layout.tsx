@@ -5,16 +5,18 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const description =
-  "Zera is the AI revenue platform for specialty medicine. One AI takes each encounter from clinical note to correct code to clean claim — no handoffs, every code traceable to the source. Live at zera.health.";
+  "Zera Health helps practices get paid in full for the care they provide. Zera Scribe writes the note and flags what’s missing before the doctor signs, for primary care and psychiatry. Zera Revenue, for coding and claims, follows in 2027.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zera.health"),
   title: {
-    default: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
-    template: "%s — Zera",
+    default: "Zera Health — Note. Code. Claim.",
+    template: "%s — Zera Health",
   },
   description,
   keywords: [
+    "AI medical scribe",
+    "documentation gap checks",
     "revenue cycle AI",
     "specialty medicine RCM",
     "AI medical coding",
@@ -38,21 +40,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://zera.health",
-    siteName: "Zera",
-    title: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
+    siteName: "Zera Health",
+    title: "Zera Health — Note. Code. Claim.",
     description,
     images: [
       {
         url: "/og-image.png?v=3",
         width: 1200,
         height: 630,
-        alt: "Zera — Note. Code. Claim. One AI. Zero handoffs.",
+        alt: "Zera Health — Note. Code. Claim.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zera",
+    title: "Zera Health",
     description,
     images: ["/og-image.png?v=3"],
   },

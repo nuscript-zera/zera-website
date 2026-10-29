@@ -21,7 +21,8 @@ export default function Footer() {
               <img src={logoWhite.src} width={logoWhite.width} height={logoWhite.height} alt="Zera" className="footlogo" />
             </Link>
             <p className="desc">
-              The AI revenue platform for specialty medicine. Note to code to claim, in one system.
+              Zera Health helps practices get paid in full for the care they provide. Zera Scribe today, Zera Revenue
+              in 2027.
             </p>
             <a className="footmail" href="mailto:hello@zera.health">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
@@ -30,14 +31,15 @@ export default function Footer() {
           </div>
           <div className="col">
             <h4>Explore</h4>
-            <Link href="/platform">Platform</Link>
-            <Link href="/scribe">Scribe</Link>
+            <Link href="/scribe">Zera Scribe</Link>
+            <Link href="/platform">Zera Revenue</Link>
             <Link href="/company">Company</Link>
             <Link href="/contact">Book a demo</Link>
           </div>
           <div className="col">
             <h4>Connect</h4>
             <Link href="/contact">Contact</Link>
+            <a href="https://zerascribe.com">zerascribe.com</a>
             <a href="mailto:hello@zera.health">Sales &amp; pilots</a>
           </div>
         </div>

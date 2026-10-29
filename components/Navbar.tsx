@@ -30,8 +30,8 @@ export default function Navbar() {
           <img src={logoDark.src} width={logoDark.width} height={logoDark.height} alt="Zera" className="brandlogo logo-dark" />
         </Link>
         <div className="navlinks">
-          <Link href="/platform">Platform</Link>
-          <Link href="/scribe">Scribe</Link>
+          <Link href="/scribe">Zera Scribe</Link>
+          <Link href="/platform">Zera Revenue</Link>
           <Link href="/company">Company</Link>
           <a href={LOGIN_URL} className="navlogin">Log in</a>
           <Link href="/contact" className="btn btn-primary">Book a demo</Link>
@@ -43,8 +43,8 @@ export default function Navbar() {
         </button>
       </div>
       <div className={"navmenu" + (open ? " open" : "")} onClick={() => setOpen(false)}>
-        <Link href="/platform">Platform</Link>
-        <Link href="/scribe">Scribe</Link>
+        <Link href="/scribe">Zera Scribe</Link>
+        <Link href="/platform">Zera Revenue</Link>
         <Link href="/company">Company</Link>
         <a href={LOGIN_URL}>Log in</a>
         <Link href="/contact" className="btn btn-primary">Book a demo</Link>

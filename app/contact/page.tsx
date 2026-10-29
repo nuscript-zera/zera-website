@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Book a demo",
   description:
-    "See what happens when the revenue cycle starts in the exam room. Book a 30-minute working demo — bring a real encounter and watch Zera turn it into a specialty-aware note, accurate coding, validated documentation, and a claim-ready record.",
+    "Book a 30-minute working demo of Zera Revenue, or start a free Zera Scribe trial at zerascribe.com. Bring a real encounter and see it move from note to code to a claim-ready record.",
   alternates: { canonical: "https://zera.health/contact" },
 };
 
@@ -15,7 +15,7 @@ export default function ContactPage() {
       <BleedHead
         eyebrow="Book a demo"
         title="See what happens when the revenue cycle starts in the exam room."
-        sub="Bring us a real encounter. We'll show you how Zera turns it into a specialty-aware note, accurate coding, validated documentation, and a claim-ready record — and exactly where it catches the problems conventional workflows discover later."
+        sub="Bring us a real encounter. We'll show you how Zera gets the note right before it's signed, and how Zera Revenue carries it to accurate coding and a claim-ready record — catching the problems conventional workflows discover later."
         image="/hero-contact.jpg?v=4"
         imageAlt="Abstract blue cubes"
       />
@@ -49,6 +49,15 @@ export default function ContactPage() {
                 </a>
                 <div className="cnote" style={{ fontSize: ".9rem", color: "var(--l-faint)", marginTop: "5px" }}>
                   Demos, pilots, and founding-cohort access.
+                </div>
+              </div>
+              <div className="row">
+                <div className="rlabel">Zera Scribe</div>
+                <a className="rval" href="https://zerascribe.com">
+                  zerascribe.com
+                </a>
+                <div className="cnote" style={{ fontSize: ".9rem", color: "var(--l-faint)", marginTop: "5px" }}>
+                  Free 14-day trial for primary care and psychiatry.
                 </div>
               </div>
               <div className="row">

@@ -25,7 +25,7 @@ export default function CompanyPage() {
             Book a demo
           </Link>
           <Link href="/platform" className="btn btn-ghost">
-            See the platform
+            See Zera Revenue
           </Link>
         </div>
       </BleedHead>
@@ -82,7 +82,7 @@ export default function CompanyPage() {
             </div>
             <div className="origin-copy">
               <p>
-                Built for specialty medicine, Zera removes the friction that slows revenue down: the handoffs, re-keying
+                From primary care to specialty medicine, Zera removes the friction that slows revenue down: the handoffs, re-keying
                 and rework between the note, the code and the claim. AI carries each encounter through one continuous
                 workflow, so revenue moves without getting stuck.
               </p>

@@ -73,7 +73,7 @@ const STEPS = [
 
 const WHO = [
   { h: "Primary care practices", p: "Family medicine, internal medicine and their clinicians." },
-  { h: "Psychiatry and behavioral health practices", p: "Psychiatrists, psychiatric NPs and therapists." },
+  { h: "Psychiatry and behavioral health practices", p: "Psychiatrists and psychiatric NPs and PAs." },
   { h: "Independent practices", p: "Small and mid-sized practices that want better notes without changing their EHR." },
 ];
 

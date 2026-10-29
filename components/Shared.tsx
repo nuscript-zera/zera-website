@@ -55,17 +55,17 @@ export function CtaBand() {
       <div className="wrap">
         <div className="cta-card reveal">
           <div className="cta-body">
-            <h2>See Zera run your encounters — note to claim.</h2>
+            <h2>See Zera on your own visits.</h2>
             <p className="lead">
-              Book a 30-minute working demo on your own specialty and payer mix. We&apos;re onboarding a small group of
-              founding practices now.
+              Primary care and psychiatry practices can try Zera Scribe free for 14 days. Ophthalmology practices can
+              book a 30-minute working demo of Zera Revenue on their own workflow and payer mix.
             </p>
             <div className="cta">
-              <Link href="/contact" className="btn btn-primary">
+              <a href="https://zerascribe.com" className="btn btn-primary">
+                Try Zera Scribe free
+              </a>
+              <Link href="/contact" className="btn btn-ghost">
                 Book a demo
-              </Link>
-              <Link href="/platform" className="btn btn-ghost">
-                See how it works
               </Link>
             </div>
           </div>

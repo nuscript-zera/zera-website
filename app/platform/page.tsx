@@ -4,9 +4,9 @@ import { BleedHead, CtaBand } from "@/components/Shared";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Platform",
+  title: "Zera Revenue",
   description:
-    "Zera is the revenue intelligence layer for specialty medicine — it captures the encounter, creates the documentation, generates the coding, and validates the record before it is signed, with word-level provenance. Full-cycle RCM is built and coming next.",
+    "Zera Revenue codes the visit, checks the codes against the note before signing and prepares the claim, with every code traceable to its source. Starting with ophthalmology, including retina, in early 2027.",
   alternates: { canonical: "https://zera.health/platform" },
 };
 
@@ -22,9 +22,9 @@ export default function ProductPage() {
   return (
     <>
       <BleedHead
-        eyebrow="Zera Platform"
+        eyebrow="Zera Revenue · Coming 2027"
         title="One intelligent workflow from note to claim."
-        sub="Zera is the revenue intelligence layer for specialty medicine — it captures the encounter, generates the coding, and validates the record before it is signed, with word-level provenance."
+        sub="Zera Revenue codes the visit, checks the codes against the note before signing and prepares the claim, with every code traceable to its source. It starts with ophthalmology, including retina, in early 2027."
         image="/hero-platform.jpg?v=4"
         imageAlt="A nurse and a physician reviewing a record on a laptop"
       >
@@ -55,7 +55,7 @@ export default function ProductPage() {
                 <h3>The encounter writes itself.</h3>
                 <p>
                   Ambient conversation is transcribed with medical-grade speech recognition and shaped into a
-                  specialty-aware clinical note. Zera understands the vocabulary of specialty care — laterality, drug
+                  specialty-aware clinical note. Zera Revenue understands the vocabulary of specialty care — laterality, drug
                   names, injection details — instead of flattening them into generic text.
                 </p>
               </div>
@@ -73,7 +73,7 @@ export default function ProductPage() {
                 <div className="fk">02 · Note → Code</div>
                 <h3>Coding that shows its work.</h3>
                 <p>
-                  Zera generates CPT and ICD-10 codes, applies the right modifiers, and calculates J-code drug units
+                  Zera Revenue generates CPT and ICD-10 codes, applies the right modifiers, and calculates J-code drug units
                   directly from the documentation. A cross-walk calculator and modifier engine handle the parts that
                   trip up human coders under volume — and each suggestion links back to the documentation behind it.
                 </p>
@@ -111,7 +111,7 @@ export default function ProductPage() {
             <span className="eyebrow">The pre-sign gate</span>
             <h2>Catch the problem before the note is signed.</h2>
             <p className="lead">
-              Most revenue-cycle systems work downstream. Zera works upstream — while the note is still open, it
+              Most revenue-cycle systems work downstream. Zera Revenue works upstream — while the note is still open, it
               continuously checks the encounter for documentation and coding gaps, and surfaces them to the provider
               before they sign.
             </p>
@@ -177,7 +177,7 @@ export default function ProductPage() {
 
             <div className="gate-note">
               <p>
-                Everything left of the signature is still live and free to fix. Zera works <b>here</b> — upstream, in
+                Everything left of the signature is still live and free to fix. Zera Revenue works <b>here</b> — upstream, in
                 the lane — so a gap gets resolved in seconds instead of becoming a denial, an appeal, or a write-off
                 weeks later.
               </p>
@@ -220,7 +220,7 @@ export default function ProductPage() {
             <h2>Defensible by design.</h2>
             <p className="lead">
               The hardest question in AI-generated coding isn&apos;t &ldquo;what code did the AI choose?&rdquo; — it&apos;s
-              &ldquo;why?&rdquo; Zera makes the answer visible: every phrase timestamped, every code linked to the
+              &ldquo;why?&rdquo; Zera Revenue makes the answer visible: every phrase timestamped, every code linked to the
               documentation that supports it.
             </p>
           </div>
@@ -248,7 +248,7 @@ export default function ProductPage() {
             <span className="eyebrow">Works with your stack</span>
             <h2>Your EHR stays your EHR.</h2>
             <p className="lead">
-              Zera adds intelligence without forcing a rip-and-replace. It works alongside the systems your practice
+              Zera Revenue adds intelligence without forcing a rip-and-replace. It works alongside the systems your practice
               already owns — six EHR-ready output formats today, with direct, real-time integrations rolling out.
             </p>
           </div>
@@ -269,7 +269,7 @@ export default function ProductPage() {
             <h2>Built for specialty complexity.</h2>
             <p className="lead">
               Start where the details matter most — laterality, drug names and doses, disease staging, modifiers, and
-              J-code units. We began with retina, one of the hardest places to get the details right.
+              J-code units. Zera Revenue begins with retina, one of the hardest places to get the details right.
             </p>
           </div>
           <div className="specrow reveal">
@@ -297,8 +297,8 @@ export default function ProductPage() {
           <div className="specnext reveal">
             <span className="snk">Same engine, next</span>
             <p>
-              <b>Cardiology is next</b> — the same engine, with the vocabulary, workflows and payer rules built for that
-              specialty rather than borrowed from a generic template.
+              <b>More specialties follow, one at a time</b> — the same engine, with the vocabulary, workflows and payer
+              rules built for each specialty rather than borrowed from a generic template.
             </p>
           </div>
         </div>
@@ -309,16 +309,16 @@ export default function ProductPage() {
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">Depth, not breadth</span>
-            <h2>Generic AI codes the visit. Zera codes the specialty.</h2>
+            <h2>General tools code the visit. Zera Revenue codes the specialty.</h2>
             <p className="lead">
-              Most ambient tools are tuned across all of medicine, so they&apos;re strongest on the general office
+              Most AI coding tools are tuned across all of medicine, so they&apos;re strongest on the general office
               visit. Specialty revenue lives somewhere else — in the drug units, the modifiers, and the laterality that
               general-purpose models treat as edge cases.
             </p>
           </div>
           <div className="vs reveal">
             <div className="vs-col them">
-              <div className="vs-h">General-purpose ambient AI</div>
+              <div className="vs-h">General-purpose coding tools</div>
               <ul>
                 <li>Tuned across all of medicine</li>
                 <li>Optimized for the general office visit — E/M, problem lists, risk capture</li>
@@ -326,7 +326,7 @@ export default function ProductPage() {
               </ul>
             </div>
             <div className="vs-col us">
-              <div className="vs-h">Zera — built for specialty</div>
+              <div className="vs-h">Zera Revenue — built for specialty</div>
               <ul>
                 <li><ACheck /> Built for one specialty at a time — its vocabulary, modifiers, and payer rules</li>
                 <li><ACheck /> The procedural details are the product, not the exception</li>
@@ -344,19 +344,19 @@ export default function ProductPage() {
             <span className="eyebrow">Roadmap</span>
             <h2>Documentation first. Then the full cycle.</h2>
             <p className="lead">
-              Build the revenue cycle on clean information. With the front of the cycle working in production, Zera
-              extends into the rest.
+              Build the revenue cycle on clean information. Zera Scribe gets the note right today; Zera Revenue extends
+              the same system into coding, claims and the rest of the cycle.
             </p>
           </div>
           <div className="products">
             <article className="pcard reveal">
               <div className="top">
-                <h3>Available now</h3>
+                <h3>Coding and claim preparation</h3>
                 <span className="tag live">
-                  <span className="d"></span>Live
+                  <span className="d"></span>Early 2027
                 </span>
               </div>
-              <p>The working front of the revenue cycle — capture, documentation, coding, and validation, in production today.</p>
+              <p>The front of the revenue cycle for ophthalmology, starting with retina: capture, documentation, coding and validation, with the claim prepared in the same place.</p>
               <ul className="caps">
                 <li>Ambient capture</li>
                 <li>Specialty-aware notes</li>
@@ -369,14 +369,14 @@ export default function ProductPage() {
             </article>
             <article className="pcard soft reveal">
               <div className="top">
-                <h3>Built and coming next</h3>
+                <h3>Claims and the full cycle</h3>
                 <span className="tag dev">
-                  <span className="d"></span>Built · Soon
+                  <span className="d"></span>Mid-2027
                 </span>
               </div>
               <p>
-                Claim submission, denial analytics, A/R intelligence, payer-rule intelligence, and end-to-end RCM
-                automation. The RCM engines are already built — coming to the platform next.
+                Claims sent to payers and connections to EHRs, followed by denial analytics, A/R intelligence,
+                payer-rule intelligence and end-to-end revenue-cycle automation.
               </p>
             </article>
           </div>
@@ -396,7 +396,7 @@ export default function ProductPage() {
           <div className="shead reveal">
             <span className="eyebrow">FAQ</span>
             <h2>Questions, answered.</h2>
-            <p className="lead">What practices ask before their first Zera demo.</p>
+            <p className="lead">What practices ask before their first Zera Revenue demo.</p>
           </div>
           <FAQ />
         </div>
