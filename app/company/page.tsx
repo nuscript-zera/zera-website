@@ -13,9 +13,9 @@ export default function CompanyPage() {
   return (
     <>
       <BleedHead
-        eyebrow="About Zera"
+        eyebrow="About Zera Health"
         title="We help practices get paid in full for the care they provide."
-        sub="Zera is building the path from visit to payment. Our first product, Zera Scribe, writes the note and flags what’s missing before the doctor signs."
+        sub="Zera Health is building the path from visit to payment. Our first product, Zera Scribe, writes the note and flags what’s missing before the doctor signs."
         image="/hero-company.jpg?v=3"
         imageAlt="The Zera team at work"
       >
@@ -39,7 +39,7 @@ export default function CompanyPage() {
           </div>
           <div className="prose reveal">
             <p>
-              Zera started with people who spent decades doing the work — clinical documentation, medical coding,
+              Zera Health started with people who spent decades doing the work — clinical documentation, medical coding,
               revenue-cycle operations, claims, corrections, denials, and all the handoffs in between. We didn&apos;t
               start with a model looking for a problem; we started with a problem we&apos;d fixed by hand thousands of
               times.
@@ -59,9 +59,9 @@ export default function CompanyPage() {
             <span className="eyebrow">Proof in production</span>
             <h2>From documentation to revenue.</h2>
             <p className="lead">
-              Our team also built Dictra, an AI clinical-documentation platform that processes more than 2,000 clinical
-              minutes per day in live production at 99.5% audited accuracy. Zera applies that same production-first
-              discipline to a bigger surface. The note is not the end of the workflow — it&apos;s the beginning.
+              We also make Dictra, an AI clinical documentation platform that handles more than 2,000 clinical minutes a
+              day in live production at 99.5% audited accuracy. Zera brings the same production-first approach to the
+              whole path from visit to payment. The note is not the end of the workflow. It&apos;s the beginning.
             </p>
           </div>
         </div>
