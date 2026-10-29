@@ -1100,3 +1100,22 @@ body:has(.hero.fb) .nav:not(.scrolled) .navtoggle{color:var(--l-ink)}
   .foot .grid{grid-template-columns:1fr 1fr;gap:32px 24px}
   .foot .grid > div:first-child{grid-column:1 / -1}
 }
+
+/* ---- Contact: "From the founder" card with the handshake photo on the right.
+   The photo's bright left side sits under a fade to the card colour, so the text
+   keeps the plain panel behind it. On phones the photo becomes a banner on top. ---- */
+.section.light.founder .founder-card.has-photo{position:relative;overflow:hidden;isolation:isolate}
+.founder-card.has-photo .founder-photo{position:absolute;inset:0;z-index:-1}
+.founder-card.has-photo .founder-photo img{width:100%;height:100%;object-fit:cover;object-position:right 30%;display:block}
+.founder-card.has-photo .founder-photo::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,var(--l-panel) 0%,var(--l-panel) 34%,rgba(241,244,250,.82) 46%,rgba(241,244,250,0) 66%)}
+.founder-card.has-photo .quote,.founder-card.has-photo p{max-width:min(60ch,52%)}
+.founder-card.has-photo .quote{max-width:min(24ch,52%)}
+@media (max-width:860px){
+  .founder-card.has-photo .founder-photo{position:relative;inset:auto;z-index:0;
+    margin:calc(-1 * clamp(32px,5vw,48px)) calc(-1 * clamp(32px,5vw,48px)) 28px calc(-1 * clamp(44px,6.5vw,72px));
+    height:clamp(180px,42vw,300px)}
+  .founder-card.has-photo .founder-photo img{object-position:72% 30%}
+  .founder-card.has-photo .founder-photo::after{background:linear-gradient(180deg,rgba(241,244,250,0) 60%,var(--l-panel) 100%)}
+  .founder-card.has-photo .quote,.founder-card.has-photo p{max-width:none}
+}

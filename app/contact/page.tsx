@@ -78,7 +78,11 @@ export default function ContactPage() {
       {/* Founder's office */}
       <section className="section light founder">
         <div className="wrap">
-          <div className="founder-card reveal">
+          <div className="founder-card has-photo reveal">
+            <div className="founder-photo" aria-hidden="true">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/founder-handshake.jpg?v=1" alt="" loading="lazy" decoding="async" />
+            </div>
             <span className="eyebrow">From the founder</span>
             <p className="quote">
               &ldquo;Show me where your revenue leaks, and I&apos;ll show you <span className="accent">one clean line</span>.&rdquo;
