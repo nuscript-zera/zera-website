@@ -19,7 +19,7 @@ export default function PrivacyPage() {
       <section className="section light">
         <div className="wrap">
           <div className="prose legal reveal">
-            <p className="upd">Last updated: 25 October 2026</p>
+            <p className="upd">Last updated: 29 October 2026</p>
 
             <p>
               This Privacy Policy explains how NuScript Systems, Inc., doing business as Zera Health and Zera

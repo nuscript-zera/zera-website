@@ -19,7 +19,7 @@ export default function TermsPage() {
       <section className="section light">
         <div className="wrap">
           <div className="prose legal reveal">
-            <p className="upd">Last updated: 25 October 2026</p>
+            <p className="upd">Last updated: 29 October 2026</p>
 
             <p>
               These Terms of Service (&ldquo;Terms&rdquo;) govern your use of this website, zera.health (the
