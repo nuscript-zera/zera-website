@@ -34,9 +34,9 @@ export default function Home() {
             loop
             playsInline
             preload="metadata"
-            poster="/hero-fullbleed-poster.jpg?v=4"
+            poster="/hero-fullbleed-poster.jpg?v=5"
           >
-            <source src="/hero-fullbleed.mp4?v=4" type="video/mp4" />
+            <source src="/hero-fullbleed.mp4?v=5" type="video/mp4" />
           </video>
         </div>
         <div className="hero-scrim" aria-hidden="true" />
