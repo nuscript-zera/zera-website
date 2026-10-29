@@ -33,8 +33,8 @@ export default function Home() {
             muted
             loop
             playsInline
-            preload="metadata"
-            poster="/hero-fullbleed-poster.jpg?v=7"
+            preload="auto"
+            poster="/hero-fullbleed-poster.jpg?v=8"
           >
             <source src="/hero-fullbleed.mp4?v=7" type="video/mp4" />
           </video>
@@ -61,8 +61,8 @@ export default function Home() {
         </div>
       </header>
 
-      {/* NOTE. CODE. CLAIM. · dark workflow band */}
-      <section className="section dark" id="workflow">
+      {/* NOTE. CODE. CLAIM. · light workflow band */}
+      <section className="section light" id="workflow">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">The workflow</span>
@@ -106,8 +106,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE PROBLEM · light */}
-      <section className="section light" id="problem">
+      {/* THE PROBLEM · dark */}
+      <section className="section dark" id="problem">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">The problem</span>

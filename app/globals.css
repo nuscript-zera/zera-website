@@ -1077,3 +1077,26 @@ body:has(.hero.fb) .nav:not(.scrolled) .navtoggle{color:var(--l-ink)}
   .hero.fb{margin-top:72px;padding:72px 0 76px;min-height:auto}
   .hero.fb.bleedhead{padding:68px 0 64px;min-height:auto}
 }
+
+/* ---- Home: The workflow on a light band (follows the video hero) ---- */
+#workflow.section.light .flowcap{color:var(--l-muted)}
+#workflow.section.light .flowcap b{color:var(--blue)}
+
+/* ---- Home: The problem on a dark band — stats remapped to dark surfaces ---- */
+#problem.section.dark{--l-ink:#FFFFFF;--l-muted:#BCC0C6;--l-line:#3A4352}
+#problem.section.dark .stats{background:var(--line);border-color:var(--line)}
+#problem.section.dark .stat{background:var(--inv-s2)}
+#problem.section.dark .stat .n{color:var(--ink)}
+#problem.section.dark .stat .n .u{color:var(--blue4)}
+#problem.section.dark .stat .k,#problem.section.dark .stat .src{color:var(--muted)}
+
+/* ---- Company: Our story + Origin & meaning descriptions use the same type
+   as the section lead (e.g. Proof in production) ---- */
+.prose.prose-lead p,.origin-copy.prose-lead p:not(.otag){font-size:1.125rem;line-height:1.55;font-weight:450}
+
+/* ---- Footer on phones: brand block full width, the two link columns side by side
+   (the later 2fr/1fr/1fr rule was overriding the mobile stack and overflowing) ---- */
+@media (max-width:760px){
+  .foot .grid{grid-template-columns:1fr 1fr;gap:32px 24px}
+  .foot .grid > div:first-child{grid-column:1 / -1}
+}

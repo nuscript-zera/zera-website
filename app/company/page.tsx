@@ -37,7 +37,7 @@ export default function CompanyPage() {
             <span className="eyebrow">Our story</span>
             <h2>We&apos;ve sat in every seat this software replaces.</h2>
           </div>
-          <div className="prose reveal">
+          <div className="prose prose-lead reveal">
             <p>
               Zera Health started with people who spent decades doing the work — clinical documentation, medical coding,
               revenue-cycle operations, claims, corrections, denials, and all the handoffs in between. We didn&apos;t
@@ -80,7 +80,7 @@ export default function CompanyPage() {
               <div className="opron">/ zee-ruh /</div>
               <div className="oexp">From &ldquo;zero friction&rdquo;</div>
             </div>
-            <div className="origin-copy">
+            <div className="origin-copy prose-lead">
               <p>
                 From primary care to specialty medicine, Zera removes the friction that slows revenue down: the handoffs, re-keying
                 and rework between the note, the code and the claim. AI carries each encounter through one continuous
