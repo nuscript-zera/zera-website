@@ -1058,3 +1058,22 @@ body:has(.hero.fb) .nav:not(.scrolled) .navlinks .navlogin::before{background:rg
 @media (max-width:760px){.hero.fb .hero-bg-el[src^="/hero-platform"]{object-position:74% center}}
 /* Footer: space between the logo and the description (tagline removed) */
 .foot .brand{margin-bottom:18px}
+
+/* ============================================================
+   WHITE NAV BAR — matches zerascribe.com
+   The nav is always solid white with the dark logo and dark links,
+   and every full-bleed hero starts below it instead of behind it.
+   ============================================================ */
+.nav,.nav.scrolled{background:#fff;backdrop-filter:none;border-bottom:1px solid var(--l-line)}
+body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-white{display:none}
+body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-dark{display:block}
+body:has(.hero.fb) .nav:not(.scrolled) .navlinks a:not(.btn){color:var(--l-muted)}
+body:has(.hero.fb) .nav:not(.scrolled) .navlinks a:not(.btn):hover{color:var(--l-ink);background:var(--l-panel)}
+body:has(.hero.fb) .nav:not(.scrolled) .navlinks .navlogin::before{background:var(--l-line)}
+body:has(.hero.fb) .nav:not(.scrolled) .navtoggle{color:var(--l-ink)}
+.hero.fb{margin-top:85px;padding:84px 0;min-height:clamp(520px,calc(84vh - 85px),760px)}
+.hero.fb.bleedhead{padding:84px 0 88px;min-height:clamp(560px,calc(62vh - 85px),640px)}
+@media (max-width:860px){
+  .hero.fb{margin-top:72px;padding:72px 0 76px;min-height:auto}
+  .hero.fb.bleedhead{padding:68px 0 64px;min-height:auto}
+}
