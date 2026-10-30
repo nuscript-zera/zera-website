@@ -1,5 +1,6 @@
-/* self-hosted font — one family throughout (Figtree Variable), as on zerascribe.com */
-@font-face{font-family:'Figtree';font-style:normal;font-weight:300 900;font-display:swap;src:url('/fonts/Figtree-Variable.woff2') format('woff2')}
+/* self-hosted body font — Hanken Grotesk Variable (SIL OFL, see public/fonts/HankenGrotesk-OFL.txt).
+   Headings use Manrope (see HEADINGS block at the end). */
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:100 900;font-display:swap;src:url('/fonts/HankenGrotesk-Variable.woff2') format('woff2')}
 
 /* ============================================================
    Zera — design tokens shared with zerascribe.com (Oct 18, 2026)
@@ -30,16 +31,16 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;font-size:100%}
-body{background:var(--bg);color:var(--ink);font-family:'Figtree',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-weight:400;
+body{background:var(--bg);color:var(--ink);font-family:'Hanken Grotesk',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-weight:400;
   line-height:1.6;font-synthesis:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:clip}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
-.mono{font-family:'Figtree',sans-serif}
-.eyebrow{font-family:'Figtree',sans-serif;font-weight:500;font-size:.85rem;
+.mono{font-family:'Hanken Grotesk',sans-serif}
+.eyebrow{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:.85rem;
   letter-spacing:.13em;text-transform:uppercase;color:var(--blue4)}
 h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .accent{color:var(--blue4)}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Figtree',sans-serif;font-weight:500;font-size:.92rem;
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:.92rem;
   border-radius:0.75rem;padding:11px 18px;transition:all .2s;cursor:pointer;border:1px solid transparent;white-space:nowrap}
 .btn-primary{background:var(--blue);color:#fff}
 .btn-primary:hover{background:var(--blue-hover);transform:translateY(-1px);box-shadow:0 12px 30px -12px rgba(0,51,212,.7)}
@@ -82,7 +83,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .hero .cta .btn{padding:14px 22px;font-size:1rem}
 .telemetry{margin-top:50px;display:inline-flex;align-items:center;flex-wrap:wrap;
   border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);padding:4px;
-  font-family:'Figtree',sans-serif;font-size:.76rem;letter-spacing:.04em}
+  font-family:'Hanken Grotesk',sans-serif;font-size:.76rem;letter-spacing:.04em}
 .telemetry .cell{padding:9px 16px;color:var(--muted);white-space:nowrap;border-right:1px solid var(--line2)}
 .telemetry .cell:last-child{border-right:0}
 .telemetry .cell b{color:var(--ink);font-weight:500}
@@ -94,14 +95,14 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .flow{margin-top:56px;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0}
 .flowstep{position:relative;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025);
   padding:22px 22px 20px;backdrop-filter:blur(2px)}
-.flowstep .fk{font-family:'Figtree',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.13em;
+.flowstep .fk{font-family:'Hanken Grotesk',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.13em;
   text-transform:uppercase;color:var(--blue4)}
 .flowstep h4{font-size:1.28rem;font-weight:500;letter-spacing:-0.02em;color:var(--ink);margin-top:9px}
 .flowstep p{color:var(--muted);font-size:.95rem;line-height:1.5;margin-top:8px}
-.flowstep .fnum{position:absolute;top:16px;right:18px;font-family:'Figtree',sans-serif;font-size:.72rem;color:var(--faint)}
+.flowstep .fnum{position:absolute;top:16px;right:18px;font-family:'Hanken Grotesk',sans-serif;font-size:.72rem;color:var(--faint)}
 .flowchev{display:flex;align-items:center;justify-content:center;color:var(--blue);width:56px}
 .flowchev svg{width:26px;height:26px}
-.flowcap{margin-top:18px;font-family:'Figtree',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.12em;
+.flowcap{margin-top:18px;font-family:'Hanken Grotesk',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.12em;
   text-transform:uppercase;color:var(--faint)}
 .flowcap b{color:var(--blue4);font-weight:500}
 .flow-mini{margin-top:42px}
@@ -117,7 +118,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .pagehead .wrap{position:relative;z-index:1}
 .pagehead h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:500;line-height:1.09;margin-top:16px;max-width:20ch;color:var(--ink)}
 .pagehead .sub{color:var(--muted);font-size:1.25rem;line-height:1.55;margin-top:18px;max-width:62ch}
-.pagehead .credline{margin-top:28px;padding-top:18px;border-top:1px solid var(--line2);font-family:'Figtree',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:none;line-height:1.7}
+.pagehead .credline{margin-top:28px;padding-top:18px;border-top:1px solid var(--line2);font-family:'Hanken Grotesk',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:none;line-height:1.7}
 .pagehead .credline .ci{white-space:nowrap}
 .pagehead .credline .sep{margin:0 .55em;opacity:.55}
 
@@ -140,7 +141,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .stat .n{font-size:2.6rem;font-weight:500;letter-spacing:-0.03em;line-height:1;color:var(--l-ink)}
 .stat .n .u{font-size:1.5rem;color:var(--blue);margin-left:2px}
 .stat .k{color:var(--l-muted);font-size:1rem;line-height:1.45;margin-top:12px;max-width:30ch}
-.stat .src{font-family:'Figtree',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--l-muted);margin-top:12px}
+.stat .src{font-family:'Hanken Grotesk',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--l-muted);margin-top:12px}
 
 /* products / capability cards (light) */
 .products{display:grid;grid-template-columns:3fr 2fr;gap:22px;margin-top:52px}
@@ -150,8 +151,8 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .pcard:hover{border-color:rgba(0,51,212,.4);transform:translateY(-3px);box-shadow:0 30px 60px -34px rgba(0,51,212,.28)}
 .pcard .top{display:flex;align-items:center;justify-content:space-between;gap:14px}
 .pcard h3{font-size:1.5rem;font-weight:500;letter-spacing:-0.02em;color:var(--l-ink)}
-.pcard h3 .fmr{font-family:'Figtree',sans-serif;font-size:.64rem;font-weight:500;letter-spacing:.02em;color:var(--l-faint);white-space:nowrap;vertical-align:middle;margin-left:8px}
-.tag{font-family:'Figtree',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+.pcard h3 .fmr{font-family:'Hanken Grotesk',sans-serif;font-size:.64rem;font-weight:500;letter-spacing:.02em;color:var(--l-faint);white-space:nowrap;vertical-align:middle;margin-left:8px}
+.tag{font-family:'Hanken Grotesk',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
   display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border-radius:6px;border:1px solid var(--l-line)}
 .tag .d{width:6px;height:6px;border-radius:50%}
 .tag.live{color:var(--blue);border-color:rgba(0,51,212,.28);background:var(--blue-tint)}
@@ -165,7 +166,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .pcard.soft{background:#fff}
 .pcard.soft:hover{transform:none;box-shadow:none;border-color:var(--l-line)}
 .pcard .caps{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.pcard .caps li{font-family:'Figtree',sans-serif;font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+.pcard .caps li{font-family:'Hanken Grotesk',sans-serif;font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
   color:var(--l-muted);border:1px solid var(--l-line);border-radius:6px;padding:5px 9px}
 
 /* thesis (dark) */
@@ -179,7 +180,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
   border-radius:18px;background:#fff;padding:34px 34px}
 .frow:nth-child(even){grid-template-columns:1.1fr .9fr}
 .frow:nth-child(even) .fbody{order:2}
-.frow .fk{font-family:'Figtree',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.frow .fk{font-family:'Hanken Grotesk',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 .frow h3{font-size:1.5rem;font-weight:500;letter-spacing:-0.02em;color:var(--l-ink);margin-top:10px}
 .frow p{color:var(--l-muted);font-size:1.08rem;line-height:1.62;margin-top:12px}
 .frow .fart{border:1px solid var(--l-line);border-radius:14px;background:var(--l-bg);min-height:200px;padding:22px;
@@ -200,7 +201,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .gate-stop.done .gate-mark{border-color:var(--blue);background:rgba(0,51,212,.1);color:var(--blue)}
 .gate-stop.sign .gate-mark{border-radius:7px;border-color:var(--l-ink);background:var(--l-ink);color:#fff}
 .gate-txt{margin-top:13px}
-.gate-k{font-family:'Figtree',sans-serif;font-size:.58rem;font-weight:500;letter-spacing:.13em;
+.gate-k{font-family:'Hanken Grotesk',sans-serif;font-size:.58rem;font-weight:500;letter-spacing:.13em;
   text-transform:uppercase;color:var(--blue);min-height:.85rem}
 .gate-stop.sign .gate-k{color:var(--l-ink)}
 .gate-lbl{font-weight:500;font-size:1.02rem;letter-spacing:-0.01em;color:var(--l-ink);margin-top:5px}
@@ -212,7 +213,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 
 /* five analyzers — inside the pre-sign gate (product) */
 .analyzers{margin-top:28px;padding-top:24px;border-top:1px solid var(--l-line)}
-.analyzers .ahead{font-family:'Figtree',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.13em;
+.analyzers .ahead{font-family:'Hanken Grotesk',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.13em;
   text-transform:uppercase;color:var(--l-faint);margin-bottom:16px}
 .agrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .analyzer{border:1px solid var(--l-line);border-radius:12px;background:var(--l-bg);padding:15px 15px}
@@ -222,7 +223,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 
 /* EHR intelligence-layer chips (product) */
 .formats{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.formats .fmt{font-family:'Figtree',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.03em;color:var(--l-muted);
+.formats .fmt{font-family:'Hanken Grotesk',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.03em;color:var(--l-muted);
   border:1px solid var(--l-line);border-radius:8px;padding:9px 13px;background:#fff}
 .formats .fmt b{color:var(--l-ink);font-weight:500}
 
@@ -237,14 +238,14 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .specrow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
 .spec{border:1px solid var(--l-line);border-radius:14px;background:#fff;padding:22px 22px}
 .spec.lead-spec{border-color:var(--blue);box-shadow:0 24px 50px -34px rgba(0,51,212,.4)}
-.spec .sk{font-family:'Figtree',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.12em;
+.spec .sk{font-family:'Hanken Grotesk',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.12em;
   text-transform:uppercase;color:var(--l-faint)}
 .spec.lead-spec .sk{color:var(--blue)}
 .spec h3{font-size:1.16rem;font-weight:500;letter-spacing:-0.01em;color:var(--l-ink);margin-top:9px}
 .spec p{font-size:.92rem;color:var(--l-muted);line-height:1.45;margin-top:8px}
 .specnext{margin-top:22px;display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;
   border:1px dashed var(--l-line);border-radius:12px;padding:18px 22px;background:#fff}
-.specnext .snk{font-family:'Figtree',sans-serif;font-size:.64rem;font-weight:500;letter-spacing:.13em;
+.specnext .snk{font-family:'Hanken Grotesk',sans-serif;font-size:.64rem;font-weight:500;letter-spacing:.13em;
   text-transform:uppercase;color:var(--blue);white-space:nowrap;margin-top:3px}
 .specnext p{color:var(--l-muted);font-size:1.02rem;line-height:1.55;max-width:70ch}
 .specnext p b{color:var(--l-ink);font-weight:500}
@@ -253,7 +254,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .faqlist{margin-top:40px;border-top:1px solid var(--l-line)}
 .faqitem{border-bottom:1px solid var(--l-line)}
 .faqq{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
-  padding:22px 4px;text-align:left;background:none;border:0;cursor:pointer;font-family:'Figtree',sans-serif}
+  padding:22px 4px;text-align:left;background:none;border:0;cursor:pointer;font-family:'Hanken Grotesk',sans-serif}
 .faqq span{font-weight:500;font-size:1.1rem;letter-spacing:-0.01em;color:var(--l-ink);transition:color .2s}
 .faqitem[data-open="true"] .faqq span,.faqq:hover span{color:var(--blue)}
 .faqq .fi{flex:none;width:20px;height:20px;color:var(--l-faint);transition:transform .28s,color .2s}
@@ -276,7 +277,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .team .tlink:hover{gap:13px}
 .people{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}
 .person{border:1px solid var(--l-line);border-radius:18px;background:#fff;padding:30px 30px}
-.person .prole{font-family:'Figtree',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.person .prole{font-family:'Hanken Grotesk',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
 .person h3{font-size:1.4rem;font-weight:500;letter-spacing:-0.02em;color:var(--l-ink);margin-top:9px}
 .person p{color:var(--l-muted);font-size:1.04rem;line-height:1.6;margin-top:12px}
 
@@ -289,11 +290,11 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 
 /* origin & meaning (company) */
 .origin{display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:start;margin-top:46px}
-.origin-mark .oword{font-family:'Figtree',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
+.origin-mark .oword{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:clamp(2.6rem,5.2vw,3.9rem);
   letter-spacing:-.025em;color:#fff;line-height:1}
-.origin-mark .opron{font-family:'Figtree',sans-serif;font-weight:500;font-size:1.1rem;
+.origin-mark .opron{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:1.1rem;
   letter-spacing:.04em;color:var(--faint);margin-top:16px}
-.origin-mark .oexp{font-family:'Figtree',sans-serif;font-weight:500;font-size:1rem;letter-spacing:.03em;
+.origin-mark .oexp{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:1rem;letter-spacing:.03em;
   color:var(--muted);margin-top:7px}
 .origin-copy p{font-size:1.1rem;line-height:1.66;color:var(--muted)}
 .origin-copy p + p{margin-top:16px}
@@ -302,7 +303,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .prose ul{color:var(--l-muted);font-size:1.0625rem;line-height:1.75;margin:0 0 16px 22px}
 .prose li{margin-bottom:6px}
 .prose a{color:var(--blue);font-weight:500}
-.prose .upd{font-family:'Figtree',sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--l-faint);margin-bottom:26px}
+.prose .upd{font-family:'Hanken Grotesk',sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--l-faint);margin-bottom:26px}
 
 /* careers/cta band — deep-blue card with right-flush concentric-arc decoration */
 .careers{position:relative;padding:96px 0;background:var(--l-bg)}
@@ -336,8 +337,8 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .contact{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start;margin-top:6px}
 .contact h2{font-size:1.6rem;font-weight:500;letter-spacing:-0.01em;color:var(--l-ink);margin-bottom:22px}
 .cform .field{margin-bottom:16px}
-.cform label{display:block;font-family:'Figtree',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
-.cform input,.cform select,.cform textarea{width:100%;font-family:'Figtree',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
+.cform label{display:block;font-family:'Hanken Grotesk',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
+.cform input,.cform select,.cform textarea{width:100%;font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:1rem;color:var(--l-ink);background:#fff;border:1px solid var(--l-line);border-radius:10px;padding:12px 14px;transition:border-color .2s,box-shadow .2s}
 .cform input::placeholder,.cform textarea::placeholder{color:#757C87}
 .cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,51,212,.12)}
 .cform textarea{resize:vertical;min-height:120px}
@@ -348,7 +349,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .hqcard{border:1px solid var(--l-line);border-radius:16px;background:#fff;padding:18px 26px}
 .hqcard .row{padding:18px 0;border-top:1px solid var(--l-line)}
 .hqcard .row:first-child{border-top:0}
-.hqcard .rlabel{font-family:'Figtree',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
+.hqcard .rlabel{font-family:'Hanken Grotesk',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:var(--l-muted);margin-bottom:7px}
 .hqcard .rval{font-size:1.02rem;color:var(--l-ink);font-weight:500;line-height:1.5}
 .hqcard a.rval{color:var(--blue);font-weight:500;display:inline-block}
 .hqcard .maplink{display:inline-block;margin-top:9px;color:var(--blue);font-weight:500;font-size:.9rem}
@@ -365,12 +366,12 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .foot .belief h2 .accent{color:var(--blue)}
 .foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
 .foot .brand{margin-bottom:12px;color:var(--l-ink);width:fit-content}
-.foot .foottag{display:block;font-family:'Figtree',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
+.foot .foottag{display:block;font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
 .foot .footlogo{height:28px;width:auto;display:block}
 .foot .desc{color:var(--l-muted);font-size:1.15rem;line-height:1.6;max-width:38ch}
 .foot .footmail{display:inline-block;margin-top:16px;color:var(--blue);font-weight:500;font-size:1.02rem;transition:opacity .2s}
 .foot .footmail:hover{opacity:.75}
-.foot .col h4{font-family:'Figtree',sans-serif;font-weight:500;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
+.foot .col h4{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--l-muted);margin-bottom:16px}
 .foot .col a{display:block;color:var(--l-muted);font-size:1.11rem;margin-bottom:12px;transition:color .2s;width:fit-content}
 .foot .col a:hover{color:var(--l-ink)}
 .foot .investor{margin-top:14px;color:var(--blue);font-weight:500}
@@ -546,7 +547,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .eyebrow,.flowstep .fk,.frow .fk,.spec .sk,.tag,.person .prole,.hqcard .rlabel,
 .foot .foottag,.foot .col h4,.cform label,.pcard .caps li,.formats .fmt,
 .gate-k,.analyzers .ahead,.specnext .snk,.stat .src,.flowcap,.pagehead .credline{
-  font-family:'Figtree',sans-serif;font-weight:500}
+  font-family:'Hanken Grotesk',sans-serif;font-weight:500}
 .eyebrow{font-size:.78rem;letter-spacing:.16em}
 
 /* ============================================================
@@ -583,7 +584,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 
 /* ---- FOOTER — match Dictra exactly ---- */
 .foot .belief{border-bottom:1px solid rgba(255,255,255,.10)}
-.foot .belief .eyebrow{font-family:'Figtree',sans-serif;text-transform:capitalize;font-size:.9rem;
+.foot .belief .eyebrow{font-family:'Hanken Grotesk',sans-serif;text-transform:capitalize;font-size:.9rem;
   font-weight:600;letter-spacing:0;color:#91B1FF}
 .foot .belief h2 .accent{color:#91B1FF}
 .foot .grid{grid-template-columns:2fr 1fr 1fr}
@@ -632,7 +633,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
    sans, title-case, in the primary blue (t-eyebrow).
    ============================================================ */
 .section .eyebrow,.careers .eyebrow{
-  font-family:'Figtree',sans-serif;text-transform:capitalize;
+  font-family:'Hanken Grotesk',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:var(--blue)}
 .section.dark .eyebrow,.careers .eyebrow{color:#91B1FF}
 
@@ -667,7 +668,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 }
 /* eyebrow matches the Founder's Office: sans Title Case, #91B1FF, leading dot */
 .thesis .thesis-card .eyebrow{
-  font-family:'Figtree',sans-serif;text-transform:capitalize;
+  font-family:'Hanken Grotesk',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:#91B1FF;margin-bottom:14px;
   display:inline-flex;align-items:center;gap:10px}
 .thesis .thesis-card .eyebrow::before{content:"";display:block;width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
@@ -692,11 +693,11 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
   padding-left:clamp(44px,6.5vw,72px);
 }
 .founder .founder-card .eyebrow{
-  font-family:'Figtree',sans-serif;text-transform:capitalize;
+  font-family:'Hanken Grotesk',sans-serif;text-transform:capitalize;
   font-size:.9rem;font-weight:600;letter-spacing:0;color:#91B1FF;margin-bottom:14px}
 
 /* ---- Home hero: Figtree UPPERCASE tracked eyebrow (corporate micro-label) ---- */
-.hero .eyebrow{font-family:'Figtree',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-weight:500;font-size:.78rem;color:var(--blue)}
+.hero .eyebrow{font-family:'Hanken Grotesk',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-weight:500;font-size:.78rem;color:var(--blue)}
 
 /* ---- Note/Code/Claim now live in a dedicated dark band: translucent panels on
    the dark section (overrides the global white .flowstep) ---- */
@@ -708,7 +709,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 
 /* Workflow-band payoff line: sentence-case Figtree statement, left-aligned —
    not the mono uppercase label style */
-#workflow .flowcap{font-family:'Figtree',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:500;font-size:.72rem;color:var(--muted);text-align:left;margin-top:30px}
+#workflow .flowcap{font-family:'Hanken Grotesk',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:500;font-size:.72rem;color:var(--muted);text-align:left;margin-top:30px}
 
 /* ============================================================
    CORPORATE MICRO-LABEL EYEBROWS  (matches nuscriptsystems.com)
@@ -727,7 +728,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
 .founder .eyebrow,
 .founder .founder-card .eyebrow,
 .foot .belief .eyebrow{
-  font-family:'Figtree',sans-serif;
+  font-family:'Hanken Grotesk',sans-serif;
   text-transform:uppercase;
   font-weight:500;
   font-size:.78rem;
@@ -743,7 +744,7 @@ h1,h2{font-weight:500;letter-spacing:-0.01em;line-height:1.1}
    Final override: the mono label block (~L548) and the .72rem size
    rule (~L621) also target .foot .foottag and come after L369, so
    this last rule is what actually lands. */
-.foot .foottag,.foot .col h4{font-family:'Figtree',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+.foot .foottag,.foot .col h4{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
 
 /* ============================================================
    LEGAL PAGES — inline numbered section headings ("1. Heading"),
@@ -835,7 +836,7 @@ body:has(.hero.fb) .nav:not(.scrolled) .brand .logo-dark{display:none}
 .vs-col{border:1px solid var(--line);border-radius:16px;padding:28px 26px}
 .vs-col.them{background:rgba(255,255,255,.02)}
 .vs-col.us{background:#1E2839;border-color:rgba(145,177,255,.2)}
-.vs-col .vs-h{font-family:'Figtree',sans-serif;font-size:.68rem;font-weight:500;
+.vs-col .vs-h{font-family:'Hanken Grotesk',sans-serif;font-size:.68rem;font-weight:500;
   letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:20px}
 .vs-col.us .vs-h{color:var(--blue4)}
 .vs-col ul{list-style:none;margin:0;padding:0;display:grid;gap:15px}
@@ -868,7 +869,7 @@ body:has(.scribe-page) .foot .belief{display:none}
 /* Scribe page: gap examples */
 .gapcards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
 .gapcard{background:#fff;border:1px solid var(--l-line);border-radius:14px;padding:24px 26px;box-shadow:0 1px 2px rgba(11,22,40,.04)}
-.gapcard .gk{font-family:'Figtree',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--l-faint)}
+.gapcard .gk{font-family:'Hanken Grotesk',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--l-faint)}
 .gapcard .gflag{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:.92rem;font-weight:600;color:#95602A}
 .gapcard .gflag svg{width:17px;height:17px;flex:none}
 .gapcard .ggap{margin-top:10px;font-size:1.12rem;font-weight:500;line-height:1.45;color:var(--l-ink)}
@@ -893,13 +894,13 @@ body:has(.scribe-page) .foot .belief{display:none}
    ============================================================ */
 
 /* ---- Base type ---- */
-body{font-family:'Figtree',sans-serif;font-weight:450;line-height:1.55;letter-spacing:normal}
+body{font-family:'Hanken Grotesk',sans-serif;font-weight:450;line-height:1.55;letter-spacing:normal}
 b,strong{font-weight:600}
 h1,h2,h3,h4,
 .hero h1,.hero.fb h1,.pagehead h1,.shead h2,.foot .belief h2,.careers h2,
 .pcard h3,.frow h3,.person h3,.spec h3,.pillar h3,.prose h2,.prose.legal h2,.contact h2,
 .flowstep h4,.founder .quote,.thesis p,.thesis .thesis-card p,.origin-mark .oword,.stat .n{
-  font-family:'Figtree',sans-serif;font-weight:450;letter-spacing:-0.035em;line-height:1.15;text-wrap:balance}
+  font-family:'Hanken Grotesk',sans-serif;font-weight:450;letter-spacing:-0.035em;line-height:1.15;text-wrap:balance}
 h1 b,h2 b,h3 b,h1 strong,h2 strong,h3 strong,
 .thesis .thesis-card p .accent,.founder .quote .accent,.thesis p .accent{font-weight:500}
 
@@ -934,14 +935,14 @@ h1 b,h2 b,h3 b,h1 strong,h2 strong,h3 strong,
 /* Eyebrows: 600 · 0.14em · 1.4 · uppercase */
 .eyebrow,.hero .eyebrow,.hero.fb .eyebrow,.section .eyebrow,.careers .eyebrow,.pagehead .eyebrow,
 .thesis .eyebrow,.thesis .thesis-card .eyebrow,.founder .eyebrow,.founder .founder-card .eyebrow,.foot .belief .eyebrow{
-  font-family:'Figtree',sans-serif;font-weight:600;letter-spacing:.14em;line-height:1.4;
+  font-family:'Hanken Grotesk',sans-serif;font-weight:600;letter-spacing:.14em;line-height:1.4;
   text-transform:uppercase;font-size:.875rem}
 /* Small labels (card kickers, tags, chips, form labels) use the eyebrow style at 12px */
 .flowstep .fk,.frow .fk,.spec .sk,.tag,.person .prole,.hqcard .rlabel,.foot .foottag,.foot .col h4,
 .cform label,.pcard .caps li,.gate-k,.analyzers .ahead,.specnext .snk,.stat .src,.flowcap,#workflow .flowcap,
 .pagehead .credline,.vs-col .vs-h,.gapcard .gk,.pcard h3 .fmr,.flowstep .fnum,.prose .upd{
-  font-family:'Figtree',sans-serif;font-weight:600;letter-spacing:.14em;line-height:1.4;font-size:.75rem}
-.formats .fmt{font-family:'Figtree',sans-serif;font-weight:500;letter-spacing:normal;font-size:.875rem}
+  font-family:'Hanken Grotesk',sans-serif;font-weight:600;letter-spacing:.14em;line-height:1.4;font-size:.75rem}
+.formats .fmt{font-family:'Hanken Grotesk',sans-serif;font-weight:500;letter-spacing:normal;font-size:.875rem}
 .cform label .opt{font-weight:450;letter-spacing:normal;text-transform:none}
 
 /* ---- Colours on light ---- */
@@ -982,7 +983,7 @@ h1 b,h2 b,h3 b,h1 strong,h2 strong,h3 strong,
 
 /* ---- Buttons: 600 · line-height 1 · 8px radius ---- */
 .btn,.nav .btn,.hero .cta .btn,.hero.fb .cta .btn,.careers .cta .btn,.pagehead .cta .btn{
-  font-family:'Figtree',sans-serif;font-weight:600;line-height:1;letter-spacing:normal;border-radius:var(--radius-button)}
+  font-family:'Hanken Grotesk',sans-serif;font-weight:600;line-height:1;letter-spacing:normal;border-radius:var(--radius-button)}
 .btn-primary,.careers .btn-primary{background:var(--blue);border-color:var(--blue);color:#fff}
 .btn-primary:hover,.careers .btn-primary:hover{background:var(--blue-hover);border-color:var(--blue-hover);color:#fff;box-shadow:none;transform:none}
 /* secondary on light: white with #757C87 border, navy text */
@@ -1123,12 +1124,12 @@ body:has(.hero.fb) .nav:not(.scrolled) .navtoggle{color:var(--l-ink)}
 /* ================= HEADINGS: Manrope =================
    Headings, card titles, big stats and the large statements use Manrope.
    Body text, buttons, eyebrows/labels, forms and the footer column labels
-   stay in Figtree. Manrope is SIL Open Font License (see
+   stay in Hanken Grotesk. Manrope is SIL Open Font License (see
    public/fonts/Manrope-OFL.txt). Characters Manrope lacks (e.g. the →
-   arrow) fall back to Figtree. */
+   arrow) fall back to a system font. */
 @font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;
   src:url('/fonts/Manrope-Variable.woff2') format('woff2')}
-:root{--font-head:'Manrope','Figtree',ui-sans-serif,system-ui,sans-serif}
+:root{--font-head:'Manrope','Hanken Grotesk',ui-sans-serif,system-ui,sans-serif}
 h1,h2,h3,h4,
 .hero h1,.hero.fb h1,.pagehead h1,.shead h2,.foot .belief h2,.careers h2,
 .pcard h3,.frow h3,.person h3,.spec h3,.pillar h3,.prose h2,.prose.legal h2,.contact h2,
