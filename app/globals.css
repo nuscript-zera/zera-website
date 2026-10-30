@@ -1128,3 +1128,13 @@ h1,h2,h3,h4,
 /* Hero headings now lead their block (eyebrow labels removed from all heroes),
    so drop the gap that used to sit under the eyebrow. */
 .hero.fb .fbcopy > h1:first-child,.pagehead .wrap > h1:first-child{margin-top:0}
+
+/* ---- Hero height: a little more breathing room (≈ +70px desktop, +40px phone) ---- */
+.hero.fb{padding:96px 0;min-height:clamp(580px,calc(92vh - 85px),840px)}
+.hero.fb.bleedhead{padding:100px 0;min-height:clamp(630px,calc(72vh - 85px),720px)}
+.pagehead{padding-bottom:88px}
+@media (max-width:760px){
+  .hero.fb{padding:92px 0 96px;min-height:auto}
+  .hero.fb.bleedhead{padding:88px 0 84px;min-height:auto}
+  .pagehead{padding-bottom:72px}
+}
