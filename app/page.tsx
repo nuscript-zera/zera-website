@@ -42,7 +42,6 @@ export default function Home() {
         <div className="hero-scrim" aria-hidden="true" />
         <div className="wrap">
           <div className="fbcopy reveal">
-            <span className="eyebrow">Zera Health</span>
             <h1>Get paid in full for the care you provide.</h1>
             <p className="sub">
               Zera follows each visit from the clinical note to the claim and catches what&apos;s missing along the way.

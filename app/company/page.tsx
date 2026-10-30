@@ -13,7 +13,6 @@ export default function CompanyPage() {
   return (
     <>
       <BleedHead
-        eyebrow="About Zera Health"
         title="We help practices get paid in full for the care they provide."
         sub="Zera Health is building the path from visit to payment. Our first product, Zera Scribe, writes the note and flags what’s missing before the doctor signs."
         image="/hero-company.jpg?v=3"

@@ -22,7 +22,6 @@ export default function ProductPage() {
   return (
     <>
       <BleedHead
-        eyebrow="Zera Revenue · Coming 2027"
         title="One intelligent workflow from note to claim."
         sub="Zera Revenue codes the visit, checks the codes against the note before signing and prepares the claim, with every code traceable to its source. It starts with ophthalmology, including retina, in early 2027."
         image="/hero-platform.jpg?v=4"

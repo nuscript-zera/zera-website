@@ -11,7 +11,6 @@ export default function PrivacyPage() {
     <>
       <header className="pagehead">
         <div className="wrap">
-          <span className="eyebrow reveal">Legal</span>
           <h1 className="reveal">Privacy Policy</h1>
         </div>
       </header>

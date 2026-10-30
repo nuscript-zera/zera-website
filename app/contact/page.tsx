@@ -13,7 +13,6 @@ export default function ContactPage() {
   return (
     <>
       <BleedHead
-        eyebrow="Book a demo"
         title="See what happens when the revenue cycle starts in the exam room."
         sub="Bring us a real encounter. We'll show you how Zera gets the note right before it's signed, and how Zera Revenue carries it to accurate coding and a claim-ready record — catching the problems conventional workflows discover later."
         image="/hero-contact-lines.jpg?v=1"

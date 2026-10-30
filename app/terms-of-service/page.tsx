@@ -11,7 +11,6 @@ export default function TermsPage() {
     <>
       <header className="pagehead">
         <div className="wrap">
-          <span className="eyebrow reveal">Legal</span>
           <h1 className="reveal">Terms of Service</h1>
         </div>
       </header>

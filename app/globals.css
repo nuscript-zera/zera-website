@@ -1124,3 +1124,7 @@ h1,h2,h3,h4,
    the 20px/500 card titles. Large headlines (40px+) stay at 450.
    (Product cards, Platform feature rows, Contact demo heading, legal section headings.) */
 .pcard h3,.frow h3,.contact h2,.prose h2,.prose.legal h2{font-weight:500}
+
+/* Hero headings now lead their block (eyebrow labels removed from all heroes),
+   so drop the gap that used to sit under the eyebrow. */
+.hero.fb .fbcopy > h1:first-child,.pagehead .wrap > h1:first-child{margin-top:0}
