@@ -1120,13 +1120,15 @@ body:has(.hero.fb) .nav:not(.scrolled) .navtoggle{color:var(--l-ink)}
   .founder-card.has-photo .quote,.founder-card.has-photo p{max-width:none}
 }
 
-/* ================= HEADINGS: Instrument Sans =================
-   Headings, card titles, big stats and the large statements use Instrument Sans.
+/* ================= HEADINGS: Manrope =================
+   Headings, card titles, big stats and the large statements use Manrope.
    Body text, buttons, eyebrows/labels, forms and the footer column labels
-   stay in Figtree. Instrument Sans is SIL Open Font License. */
-@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-display:swap;
-  src:url('/fonts/InstrumentSans-Variable.woff2') format('woff2')}
-:root{--font-head:'Instrument Sans','Figtree',ui-sans-serif,system-ui,sans-serif}
+   stay in Figtree. Manrope is SIL Open Font License (see
+   public/fonts/Manrope-OFL.txt). Characters Manrope lacks (e.g. the →
+   arrow) fall back to Figtree. */
+@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;
+  src:url('/fonts/Manrope-Variable.woff2') format('woff2')}
+:root{--font-head:'Manrope','Figtree',ui-sans-serif,system-ui,sans-serif}
 h1,h2,h3,h4,
 .hero h1,.hero.fb h1,.pagehead h1,.shead h2,.foot .belief h2,.careers h2,
 .pcard h3,.frow h3,.person h3,.spec h3,.pillar h3,.prose h2,.prose.legal h2,.contact h2,
