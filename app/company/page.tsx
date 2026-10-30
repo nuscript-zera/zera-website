@@ -59,8 +59,8 @@ export default function CompanyPage() {
             <span className="eyebrow">Proof in production</span>
             <h2>From documentation to revenue.</h2>
             <p className="lead">
-              We also make Dictra, an AI clinical documentation platform that handles more than 2,000 clinical minutes a
-              day in live production at 99.5% audited accuracy. Zera brings the same production-first approach to the
+              We also make Dictra, an AI clinical documentation platform that produces more than 600 clinical notes a day
+              in live production at 99.5% audited accuracy. Zera brings the same production-first approach to the
               whole path from visit to payment. The note is not the end of the workflow. It&apos;s the beginning.
             </p>
           </div>

@@ -16,8 +16,8 @@ export default function ContactPage() {
         eyebrow="Book a demo"
         title="See what happens when the revenue cycle starts in the exam room."
         sub="Bring us a real encounter. We'll show you how Zera gets the note right before it's signed, and how Zera Revenue carries it to accurate coding and a claim-ready record — catching the problems conventional workflows discover later."
-        image="/hero-contact.jpg?v=4"
-        imageAlt="Abstract blue cubes"
+        image="/hero-contact-lines.jpg?v=1"
+        imageAlt="Coloured light lines converging into one path"
       />
 
       {/* Book a demo — form + details */}
@@ -78,11 +78,7 @@ export default function ContactPage() {
       {/* Founder's office */}
       <section className="section light founder">
         <div className="wrap">
-          <div className="founder-card has-photo reveal">
-            <div className="founder-photo" aria-hidden="true">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/founder-handshake.jpg?v=1" alt="" loading="lazy" decoding="async" />
-            </div>
+          <div className="founder-card reveal">
             <span className="eyebrow">From the founder</span>
             <p className="quote">
               &ldquo;Show me where your revenue leaks, and I&apos;ll show you <span className="accent">one clean line</span>.&rdquo;
