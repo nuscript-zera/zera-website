@@ -41,6 +41,9 @@ export default function Footer() {
             <Link href="/contact">Contact</Link>
             <a href="https://zerascribe.com">zerascribe.com</a>
             <a href="mailto:hello@zera.health">Sales &amp; pilots</a>
+            <a href="https://www.linkedin.com/company/zerahealth" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
           </div>
         </div>
         <div className="base">
