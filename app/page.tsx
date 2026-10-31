@@ -301,8 +301,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRODUCTS & ROADMAP · dark */}
-      <section className="section dark" id="roadmap">
+      {/* PRODUCTS & ROADMAP · light tint */}
+      <section className="section light tint" id="roadmap">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">Products &amp; roadmap</span>
@@ -345,9 +345,15 @@ export default function Home() {
               </div>
               <p>
                 Coding and claims, launching in 2027 one specialty at a time: primary care, psychiatry, ophthalmology
-                and cardiology. Each launch is complete: CPT and ICD-10 codes from the note, modifiers and drug units,
-                codes checked before signing, and claims sent to payers. Denial analytics and A/R intelligence follow.
+                and cardiology.
               </p>
+              <ul className="caps">
+                <li>Codes from the note</li>
+                <li>Modifiers and drug units</li>
+                <li>Codes checked before signing</li>
+                <li>Claims sent to payers</li>
+                <li>Every code linked to its source</li>
+              </ul>
               <Link className="plink muted" href="/platform">
                 Explore Zera Revenue →
               </Link>

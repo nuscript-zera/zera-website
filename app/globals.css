@@ -1166,15 +1166,3 @@ h1,h2,h3,h4,
 .pcard .caps li{text-transform:none;letter-spacing:normal;font-size:.875rem;font-weight:500;line-height:1.4;
   color:var(--l-ink);padding:6px 12px}
 
-/* ---- Home PRODUCTS & ROADMAP on the dark band ---- */
-#roadmap.section.dark{--l-ink:#FFFFFF;--l-muted:#BCC0C6;--l-faint:#BCC0C6;--l-line:#3A4352}
-#roadmap.section.dark .pcard,#roadmap.section.dark .pcard.soft{background:var(--inv-s2);border-color:var(--line)}
-#roadmap.section.dark .pcard:hover{border-color:var(--blue4)}
-#roadmap.section.dark .pcard.soft:hover{border-color:var(--line)}
-#roadmap.section.dark .pcard .caps li{border-color:#4A5466;color:#E6EAF0}
-#roadmap.section.dark .tag.live{color:#91B1FF;background:rgba(145,177,255,.12);border-color:rgba(145,177,255,.35)}
-#roadmap.section.dark .tag.live .d{background:#91B1FF}
-#roadmap.section.dark .tag.dev{color:#BCC0C6;border-color:var(--line)}
-#roadmap.section.dark .tag.dev .d{border-color:#BCC0C6}
-#roadmap.section.dark .pcard .plink{color:#91B1FF}
-#roadmap.section.dark .pcard .plink.muted{color:#E6EAF0}
