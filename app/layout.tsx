@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const description =
-  "Zera Health helps practices get paid in full for the care they provide. Zera Scribe writes the note and flags what’s missing before the doctor signs, for primary care and psychiatry. Zera Revenue, for coding and claims, follows in 2027.";
+  "Zera Health helps practices get paid in full for the care they provide. Zera Scribe writes the note and flags what’s missing before the doctor signs, for primary care and psychiatry, with ophthalmology and cardiology next. Zera Revenue, for coding and claims, follows in 2027.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zera.health"),
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "AI medical coding",
     "clinical documentation AI",
     "AI RCM platform",
-    "retina practice billing",
+    "ophthalmology and cardiology coding",
     "CPT coding automation",
     "claim denial prevention",
   ],

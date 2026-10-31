@@ -5,10 +5,10 @@ import type { FormEvent } from "react";
 
 const interests = [
   { v: "demo", label: "Book a demo — see Zera on my encounters" },
-  { v: "scribe", label: "Zera Scribe for my practice (primary care or psychiatry)" },
+  { v: "scribe", label: "Zera Scribe for my practice" },
   { v: "pilot", label: "Start a 90-day Zera Revenue pilot" },
-  { v: "founding", label: "Zera Revenue founding cohort (ophthalmology / retina)" },
-  { v: "partnership", label: "Partnership or affiliate RCM" },
+  { v: "founding", label: "Join the Zera Revenue founding practices" },
+  { v: "partnership", label: "Partnership" },
   { v: "investment", label: "Investment" },
   { v: "other", label: "Something else" },
 ];
@@ -54,7 +54,7 @@ export default function ContactForm() {
       </div>
       <div className="field">
         <label htmlFor="cf-practice">Practice / organization</label>
-        <input id="cf-practice" value={practice} onChange={(e) => setPractice(e.target.value)} required placeholder="e.g. Coastal Retina Associates" />
+        <input id="cf-practice" value={practice} onChange={(e) => setPractice(e.target.value)} required placeholder="e.g. Lakeside Medical Group" />
       </div>
       <div className="two">
         <div className="field">

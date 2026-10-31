@@ -201,9 +201,10 @@ export default function Home() {
             <span className="eyebrow">Built for each specialty</span>
             <h2>The details each specialty depends on.</h2>
             <p className="lead">
-              Every specialty gets paid on different details: psychotherapy time and risk documentation in psychiatry,
-              chronic-condition staging in primary care, laterality, drug units and modifiers in ophthalmology. Zera is
-              built around those details instead of a generic template.
+              Every specialty gets paid on different details: chronic-condition staging in primary care, psychotherapy
+              time and risk documentation in psychiatry, laterality, drug units and modifiers in ophthalmology,
+              diagnostic tests and procedures in cardiology. Zera is built around those details instead of a generic
+              template.
             </p>
           </div>
           <div className="specrow reveal">
@@ -218,21 +219,21 @@ export default function Home() {
               <p>Psychotherapy time, risk documentation and medication management, in each clinician&apos;s format.</p>
             </div>
             <div className="spec">
-              <div className="sk">Zera Revenue · Early 2027</div>
-              <h3>Retina</h3>
-              <p>Injection workflow: anti-VEGF documentation, J-code units and laterality.</p>
+              <div className="sk">Zera Scribe · Next</div>
+              <h3>Ophthalmology</h3>
+              <p>Injections, laterality, drug units and surgical detail, from retina to glaucoma and cataract.</p>
             </div>
             <div className="spec">
-              <div className="sk">Zera Revenue · 2027</div>
-              <h3>Ophthalmology</h3>
-              <p>Glaucoma, cataract and comprehensive exams, with laterality and surgical coding.</p>
+              <div className="sk">Zera Scribe · Next</div>
+              <h3>Cardiology</h3>
+              <p>Diagnostic tests, procedures and the findings behind them, captured in the visit.</p>
             </div>
           </div>
           <div className="specnext reveal">
-            <span className="snk">More specialties next</span>
+            <span className="snk">Zera Revenue · 2027</span>
             <p>
-              <b>One specialty at a time</b>, each with the vocabulary, workflows and payer rules built for it rather
-              than borrowed from a generic template.
+              <b>Coding and claims for each of these specialties, one at a time</b>, each with the vocabulary,
+              workflows and payer rules built for it rather than borrowed from a generic template.
             </p>
           </div>
         </div>
@@ -307,8 +308,8 @@ export default function Home() {
                 </span>
               </div>
               <p>
-                The AI scribe for primary care and psychiatry. It writes the note from the visit and flags what&apos;s
-                missing before the doctor signs.
+                The AI scribe for primary care and psychiatry, with ophthalmology and cardiology next. It writes the
+                note from the visit and flags what&apos;s missing before the doctor signs.
               </p>
               <ul className="caps">
                 <li>Ambient recording and dictation</li>
@@ -330,9 +331,9 @@ export default function Home() {
                 </span>
               </div>
               <p>
-                Coding and claims, starting with ophthalmology, including retina, in early 2027: CPT and ICD-10 coding
-                from the note, modifiers and drug units, codes checked before signing, and payer-ready claims. Claims
-                sent to payers and EHR connections follow in mid-2027, then denial analytics and A/R intelligence.
+                Coding and claims, launching in 2027 one specialty at a time: primary care, psychiatry, ophthalmology
+                and cardiology. Each launch is complete: CPT and ICD-10 codes from the note, modifiers and drug units,
+                codes checked before signing, and claims sent to payers. Denial analytics and A/R intelligence follow.
               </p>
               <Link className="plink muted" href="/platform">
                 Explore Zera Revenue →
@@ -390,9 +391,9 @@ export default function Home() {
               <span className="eyebrow">Zera Scribe now · Zera Revenue in 2027</span>
               <h2>See Zera on your own visits.</h2>
               <p className="lead">
-                Primary care and psychiatry practices can try Zera Scribe free for 14 days. Ophthalmology practices can
-                book a 30-minute working demo of Zera Revenue and watch a real encounter move from conversation to note
-                to code to a clean claim. From the makers of Dictra, in production at 99.5% audited accuracy.
+                Primary care and psychiatry practices can try Zera Scribe free for 14 days. Or book a 30-minute demo
+                and watch a real encounter move from conversation to note to code to a clean claim. From the makers of
+                Dictra, in production at 99.5% audited accuracy.
               </p>
               <div className="cta">
                 <a href={TRIAL_URL} className="btn btn-primary">

@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 export const metadata: Metadata = {
   title: "Zera Revenue",
   description:
-    "Zera Revenue codes the visit, checks the codes against the note before signing and prepares the claim, with every code traceable to its source. Starting with ophthalmology, including retina, in early 2027.",
+    "Zera Revenue codes the visit, checks the codes against the note before signing and prepares the claim, with every code traceable to its source. Launching in 2027, one specialty at a time: primary care, psychiatry, ophthalmology and cardiology.",
   alternates: { canonical: "https://zera.health/platform" },
 };
 
@@ -23,7 +23,7 @@ export default function ProductPage() {
     <>
       <BleedHead
         title="One intelligent workflow from note to claim."
-        sub="Zera Revenue codes the visit, checks the codes against the note before signing and prepares the claim, with every code traceable to its source. It starts with ophthalmology, including retina, in early 2027."
+        sub="Zera Revenue codes the visit, checks the codes against the note before signing and prepares the claim, with every code traceable to its source. It launches in 2027, one specialty at a time: primary care, psychiatry, ophthalmology and cardiology."
         image="/hero-platform.jpg?v=4"
         imageAlt="A nurse and a physician reviewing a record on a laptop"
       >
@@ -267,37 +267,37 @@ export default function ProductPage() {
             <span className="eyebrow">Built for specialty medicine</span>
             <h2>Built for specialty complexity.</h2>
             <p className="lead">
-              Start where the details matter most — laterality, drug names and doses, disease staging, modifiers, and
-              J-code units. Zera Revenue begins with retina, one of the hardest places to get the details right.
+              Each specialty gets paid on its own details: disease staging, psychotherapy time, laterality, drug units,
+              modifiers and test findings. Zera Revenue is built for each one, one specialty at a time.
             </p>
           </div>
           <div className="specrow reveal">
             <div className="spec lead-spec">
-              <div className="sk">Near-term focus</div>
-              <h3>Retina</h3>
-              <p>Purpose-built injection workflow — anti-VEGF documentation, J-code units, and laterality.</p>
+              <div className="sk">Primary care</div>
+              <h3>Chronic conditions</h3>
+              <p>Risk-adjustment conditions, staging and specificity, with documentation behind every diagnosis.</p>
+            </div>
+            <div className="spec lead-spec">
+              <div className="sk">Psychiatry</div>
+              <h3>Time and risk</h3>
+              <p>Visit and psychotherapy codes together, with the minutes and risk documentation each one needs.</p>
             </div>
             <div className="spec">
               <div className="sk">Ophthalmology</div>
-              <h3>Glaucoma</h3>
-              <p>Laterality enforcement and diagnostic-test coding logic.</p>
+              <h3>Eye by eye</h3>
+              <p>Injections, J-code units, laterality and surgical coding, from retina to glaucoma and cataract.</p>
             </div>
             <div className="spec">
-              <div className="sk">Ophthalmology</div>
-              <h3>Cataract / Refractive</h3>
-              <p>Pre- and post-op chart fidelity and surgical coding.</p>
-            </div>
-            <div className="spec">
-              <div className="sk">Ophthalmology</div>
-              <h3>Comprehensive</h3>
-              <p>VA, IOP, slit-lamp, fundus, and gonioscopy captured cleanly.</p>
+              <div className="sk">Cardiology</div>
+              <h3>Tests and procedures</h3>
+              <p>Diagnostic tests, procedures and their modifiers, coded from the findings in the note.</p>
             </div>
           </div>
           <div className="specnext reveal">
-            <span className="snk">Same engine, next</span>
+            <span className="snk">One at a time</span>
             <p>
-              <b>More specialties follow, one at a time</b> — the same engine, with the vocabulary, workflows and payer
-              rules built for each specialty rather than borrowed from a generic template.
+              <b>Each specialty launches complete</b> — the same engine, with the vocabulary, workflows and payer rules
+              built for that specialty rather than borrowed from a generic template.
             </p>
           </div>
         </div>
@@ -350,32 +350,35 @@ export default function ProductPage() {
           <div className="products">
             <article className="pcard reveal">
               <div className="top">
-                <h3>Coding and claim preparation</h3>
+                <h3>Coding and claims</h3>
                 <span className="tag live">
-                  <span className="d"></span>Early 2027
+                  <span className="d"></span>2027
                 </span>
               </div>
-              <p>The front of the revenue cycle for ophthalmology, starting with retina: capture, documentation, coding and validation, with the claim prepared in the same place.</p>
+              <p>
+                Launching one specialty at a time across primary care, psychiatry, ophthalmology and cardiology. Each
+                launch is complete: from the note to the code to the claim sent to the payer.
+              </p>
               <ul className="caps">
-                <li>Ambient capture</li>
                 <li>Specialty-aware notes</li>
                 <li>CPT + ICD-10</li>
                 <li>Modifier engine</li>
                 <li>J-code math</li>
                 <li>Pre-sign validation</li>
+                <li>Claims sent to payers</li>
                 <li>Traceable Truth</li>
               </ul>
             </article>
             <article className="pcard soft reveal">
               <div className="top">
-                <h3>Claims and the full cycle</h3>
+                <h3>The rest of the cycle</h3>
                 <span className="tag dev">
-                  <span className="d"></span>Mid-2027
+                  <span className="d"></span>Next
                 </span>
               </div>
               <p>
-                Claims sent to payers and connections to EHRs, followed by denial analytics, A/R intelligence,
-                payer-rule intelligence and end-to-end revenue-cycle automation.
+                Direct EHR connections, denial analytics, A/R intelligence, payer-rule intelligence and end-to-end
+                revenue-cycle automation.
               </p>
             </article>
           </div>

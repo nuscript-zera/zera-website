@@ -57,8 +57,8 @@ export function CtaBand() {
           <div className="cta-body">
             <h2>See Zera on your own visits.</h2>
             <p className="lead">
-              Primary care and psychiatry practices can try Zera Scribe free for 14 days. Ophthalmology practices can
-              book a 30-minute working demo of Zera Revenue on their own workflow and payer mix.
+              Primary care and psychiatry practices can try Zera Scribe free for 14 days. Or book a 30-minute demo
+              and see where Zera Revenue fits your workflow and payer mix.
             </p>
             <div className="cta">
               <a href="https://zerascribe.com" className="btn btn-primary">

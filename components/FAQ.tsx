@@ -5,15 +5,15 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What is Zera Revenue?",
-    a: "Zera Revenue is Zera's coding and claims product for specialty medicine. It codes the visit from the note, checks the codes against the documentation before signing, and prepares the claim, with the provider always in control. It starts with ophthalmology, including retina, in early 2027.",
+    a: "Zera Revenue is Zera's coding and claims product for specialty medicine. It codes the visit from the note, checks the codes against the documentation before signing, and prepares the claim, with the provider always in control. It launches in 2027, one specialty at a time.",
   },
   {
     q: "How does Zera Revenue relate to Zera Scribe?",
-    a: "Zera Scribe, available now for primary care and psychiatry at zerascribe.com, writes the note and flags what's missing before the doctor signs. Zera Revenue builds on the same system to carry the visit through coding to the claim. Practices that move from Zera Scribe to Zera Revenue switch plans; they don't pay for both.",
+    a: "Zera Scribe, available now for primary care and psychiatry at zerascribe.com, with ophthalmology and cardiology next, writes the note and flags what's missing before the doctor signs. Zera Revenue builds on the same system to carry the visit through coding to the claim. Practices that move from Zera Scribe to Zera Revenue switch plans; they don't pay for both.",
   },
   {
     q: "Which specialties does Zera Revenue support?",
-    a: "Ophthalmology first, with retina as the starting point, followed by glaucoma, cataract/refractive and comprehensive workflows. More specialties follow one at a time, each with its own vocabulary, workflows and payer rules.",
+    a: "Primary care, psychiatry, ophthalmology and cardiology. Zera Revenue launches in each one at a time during 2027, built around that specialty's vocabulary, workflows and payer rules. Every launch includes both coding and claims.",
   },
   {
     q: "Does Zera replace my EHR?",
@@ -26,10 +26,6 @@ const faqs = [
   {
     q: "Is Zera HIPAA compliant?",
     a: "Yes. Zera signs a Business Associate Agreement with every practice, deploys US-only, and isolates each organization's data with customer-scoped keys. We are SOC 2 Type I certified, with Type II in progress. Your data is never used to train shared models — a private, per-provider learning loop personalizes Zera to each clinician.",
-  },
-  {
-    q: "Can Zera run the whole revenue cycle for us?",
-    a: "Yes. Run Zera Revenue yourself, or choose Zera Managed RCM — the same platform, operated for you by a dedicated revenue-cycle team. Same software, same intelligence layer; you choose who runs the operation.",
   },
 ];
 

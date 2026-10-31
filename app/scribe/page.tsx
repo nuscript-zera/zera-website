@@ -228,6 +228,7 @@ export default function ScribePage() {
           <div className="shead reveal">
             <span className="eyebrow">Who it&rsquo;s for</span>
             <h2>Built for primary care and psychiatry.</h2>
+            <p className="lead">Ophthalmology and cardiology are next.</p>
           </div>
           <div className="pillars">
             {WHO.map((w) => (
