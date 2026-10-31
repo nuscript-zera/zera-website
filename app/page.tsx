@@ -301,8 +301,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRODUCTS & ROADMAP · light tint */}
-      <section className="section light tint" id="roadmap">
+      {/* PRODUCTS & ROADMAP · dark */}
+      <section className="section dark" id="roadmap">
         <div className="wrap">
           <div className="shead reveal">
             <span className="eyebrow">Products &amp; roadmap</span>
