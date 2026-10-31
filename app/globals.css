@@ -1138,3 +1138,26 @@ h1,h2,h3,h4,
   .hero.fb.bleedhead{padding:88px 0 84px;min-height:auto}
   .pagehead{padding-bottom:72px}
 }
+
+/* ---- ONE CONNECTED PATH card: photo inside the card, right side ---- */
+.thesis .thesis-card.has-photo{display:grid;grid-template-columns:minmax(0,1fr) 28%;padding:0;overflow:hidden}
+.thesis .thesis-card.has-photo .tc-copy{align-self:center;padding:clamp(32px,5vw,48px);padding-left:clamp(44px,6.5vw,72px)}
+.thesis .thesis-card.has-photo .tc-photo{margin:0;position:relative;min-height:340px}
+.thesis .thesis-card.has-photo .tc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:66% 30%;display:block}
+@media (max-width:860px){
+  .thesis .thesis-card.has-photo{grid-template-columns:1fr}
+  .thesis .thesis-card.has-photo .tc-photo{order:-1;min-height:0;aspect-ratio:4/3}
+  .thesis .thesis-card.has-photo .tc-copy{padding:28px 24px 32px}
+}
+
+/* ---- Zera Scribe "What you get": photo beside the feature list ---- */
+.feat-split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,3vw,40px);margin-top:40px;align-items:center}
+.feat-split .agrid.scribe-features{margin-top:0;grid-template-columns:repeat(2,1fr)}
+.feat-split .feat-photo{margin:0;border-radius:var(--radius-card);overflow:hidden;aspect-ratio:4/3;background:var(--l-line)}
+.feat-split .feat-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+@media (max-width:900px){
+  .feat-split{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .feat-split .agrid.scribe-features{grid-template-columns:1fr}
+}

@@ -183,13 +183,26 @@ export default function Home() {
       {/* NOTE TO CLAIM · dark */}
       <section className="section dark thesis" id="layer">
         <div className="wrap">
-          <div className="thesis-card reveal">
-            <span className="eyebrow">One connected path</span>
-            <p>
-              The note is only the first step. Zera connects the entire path,{" "}
-              <span className="accent">encounter → documentation → coding → validation → claim</span>, into one
-              continuous workflow. Zera Scribe gets the note right. Zera Revenue carries it the rest of the way.
-            </p>
+          <div className="thesis-card has-photo reveal">
+            <div className="tc-copy">
+              <span className="eyebrow">One connected path</span>
+              <p>
+                The note is only the first step. Zera connects the entire path,{" "}
+                <span className="accent">encounter → documentation → coding → validation → claim</span>, into one
+                continuous workflow. Zera Scribe gets the note right. Zera Revenue carries it the rest of the way.
+              </p>
+            </div>
+            <figure className="tc-photo">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/connected-path.jpg?v=1"
+                alt="A clinician holding a tablet, smiling as she talks with a patient"
+                width={670}
+                height={652}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
           </div>
         </div>
       </section>

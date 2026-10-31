@@ -248,14 +248,27 @@ export default function ScribePage() {
             <span className="eyebrow">What you get</span>
             <h2>Everything in one subscription.</h2>
           </div>
-          <div className="agrid scribe-features reveal">
-            {FEATURES.map((f) => (
-              <div className="analyzer" key={f}>
-                <div className="an">
-                  <Check /> {f}
+          <div className="feat-split reveal">
+            <figure className="feat-photo">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/scribe-review.jpg?v=1"
+                alt="A physician reviewing a note on a tablet at her desk"
+                width={1200}
+                height={900}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div className="agrid scribe-features">
+              {FEATURES.map((f) => (
+                <div className="analyzer" key={f}>
+                  <div className="an">
+                    <Check /> {f}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
